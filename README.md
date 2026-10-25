@@ -12,3 +12,7 @@ uv venv -p 3.11 .venv && uv pip install -p .venv bpy
 ## Guns
 
 [`guns/`](guns) holds game-ready firearm models (AR-15, Glock 17, MAC-10, Mossberg 590, Kar98k) built for the LootNShoot game: FBX parts with LODs, PBR textures, sockets and renders. That folder has its own layout; see [`guns/README.md`](guns/README.md).
+
+## Skills
+
+[`skills/`](skills) holds the Claude Code skills used to build the guns and levels: `level-factory`, `gun-pipeline`, `model-factory`, `blender-3d` and `lns-game-import`. See [`skills/README.md`](skills/README.md).
