@@ -66,44 +66,57 @@ class Svg:
 
 
 def mezz(out):
-    g = Svg(-46, -18, 46, 18, 13, "MEZZANINE  z 520  — the Ring around the Well (safe hub)")
+    g = Svg(-46, -14, 46, 14, 13, "MEZZANINE  z 520  — the Arcade (safe hub)")
     g.rect(S.MEZZ, "#1d2126", DIM, 2)
     for k, r in S.MEZZ_ROOMS.items():
         g.rect(r["rect"], ROOM[k], "#000", 1, 0.85)
         x0, y0, x1, y1 = r["rect"]
-        if k in ("gate", "departure"):
-            g.text((x0 + x1) / 2, y1 - 2.4 if k == "gate" else 13.8, k.replace("_", " ").upper(), 12, bold=True)
-        elif k not in ("watch_post",):
+        if k == "gate":
+            g.text((x0 + x1) / 2, 4.6, "GATE", 12, bold=True)
+        elif k != "watch_post":
             g.text((x0 + x1) / 2, (y0 + y1) / 2 + 0.4, f"{k.replace('_', ' ').upper()}\nwas: {r['was']}", 10)
-    g.text(-35, -3.2, "WATCH POST\n(token booth)", 9)
-    g.rect(S.WELL, WELL, WELL, 2, 0.18)
-    g.poly([(S.WELL[0], S.WELL[1]), (S.WELL[2], S.WELL[1]), (S.WELL[2], S.WELL[3]),
-            (S.WELL[0], S.WELL[3]), (S.WELL[0], S.WELL[1])], WELL, 3)
-    g.text(3, 2.0, "THE WELL", 14, WELL, bold=True)
-    g.text(3, -0.4, "open to platform · daylight from the Breach", 10, WELL)
-    g.text(3, -2.2, "bus wedged overhead", 10, WELL)
+        if x0 >= S.FARE_LINE_X and x1 <= S.CONCOURSE[2]:      # glass shopfront line
+            fy = S.CONCOURSE[3] if y0 >= 0 else S.CONCOURSE[1]
+            g.poly([(x0 + 0.5, fy), (x1 - 0.5, fy)], "#9fd3e6", 3)
+    g.text(-35, -3.0, "WATCH POST\n(token booth)", 9)
+    g.rect(S.CONCOURSE, "#3a3d42", "none")
+    g.rect(S.NODE, "#3a3d42", "none")
+    c = S.COMPASS_ROSE
+    cx, cy = g.p(*c["center"])
+    g.out.append(f'<circle cx="{cx:.1f}" cy="{cy:.1f}" r="{c["r"]*g.ppm:.1f}" fill="#d9d6cf" fill-opacity="0.35" stroke="#d9d6cf"/>')
+    for a_ in range(8):
+        t = a_ * math.pi / 4
+        rr = c["r"] if a_ % 2 == 0 else c["r"] * 0.55
+        g.poly([c["center"], (c["center"][0] + rr * math.sin(t), c["center"][1] + rr * math.cos(t))], "#d9d6cf", 2)
+    g.text(2, 10.6, "RAID BOARD · muster", 9, "#7fd17f", bold=True)
+    g.text(2, 7.4, "THE NODE", 12, bold=True)
+    g.text(-17.25, 1.6, "MARKET (glass kiosks)", 10, "#9fd3e6")
+    for kx, ky in S.CENTER_KIOSKS:
+        g.rect((kx - 1.2, ky - 0.6, kx + 1.2, ky + 0.6), "#9fd3e6", "#000", 1, 0.7)
+    for k in range(-10, 11):
+        x = k * S.COLUMN_PITCH
+        if S.FARE_LINE_X < x < S.CONCOURSE[2]:
+            for yy in (-S.CONCOURSE_COLUMNS_Y, S.CONCOURSE_COLUMNS_Y):
+                g.rect((x - 0.25, yy - 0.25, x + 0.25, yy + 0.25), "#f2f2f2")
     for st in S.PLATFORM_STAIRS:
-        g.stair(st["top"], st["dir"], st["width"], S.PLATFORM_STAIR_RISERS)
+        run = g.stair(st["top"], st["dir"], st["width"], S.PLATFORM_STAIR_RISERS)
+        x0, x1 = sorted((st["top"][0], st["top"][0] + st["dir"][0] * run))
+        w = st["width"] / 2 + 0.3
+        far, near = (x1, x0) if st["dir"][0] > 0 else (x0, x1)    # railing on 3 sides, open at the top
+        g.poly([(near, w), (far, w), (far, -w), (near, -w)], "#e0b020", 3)
+        g.text((x0 + x1) / 2, -w - 1.0, f"{st['name'].replace('Stair_', '').upper()} STAIR down", 9, "#e0b020")
     for st in S.STREET_STAIRS:
         g.stair(st["top"], st["dir"], st["width"], S.STREET_STAIR_RISERS)
-        g.text(st["top"][0] + 4, st["top"][1] + (1.6 if st["top"][1] > 0 else -2.4),
+        g.text(st["top"][0] + 4, st["top"][1] + (1.5 if st["top"][1] > 0 else -2.2),
                f"from street ({st['globe']}, {st['state']})", 9, DIM)
-    # fare line + turnstiles
-    g.poly([(S.FARE_LINE_X, -16), (S.FARE_LINE_X, -6)], INK, 4)
-    g.poly([(S.FARE_LINE_X, 6), (S.FARE_LINE_X, 16)], INK, 4)
-    for i in range(8):
-        y = -5.25 + i * 1.5
+    g.poly([(S.FARE_LINE_X, S.MEZZ[1]), (S.FARE_LINE_X, S.CONCOURSE[1])], INK, 4)
+    g.poly([(S.FARE_LINE_X, S.CONCOURSE[3]), (S.FARE_LINE_X, S.MEZZ[3])], INK, 4)
+    for i in range(6):
+        y = -3.3 + i * 1.32
         g.rect((S.FARE_LINE_X - 0.4, y - 0.15, S.FARE_LINE_X + 0.4, y + 0.15), INK)
-    g.text(S.FARE_LINE_X - 1.2, 6.8, "turnstiles\n+ shutter", 9, INK, "end")
-    # loop arrows: out on north walkway, back on south
-    g.poly([(-24, 7.5), (24, 7.5), (24, 2.5)], "#7fd17f", 3, dash="10 6")
-    g.poly([(23.4, 3.4), (24, 2.5), (24.6, 3.4)], "#7fd17f", 3)
-    g.text(0, 8.0, "OUT → stash · trade · arms · mech · raid board · down", 10, "#7fd17f")
-    g.poly([(24, -2.5), (24, -7.5), (-24, -7.5)], "#e58f8f", 3, dash="10 6")
-    g.poly([(-23.1, -6.9), (-24, -7.5), (-23.1, -8.1)], "#e58f8f", 3)
-    g.text(0, -8.2, "BACK ← up · infirmary · workshop · galley · bunks", 10, "#e58f8f")
-    g.text(29.5, -12.5, "RAID BOARD\non east wall", 9)
-    g.scale_bar(-44, -17.2)
+    g.text(S.FARE_LINE_X - 1.0, 4.6, "turnstiles\n+ shutter", 9, INK, "end")
+    g.text(38, -2.6, "NO ENTRY", 9, "#e58f8f")
+    g.scale_bar(-44, -13.4)
     g.save(os.path.join(out, "plan_mezzanine.svg"))
 
 
@@ -127,13 +140,12 @@ def platform(out):
             x = tr["start_x"] + i * (car["length"] + car["gap"])
             g.rect((x, ty - car["width"] / 2, x + car["length"], ty + car["width"] / 2), col, "#000", 1)
         g.text(tr["start_x"] + 8, ty - 0.5, lab, 10, "#000", bold=True)
-    g.rect(S.WELL, WELL, WELL, 2, 0.12, dash="8 5")
-    g.text(3, -10.6, "Well overhead (daylight shaft)", 10, WELL)
     for st in S.PLATFORM_STAIRS:
         top = st["top"]
         run = (S.PLATFORM_STAIR_RISERS - 2) * S.TREAD + S.LANDING
         g.rect((min(top[0], top[0] + st["dir"][0] * run), -st["width"] / 2,
                 max(top[0], top[0] + st["dir"][0] * run), st["width"] / 2), "#c9c3b8", INK, 1)
+        g.text(top[0] + st["dir"][0] * run / 2, -st["width"] / 2 - 0.9, "stair up", 9)
     for k, z in S.PLATFORM_ZONES.items():
         g.rect(z["rect"], "#7fd17f" if k == "boarding" else "#d18f3f", "none", 0, 0.25)
     g.text(-32, 2.2, "ROUTE\nBOARD", 9)
@@ -172,8 +184,8 @@ def street(out):
     for r in S.STREET_ZONES["walkups"]["rects"]:
         g.rect(r, "#8a6a4a", "#000", 1)
         g.text((r[0] + r[2]) / 2, (r[1] + r[3]) / 2 + 0.5, "walk-up", 8)
-    g.rect(S.WELL, WELL, WELL, 3, 0.25)
-    g.text(3, 1.5, "THE BREACH\ncaged sinkhole · bus nose-down", 10, WELL, bold=True)
+    g.rect(S.MEZZ, "none", WELL, 2, dash="6 5")
+    g.text(0, -11.0, "station footprint below", 9, WELL)
     for st in S.STREET_STAIRS:
         g.stair(st["top"], st["dir"], st["width"], S.STREET_STAIR_RISERS)
         g.rect((st["top"][0] - 1.2, st["top"][1] - 1.2, st["top"][0] + 0.2, st["top"][1] + 1.2),
@@ -195,15 +207,17 @@ def street(out):
 
 
 def section(out):
-    g = Svg(-50, -3, 46, 14, 12, "SECTION through the shaft (y = 0, looking north)")
-    g.rect((-50, -3, 46, 8.8), "#2a2622")                       # earth
-    g.rect((-45, -1.1, 45, 4.3), "#1d2126")                      # platform box
-    g.rect((-42, 5.2, 42, 8.8), "#262a30")                        # mezz box
-    g.rect(S.PLATFORM[:1] + (-1.1,) + S.PLATFORM[2:3] + (0.0,), "#6c6a64")
-    g.rect((S.WELL[0], 0, S.WELL[2], 14), WELL, "none", 0, 0.12)  # light shaft
-    for x0, x1 in ((-50, S.WELL[0]), (S.WELL[2], 46)):
-        g.rect((x0, 8.8, x1, 10.0), "#4a4744", INK, 1)
-        g.rect((max(x0, -42), 4.3, min(x1, 42), 5.2), "#4a4744", INK, 1)
+    g = Svg(-50, -3, 46, 12, 12, "SECTION along the station (y = 0, looking north)")
+    g.rect((-50, -3, 46, 8.8), "#2a2622")
+    g.rect((-45, -1.1, 45, 4.3), "#1d2126")
+    g.rect((S.MEZZ[0], 5.2, S.MEZZ[2], 8.8), "#262a30")
+    g.rect((S.PLATFORM[0], -1.1, S.PLATFORM[2], 0.0), "#6c6a64")
+    g.rect((-50, 8.8, 46, 10.0), "#4a4744", INK, 1)
+    run = (S.PLATFORM_STAIR_RISERS - 2) * S.TREAD + S.LANDING
+    cuts = sorted(sorted((st["top"][0], st["top"][0] + st["dir"][0] * run)) for st in S.PLATFORM_STAIRS)
+    xs = [-45] + [v for c_ in cuts for v in c_] + [45]
+    for i in range(0, len(xs), 2):
+        g.rect((xs[i], 4.3, xs[i + 1], 5.2), "#4a4744", INK, 1)
     for st in S.PLATFORM_STAIRS:
         x, d, z, pts = st["top"][0], st["dir"][0], 5.2, []
         rise = 5.2 / S.PLATFORM_STAIR_RISERS
@@ -219,25 +233,16 @@ def section(out):
         z -= rise
         x += S.LANDING if i == S.STREET_STAIR_RISERS // 2 else S.TREAD
     g.poly(pts, "#2c2", 2, dash="4 3")
-    b = S.BREACH_BUS
-    ang, L, H = math.radians(b["pitch_deg"]), 12.0, 3.0
-    c, s_ = math.cos(ang), math.sin(ang)
-    o = (b["x"], 8.2)
-    pts = [(o[0] + c * u - s_ * v, o[1] + s_ * u + c * v) for u, v in ((-L/2, 0), (L/2, 0), (L/2, H), (-L/2, H), (-L/2, 0))]
-    g.poly(pts, "#3a6aa8", 2, fill="#3a6aa8", op=0.6)
-    g.poly([(S.WELL[0], 10.0), (S.WELL[2], 10.0)], "#999", 2, dash="2 3")
-    g.text(17, 12.3, "cage + tarps", 9, DIM)
-    g.text(1, 11.6, "city bus, nose-down", 10, INK)
     g.text(-30, 9.25, "STREET  z 1000", 10, INK, bold=True)
-    g.text(-30, 6.8, "MEZZANINE  z 520", 10, INK, bold=True)
+    g.text(-15, 6.8, "MEZZANINE  z 520  (arcade)", 10, INK, bold=True)
     g.text(-30, 1.8, "PLATFORM  z 0", 10, INK, bold=True)
-    g.text(-37.5, 11.5, "kiosk stair (27, y=9.5)", 9, "#2c2")
-    g.text(-6, 4.0, "West stair (29)", 9)
-    g.text(12, 4.0, "Grand stair (29)", 9)
-    g.text(3, 0.6, "BOARDING", 10, WELL, bold=True)
+    g.text(-37.5, 11.0, "sidewalk stair (27, y=8.5)", 9, "#2c2")
+    g.text(1.5, 6.0, "main stair (29)", 9)
+    g.text(28.5, 6.0, "east stair (29)", 9)
+    g.text(15, 0.6, "BOARDING", 10, "#7fd17f", bold=True)
     g.rect((S.TRAIN_A["start_x"], -0.8, S.TRAIN_A["start_x"] + 64.7, 3.0), "none", "#9aa3ad", 1, dash="6 4")
     g.text(-25, -2.2, "live train (Track A, behind)", 9, "#9aa3ad")
-    g.save(os.path.join(out, "section_shaft.svg"))
+    g.save(os.path.join(out, "section_station.svg"))
 
 
 if __name__ == "__main__":

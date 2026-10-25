@@ -1,4 +1,4 @@
-"""Every number and registry for Cortlandt Station (layout v2: "The Well").
+"""Every number and registry for Cortlandt Station (layout v3: "The Arcade").
 Pure data — no bpy, no logic. Units: metres. X along the platform (west→east), Y across
 (south→north), Z up. Platform top = 0. Rects are (x0, y0, x1, y1)."""
 
@@ -15,12 +15,6 @@ LANDING = 1.5
 STREET_STAIR_RISERS = 27         # 4.8 m / 27 = 17.8 cm
 PLATFORM_STAIR_RISERS = 29       # 5.2 m / 29 = 17.9 cm
 
-# --- the spine: one vertical shaft through all three levels -------------------------
-# Street: collapsed roadway ("The Breach"), caged over. Mezz: open "Well" with a rail.
-# Platform: daylight lands on the boarding zone. Same rect on every level.
-WELL = (-16.0, -6.0, 22.0, 6.0)
-BREACH_BUS = dict(x=4.0, y=-1.0, pitch_deg=-28, yaw_deg=8)   # set piece wedged in the shaft
-
 # --- platform level -----------------------------------------------------------------
 PLATFORM = (-35.0, -4.5, 35.0, 4.5)
 TRACK_A = (-85.0, -9.0, 85.0, -4.5)      # south: the live train
@@ -34,45 +28,46 @@ TRAIN_CAR = dict(length=15.5, width=2.7, gap=0.9, doors_per_side=4, door_w=1.27)
 TRAIN_A = dict(cars=4, start_x=-31.0, kit="SM_TrainCar_R142")
 TRAIN_B = dict(cars=3, start_x=-33.0, kit="SM_TrainCar_Derelict")
 PLATFORM_ZONES = {
-    "boarding":     dict(rect=(-7.0, -4.5, 13.0, 4.5), note="under the Well, daylight shaft"),
+    "boarding":     dict(rect=(6.0, -4.5, 24.0, 4.5), note="between the two stair feet"),
     "route_board":  dict(rect=(-35.0, -4.5, -29.0, 0.0), note="pick a stop at the lead car cab"),
     "test_range":   dict(rect=(35.0, 4.5, 80.0, 9.0), note="Track B tunnel, 10/25/50 m targets"),
     "range_steps":  dict(rect=(31.0, 2.5, 35.0, 4.5), note="steps down to Track B trackbed"),
 }
 
-# --- mezzanine ----------------------------------------------------------------------
-MEZZ = (-42.0, -16.0, 42.0, 16.0)
+# --- mezzanine: a straight Turnstyle-style arcade directly above the platform -----------
+MEZZ = (-42.0, -12.0, 42.0, 12.0)
 FARE_LINE_X = -28.0
-WALKWAY = 3.0                    # ring walkway around the Well
-PLATFORM_STAIRS = [              # inside the Well. top nosing at mezz level
-    dict(name="Stair_West",  top=(-16.0, 0.0), dir=(1, 0),  width=3.0),
-    dict(name="Stair_Grand", top=(22.0, 0.0),  dir=(-1, 0), width=4.0),
+CONCOURSE = (-28.0, -4.0, 34.0, 4.0)     # 8 m wide, glass shopfronts both sides
+CONCOURSE_COLUMNS_Y = 3.4                # white riveted I-beams just inside the shopfronts
+NODE = (-4.0, -12.0, 8.0, 12.0)          # the crossroads: main stair, raid board, compass rose
+COMPASS_ROSE = dict(center=(2.0, -7.8), r=3.5)
+CENTER_KIOSKS = [(-24.0 + i * 4.5, 0.0) for i in range(4)]   # glass display islands = the market
+PLATFORM_STAIRS = [              # floor openings in the concourse with railings. top nosing at mezz
+    dict(name="Stair_Main", top=(-3.0, 0.0), dir=(1, 0),  width=3.0),
+    dict(name="Stair_East", top=(33.0, 0.0), dir=(-1, 0), width=2.4),
 ]
-STREET_STAIRS = [                # top nosing at street level, descend east into the Gate
-    dict(name="Kiosk_North", top=(-42.0, 9.5),  dir=(1, 0), width=2.0,
-         globe="green", state="open", note="main entrance, sandbag gate + shutter"),
-    dict(name="Kiosk_South", top=(-42.0, -9.5), dir=(1, 0), width=2.0,
-         globe="red", state="welded", note="sealed, visible landmark, opens late-game"),
+STREET_STAIRS = [                # sidewalk stairs against the building line, descend east into the Gate
+    dict(name="Kiosk_North", top=(-42.0, 8.5),  dir=(1, 0), width=2.0,
+         globe="green", state="open", note="main entrance beside the corner newsstand"),
+    dict(name="Kiosk_South", top=(-42.0, -8.5), dir=(1, 0), width=2.0,
+         globe="red", state="welded", note="sealed, visible from the Gate"),
 ]
-# Every room: rect, what it was before the outbreak, what it is now, light identity.
-# Loop: OUT along the north side (stash→trade→arms→mech→raid board→Grand Stair),
-#       BACK along the south side (Grand Stair→infirmary→workshop→galley→bunks).
+# Rooms: rect, pre-outbreak use, current use, light identity.
+# Most-used services hug the Node (main stair); outer bays are less frequent stops.
 MEZZ_ROOMS = {
-    "gate":        dict(rect=(-42.0, -16.0, -28.0, 16.0), was="Unpaid area",   light="sodium orange, CCTV glow"),
-    "watch_post":  dict(rect=(-37.0, -2.0, -33.0, 2.0),   was="Token booth",   light="red alarm lamp"),
-    "landing_sq":  dict(rect=(-28.0, -9.0, -16.0, 9.0),   was="Paid concourse", light="work lights"),
-    "stash":       dict(rect=(-28.0, 9.0, -16.0, 16.0),   was="Lost & found",  light="cool fluorescent"),
-    "trade_post":  dict(rect=(-16.0, 9.0, -2.0, 16.0),    was="Newsstand",     light="warm marquee bulbs"),
-    "gunsmith":    dict(rect=(-2.0, 9.0, 12.0, 16.0),     was="Shoe repair",   light="red neon sign"),
-    "mechanic":    dict(rect=(12.0, 9.0, 25.0, 16.0),     was="Locksmith",     light="orange caged bulbs"),
-    "departure":   dict(rect=(25.0, -16.0, 34.0, 16.0),   was="Exit passage",  light="raid board projector"),
-    "infirmary":   dict(rect=(12.0, -16.0, 25.0, -9.0),   was="Barber shop",   light="clinical white + barber pole"),
-    "workshop":    dict(rect=(0.0, -16.0, 12.0, -9.0),    was="Phone repair",  light="cool white + printer glow"),
-    "galley":      dict(rect=(-12.0, -16.0, 0.0, -9.0),   was="Coffee cart",   light="string lights"),
-    "bunks":       dict(rect=(-28.0, -16.0, -12.0, -9.0), was="Crew storage",  light="dim red night lamps"),
-    "black_market": dict(rect=(34.0, 4.0, 42.0, 16.0),    was="Signal room",   light="UV purple"),
-    "staff_hall":  dict(rect=(34.0, -4.0, 42.0, 4.0),     was="Staff corridor", light="flicker"),
-    "generator":   dict(rect=(34.0, -16.0, 42.0, -4.0),   was="Fan plant",     light="hazard amber"),
+    "gate":         dict(rect=(-42.0, -12.0, -28.0, 12.0), was="Unpaid area",    light="sodium orange, CCTV glow"),
+    "watch_post":   dict(rect=(-37.0, -2.0, -33.0, 2.0),   was="Token booth",    light="red alarm lamp"),
+    "mechanic":     dict(rect=(-28.0, 4.0, -16.0, 12.0),   was="Locksmith",      light="orange caged bulbs"),
+    "trade_post":   dict(rect=(-16.0, 4.0, -4.0, 12.0),    was="Newsstand",      light="warm marquee bulbs"),
+    "gunsmith":     dict(rect=(8.0, 4.0, 20.0, 12.0),      was="Shoe repair",    light="red neon"),
+    "workshop":     dict(rect=(20.0, 4.0, 34.0, 12.0),     was="Phone repair",   light="cool white + printer glow"),
+    "galley":       dict(rect=(-28.0, -12.0, -16.0, -4.0), was="Pizza counter",  light="string lights"),
+    "infirmary":    dict(rect=(-16.0, -12.0, -4.0, -4.0),  was="Pharmacy",       light="clinical white"),
+    "stash":        dict(rect=(8.0, -12.0, 20.0, -4.0),    was="Lost & found",   light="cool fluorescent"),
+    "bunks":        dict(rect=(20.0, -12.0, 34.0, -4.0),   was="Crew storage",   light="dim red night lamps"),
+    "black_market": dict(rect=(34.0, 4.0, 42.0, 12.0),     was="Signal room",    light="UV purple"),
+    "staff_hall":   dict(rect=(34.0, -4.0, 42.0, 4.0),     was="Staff corridor", light="flicker"),
+    "generator":    dict(rect=(34.0, -12.0, 42.0, -4.0),   was="Fan plant",      light="hazard amber"),
 }
 
 # --- street -------------------------------------------------------------------------

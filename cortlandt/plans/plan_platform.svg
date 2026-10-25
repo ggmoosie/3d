@@ -50,11 +50,11 @@
 <rect x="825.4" y="101.9" width="170.5" height="29.7" fill="#6b4a33" fill-opacity="1" stroke="#000" stroke-width="1"/>
 <rect x="1005.8" y="101.9" width="170.5" height="29.7" fill="#6b4a33" fill-opacity="1" stroke="#000" stroke-width="1"/>
 <text x="733.0" y="122.2" fill="#000" font-size="10" text-anchor="middle" font-weight="bold">DERELICT</text>
-<rect x="832.0" y="125.0" width="418.0" height="132.0" fill="#f5c542" fill-opacity="0.12" stroke="#f5c542" stroke-width="2" stroke-dasharray="8 5"/>
-<text x="1041.0" y="307.6" fill="#f5c542" font-size="10" text-anchor="middle">Well overhead (daylight shaft)</text>
-<rect x="832.0" y="174.5" width="99.7" height="33.0" fill="#c9c3b8" fill-opacity="1" stroke="#e8e6e1" stroke-width="1"/>
-<rect x="1150.3" y="169.0" width="99.7" height="44.0" fill="#c9c3b8" fill-opacity="1" stroke="#e8e6e1" stroke-width="1"/>
-<rect x="931.0" y="141.5" width="220.0" height="99.0" fill="#7fd17f" fill-opacity="0.25" stroke="none" stroke-width="0"/>
+<rect x="975.0" y="174.5" width="99.7" height="33.0" fill="#c9c3b8" fill-opacity="1" stroke="#e8e6e1" stroke-width="1"/>
+<text x="1024.8" y="217.4" fill="#e8e6e1" font-size="9" text-anchor="middle">stair up</text>
+<rect x="1271.3" y="177.8" width="99.7" height="26.4" fill="#c9c3b8" fill-opacity="1" stroke="#e8e6e1" stroke-width="1"/>
+<text x="1321.2" y="214.1" fill="#e8e6e1" font-size="9" text-anchor="middle">stair up</text>
+<rect x="1074.0" y="141.5" width="198.0" height="99.0" fill="#7fd17f" fill-opacity="0.25" stroke="none" stroke-width="0"/>
 <rect x="623.0" y="191.0" width="66.0" height="49.5" fill="#d18f3f" fill-opacity="0.25" stroke="none" stroke-width="0"/>
 <rect x="1393.0" y="92.0" width="495.0" height="49.5" fill="#d18f3f" fill-opacity="0.25" stroke="none" stroke-width="0"/>
 <rect x="1349.0" y="141.5" width="44.0" height="22.0" fill="#d18f3f" fill-opacity="0.25" stroke="none" stroke-width="0"/>
