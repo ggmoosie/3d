@@ -1,0 +1,103 @@
+{
+ "mesh": "SM_AR15_Barrel145",
+ "units": "cm",
+ "frame": "shared gun frame (UE: +X gun left, +Y muzzle, +Z up; INTEGRATION.md origin, bore at z 12.14): attach at identity",
+ "rotator": "FRotator (pitch, yaw, roll) degrees; x/y/z_axis = the resulting socket axes in mesh space",
+ "import_hint": "unreal.StaticMeshSocket: relative_location = loc, relative_rotation = Rotator(pitch=, yaw=, roll=), tag = tag",
+ "attach": {
+  "parent": "SM_AR15_Upper",
+  "socket": "Part_Barrel"
+ },
+ "sockets": [
+  {
+   "name": "Muzzle",
+   "loc": [
+    0.0,
+    52.3798,
+    12.14
+   ],
+   "rot_pyr": [
+    0,
+    90,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "y_axis": [
+    -1.0,
+    0.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    0.0,
+    369.298,
+    0.0
+   ],
+   "note": "barrel muzzle face on the bore axis; muzzle devices attach here (X forward, pivot on this face)",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Chamber",
+   "loc": [
+    0.0,
+    17.71,
+    12.14
+   ],
+   "rot_pyr": [
+    0,
+    90,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "y_axis": [
+    -1.0,
+    0.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    0.0,
+    22.6,
+    0.0
+   ],
+   "note": "bore axis at the middle of a 5.56 case (bolt face + 22.4 mm)",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ]
+}

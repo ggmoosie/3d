@@ -1,0 +1,74 @@
+{
+  "Muzzle": {
+    "location": [
+      0.0,
+      60.320395,
+      3.034377
+    ],
+    "rotation_pitch_yaw_roll": [
+      0,
+      90,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source": "centroid of muzzle-plane ring"
+  },
+  "Trigger": {
+    "location": [
+      0.0,
+      -6.68603,
+      -2.842784
+    ],
+    "rotation_pitch_yaw_roll": [
+      0,
+      -90,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source": "ray hit on trigger face at inherited grip-anchor height"
+  },
+  "Pump_Socket": {
+    "location": [
+      0.0,
+      19.701526,
+      3.034377
+    ],
+    "rotation_pitch_yaw_roll": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source": "bore axis at measured wood forend rear face"
+  },
+  "FrontSight": {
+    "location": [
+      0.0,
+      58.937675,
+      4.381091
+    ],
+    "rotation_pitch_yaw_roll": [
+      0,
+      90,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "source": "highest bead vertex"
+  }
+}

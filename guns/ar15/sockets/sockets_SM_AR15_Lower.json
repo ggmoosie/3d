@@ -1,0 +1,955 @@
+{
+ "mesh": "SM_AR15_Lower",
+ "units": "cm",
+ "frame": "shared gun frame (UE: +X gun left, +Y muzzle, +Z up; INTEGRATION.md origin, bore at z 12.14): attach at identity",
+ "rotator": "FRotator (pitch, yaw, roll) degrees; x/y/z_axis = the resulting socket axes in mesh space",
+ "import_hint": "unreal.StaticMeshSocket: relative_location = loc, relative_rotation = Rotator(pitch=, yaw=, roll=), tag = tag",
+ "attach": null,
+ "sockets": [
+  {
+   "name": "MagazineSocket",
+   "loc": [
+    0.0,
+    11.605,
+    10.84
+   ],
+   "rot_pyr": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "y_axis": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    0.0,
+    -38.45,
+    -13.0
+   ],
+   "note": "where the top of SM_M4_Mag / SM_AR15_Mag30 sits (their pivot: feed-lip top, 5.8 mm ahead of the top centre)",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Trigger",
+   "loc": [
+    0.0,
+    3.5643,
+    5.85
+   ],
+   "rot_pyr": [
+    0,
+    -90,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "y_axis": [
+    1.0,
+    0.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    0.0,
+    -118.857,
+    -62.9
+   ],
+   "note": "trigger blade face, finger contact point",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "GripCyl_R",
+   "loc": [
+    0.0,
+    -1.9505,
+    2.8028
+   ],
+   "rot_pyr": [
+    64.9727,
+    90.0,
+    -60.838
+   ],
+   "scale": [
+    2.018,
+    3.687,
+    1.0
+   ],
+   "tag": "",
+   "x_axis": [
+    0.0,
+    0.42305,
+    0.90611
+   ],
+   "y_axis": [
+    -0.48728,
+    -0.79125,
+    0.36943
+   ],
+   "z_axis": [
+    0.87325,
+    -0.44153,
+    0.20614
+   ],
+   "g_mm": [
+    0.0,
+    -174.005,
+    -93.372
+   ],
+   "note": "pistol-grip cylinder fitted to the A2 grip (heights 10-80 %)",
+   "nrm": [
+    0.87325,
+    -0.44153,
+    0.20614
+   ]
+  },
+  {
+   "name": "RightHandSocket",
+   "loc": [
+    0.0,
+    -1.9505,
+    2.8028
+   ],
+   "rot_pyr": [
+    64.9727,
+    90.0,
+    0.0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    0.0,
+    0.42305,
+    0.90611
+   ],
+   "y_axis": [
+    -1.0,
+    0.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    -0.90611,
+    0.42305
+   ],
+   "g_mm": [
+    0.0,
+    -174.005,
+    -93.372
+   ],
+   "note": "legacy: pistol-grip centre",
+   "nrm": [
+    -0.0,
+    -0.90611,
+    0.42305
+   ]
+  },
+  {
+   "name": "MagRelease",
+   "loc": [
+    -1.63,
+    6.99,
+    8.98
+   ],
+   "rot_pyr": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "y_axis": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    -16.3,
+    -84.6,
+    -31.6
+   ],
+   "note": "button face; X = press direction",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "BoltCatch",
+   "loc": [
+    1.76,
+    6.675,
+    11.78
+   ],
+   "rot_pyr": [
+    0.0,
+    180.0,
+    0.0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "y_axis": [
+    -0.0,
+    -1.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    -0.0,
+    1.0
+   ],
+   "g_mm": [
+    17.6,
+    -87.75,
+    -3.6
+   ],
+   "note": "paddle face; X = press direction",
+   "nrm": [
+    -0.0,
+    -0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Selector",
+   "loc": [
+    1.83,
+    2.49,
+    8.94
+   ],
+   "rot_pyr": [
+    90.0,
+    0.0,
+    180.0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "y_axis": [
+    0.0,
+    -1.0,
+    -0.0
+   ],
+   "z_axis": [
+    1.0,
+    0.0,
+    -0.0
+   ],
+   "g_mm": [
+    18.3,
+    -129.6,
+    -32.0
+   ],
+   "note": "lever tip at SAFE; X = swing direction toward SEMI",
+   "nrm": [
+    1.0,
+    0.0,
+    -0.0
+   ]
+  },
+  {
+   "name": "Stock",
+   "loc": [
+    0.0,
+    -27.565,
+    7.565
+   ],
+   "rot_pyr": [
+    0,
+    90,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "y_axis": [
+    -1.0,
+    0.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    0.0,
+    -430.15,
+    -45.75
+   ],
+   "note": "butt-plate centre, stock at position 3 of 0-5 (half extended) (geometry on SM_AR15_Stock)",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Butt",
+   "loc": [
+    0.0,
+    -27.565,
+    7.565
+   ],
+   "rot_pyr": [
+    0.0,
+    -90.0,
+    0.0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "y_axis": [
+    1.0,
+    0.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    0.0,
+    -430.15,
+    -45.75
+   ],
+   "note": "butt-plate centre, X out of the plate toward the shoulder (modular-hold branch) (geometry on SM_AR15_Stock)",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Part_Upper",
+   "loc": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rot_pyr": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "y_axis": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    -0.0,
+    -154.5,
+    -121.4
+   ],
+   "note": "identity part socket (shared gun frame): SM_AR15_Upper",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Part_Stock",
+   "loc": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rot_pyr": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "y_axis": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    -0.0,
+    -154.5,
+    -121.4
+   ],
+   "note": "identity part socket (shared gun frame): SM_AR15_Stock",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Muzzle",
+   "loc": [
+    0.0,
+    59.2023,
+    12.14
+   ],
+   "rot_pyr": [
+    0,
+    90,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "y_axis": [
+    -1.0,
+    0.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    0.0,
+    437.523,
+    0.0
+   ],
+   "note": "fallback for code that only reads the core mesh; tip of the A2 on the 16 in barrel (default build); the barrels carry their own Muzzle at the muzzle face",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Chamber",
+   "loc": [
+    0.0,
+    17.71,
+    12.14
+   ],
+   "rot_pyr": [
+    0,
+    90,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "y_axis": [
+    -1.0,
+    0.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    0.0,
+    22.6,
+    0.0
+   ],
+   "note": "fallback for code that only reads the core mesh; bore axis at the middle of a 5.56 case (bolt face + 22.4 mm)",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Optic_Socket",
+   "loc": [
+    0.0,
+    5.4995,
+    15.18
+   ],
+   "rot_pyr": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "y_axis": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    0.0,
+    -99.505,
+    30.4
+   ],
+   "note": "fallback for code that only reads the core mesh; receiver 1913 rail top, centred on the middle slot (an optic recoil lug drops into it); optics Y-forward, pivot at the bottom",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Aim",
+   "loc": [
+    0.0,
+    -2.71,
+    18.39
+   ],
+   "rot_pyr": [
+    0,
+    90,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "y_axis": [
+    -1.0,
+    0.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    0.0,
+    -181.6,
+    62.5
+   ],
+   "note": "fallback for code that only reads the core mesh; rear BUIS aperture (SM_AR15_Sights_BUIS_*)",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Eye",
+   "loc": [
+    0.0,
+    -10.21,
+    18.39
+   ],
+   "rot_pyr": [
+    0,
+    90,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "y_axis": [
+    -1.0,
+    0.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    0.0,
+    -256.6,
+    62.5
+   ],
+   "note": "fallback for code that only reads the core mesh; iron-sight eye point 75 mm behind the rear aperture",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "EjectionSocket",
+   "loc": [
+    -1.46,
+    9.45,
+    12.56
+   ],
+   "rot_pyr": [
+    22.0206,
+    -164.3578,
+    0.0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    -0.89272,
+    -0.24996,
+    0.37494
+   ],
+   "y_axis": [
+    0.26963,
+    -0.96296,
+    -0.0
+   ],
+   "z_axis": [
+    0.36105,
+    0.10109,
+    0.92705
+   ],
+   "g_mm": [
+    -14.6,
+    -60.0,
+    4.2
+   ],
+   "note": "fallback for code that only reads the core mesh; ejection port centre; X = ejection direction (right, slightly up and back)",
+   "nrm": [
+    0.36105,
+    0.10109,
+    0.92705
+   ]
+  },
+  {
+   "name": "Grip_Socket",
+   "loc": [
+    0.0,
+    29.71,
+    9.84
+   ],
+   "rot_pyr": [
+    0,
+    90,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "y_axis": [
+    -1.0,
+    0.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    0.0,
+    142.6,
+    -23.0
+   ],
+   "note": "fallback for code that only reads the core mesh; 6 o'clock M-LOK slot inside the quad rail span (Y 142.6); on the M4Quad the bottom rail surface is 7.4 mm lower",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "TacticalSocket",
+   "loc": [
+    -2.05,
+    29.71,
+    12.24
+   ],
+   "rot_pyr": [
+    270,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    -0.0,
+    -0.0,
+    -1.0
+   ],
+   "y_axis": [
+    -0.0,
+    1.0,
+    0.0
+   ],
+   "z_axis": [
+    1.0,
+    0.0,
+    -0.0
+   ],
+   "g_mm": [
+    -20.5,
+    142.6,
+    1.0
+   ],
+   "note": "fallback for code that only reads the core mesh; 3 o'clock M-LOK slot inside the quad span; on the M4Quad the right rail surface is 9.9 mm further out",
+   "nrm": [
+    1.0,
+    0.0,
+    -0.0
+   ]
+  },
+  {
+   "name": "LeftHandSocket",
+   "loc": [
+    0.0,
+    29.71,
+    9.85
+   ],
+   "rot_pyr": [
+    0,
+    90,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "y_axis": [
+    -1.0,
+    0.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    0.0,
+    142.6,
+    -22.9
+   ],
+   "note": "fallback for code that only reads the core mesh; AI left-hand target under the handguard",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "GripCyl_L",
+   "loc": [
+    0.0,
+    29.71,
+    12.21
+   ],
+   "rot_pyr": [
+    0.0,
+    90.0,
+    123.5305
+   ],
+   "scale": [
+    2.36,
+    5.0,
+    1.0
+   ],
+   "tag": "",
+   "x_axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "y_axis": [
+    0.55238,
+    -0.0,
+    -0.83359
+   ],
+   "z_axis": [
+    -0.83359,
+    0.0,
+    -0.55238
+   ],
+   "g_mm": [
+    0.0,
+    142.6,
+    0.7
+   ],
+   "note": "fallback for code that only reads the core mesh; support-hand cylinder at the Grip_Socket station",
+   "nrm": [
+    -0.83359,
+    0.0,
+    -0.55238
+   ]
+  }
+ ]
+}

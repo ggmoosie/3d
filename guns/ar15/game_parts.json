@@ -1,0 +1,1004 @@
+{
+ "note": "LootNShoot AR-15 game parts (pass 3; pass 4: MBUS-style polymer sights + SM_AR15_Sights_BUIS_Set_Stowed; pass 4b: fire-control group fixed). Paths are relative to Tools/bpy/ar15/out/. Units cm, UE axes. Gun-frame meshes attach at identity sockets (Part_*); the muzzle device, sights and magazines have their own frames.",
+ "default_build": [
+  "SM_AR15_Lower",
+  "SM_AR15_Upper",
+  "SM_AR15_Barrel16",
+  "SM_AR15_HG_MLOK",
+  "SM_AR15_Stock",
+  "SM_AR15_Muzzle_A2",
+  "SM_AR15_Sights_BUIS_Set",
+  "SM_AR15_Mag30_Loaded"
+ ],
+ "m4quad_build": [
+  "SM_AR15_Lower",
+  "SM_AR15_Upper",
+  "SM_AR15_Barrel145",
+  "SM_AR15_HG_M4Quad",
+  "SM_AR15_Stock",
+  "SM_AR15_Muzzle_A2",
+  "SM_AR15_Sights_BUIS_Rear",
+  "SM_AR15_Mag30_Loaded"
+ ],
+ "slots": [
+  "Receiver",
+  "Steel",
+  "BCG",
+  "Polymer",
+  "Handguard",
+  "Brass"
+ ],
+ "brass_slot_only_on": [
+  "SM_AR15_MagRound",
+  "SM_AR15_Mag30_Loaded"
+ ],
+ "texel_px_per_cm": {
+  "Receiver": 82.03,
+  "Handguard": 82.03,
+  "Steel": 41.01,
+  "Polymer": 41.01,
+  "BCG": 41.01
+ },
+ "assembled_tris": {
+  "default": 57100,
+  "m4quad": 53838
+ },
+ "checks": {
+  "fsb_covers_lpgb": {
+   "samples": 478,
+   "outside": 0,
+   "too_close": 0,
+   "min_depth_mm": 0.5,
+   "ok": true
+  }
+ },
+ "meshes": [
+  {
+   "name": "SM_AR15_Lower",
+   "label": "Lower (core)",
+   "fbx": "game/SM_AR15_Lower.fbx",
+   "lods": [
+    "game/lod/SM_AR15_Lower_LOD1.fbx",
+    "game/lod/SM_AR15_Lower_LOD2.fbx"
+   ],
+   "sockets": "game/sockets/sockets_SM_AR15_Lower.json",
+   "slots": [
+    "Receiver",
+    "Steel",
+    "Polymer"
+   ],
+   "tris": 16200,
+   "lod_tris": [
+    8100,
+    3240
+   ],
+   "frame": "gun",
+   "frame_note": "shared gun frame (UE: +X gun left, +Y muzzle, +Z up; INTEGRATION.md origin, bore at z 12.14): attach at identity",
+   "parts": [
+    "SM_AR15_LowerReceiver",
+    "SM_AR15_Trigger",
+    "SM_AR15_Selector",
+    "SM_AR15_MagCatch",
+    "SM_AR15_BoltCatch",
+    "SM_AR15_LowerPins",
+    "SM_AR15_Grip",
+    "SM_AR15_BufferTube",
+    "SM_AR15_CastleNut"
+   ],
+   "attach": null,
+   "collision": [
+    "UCX_SM_AR15_Lower_00",
+    "UCX_SM_AR15_Lower_01",
+    "UCX_SM_AR15_Lower_02",
+    "UCX_SM_AR15_Lower_03",
+    "UCX_SM_AR15_Lower_04"
+   ],
+   "textures": {
+    "Receiver": {
+     "atlas": "Kit_Receiver",
+     "size": 4096,
+     "ao": "bake/game/Kit_Receiver_AO.png",
+     "curv": "bake/game/Kit_Receiver_Curv.png",
+     "n": "bake/game/Kit_Receiver_N.png",
+     "masks": "bake/game/Kit_Receiver_Masks.png"
+    },
+    "Steel": {
+     "atlas": "Kit_Steel",
+     "size": 2048,
+     "ao": "bake/game/Kit_Steel_AO.png",
+     "curv": "bake/game/Kit_Steel_Curv.png",
+     "masks": "bake/game/Kit_Steel_Masks.png"
+    },
+    "Polymer": {
+     "atlas": "Kit_Polymer",
+     "size": 2048,
+     "ao": "bake/game/Kit_Polymer_AO.png",
+     "curv": "bake/game/Kit_Polymer_Curv.png",
+     "n": "bake/game/Kit_Polymer_N.png",
+     "masks": "bake/game/Kit_Polymer_Masks.png"
+    }
+   },
+   "socket_names": [
+    "MagazineSocket",
+    "Trigger",
+    "GripCyl_R",
+    "RightHandSocket",
+    "MagRelease",
+    "BoltCatch",
+    "Selector",
+    "Stock",
+    "Butt",
+    "Part_Upper",
+    "Part_Stock",
+    "Muzzle",
+    "Chamber",
+    "Optic_Socket",
+    "Aim",
+    "Eye",
+    "EjectionSocket",
+    "Grip_Socket",
+    "TacticalSocket",
+    "LeftHandSocket",
+    "GripCyl_L"
+   ]
+  },
+  {
+   "name": "SM_AR15_Upper",
+   "label": "Upper",
+   "fbx": "game/SM_AR15_Upper.fbx",
+   "lods": [
+    "game/lod/SM_AR15_Upper_LOD1.fbx",
+    "game/lod/SM_AR15_Upper_LOD2.fbx"
+   ],
+   "sockets": "game/sockets/sockets_SM_AR15_Upper.json",
+   "slots": [
+    "Receiver",
+    "Steel",
+    "BCG"
+   ],
+   "tris": 8414,
+   "lod_tris": [
+    4206,
+    1682
+   ],
+   "frame": "gun",
+   "frame_note": "shared gun frame (UE: +X gun left, +Y muzzle, +Z up; INTEGRATION.md origin, bore at z 12.14): attach at identity",
+   "parts": [
+    "SM_AR15_UpperReceiver",
+    "SM_AR15_ForwardAssist",
+    "SM_AR15_DustCover",
+    "SM_AR15_DustCoverRod",
+    "SM_AR15_BCG",
+    "SM_AR15_Bolt",
+    "SM_AR15_ChargingHandle"
+   ],
+   "attach": {
+    "parent": "SM_AR15_Lower",
+    "socket": "Part_Upper"
+   },
+   "collision": null,
+   "textures": {
+    "Receiver": {
+     "atlas": "Kit_Receiver",
+     "size": 4096,
+     "ao": "bake/game/Kit_Receiver_AO.png",
+     "curv": "bake/game/Kit_Receiver_Curv.png",
+     "n": "bake/game/Kit_Receiver_N.png",
+     "masks": "bake/game/Kit_Receiver_Masks.png"
+    },
+    "Steel": {
+     "atlas": "Kit_Steel",
+     "size": 2048,
+     "ao": "bake/game/Kit_Steel_AO.png",
+     "curv": "bake/game/Kit_Steel_Curv.png",
+     "masks": "bake/game/Kit_Steel_Masks.png"
+    },
+    "BCG": {
+     "atlas": "Kit_BCG",
+     "size": 1024,
+     "ao": "bake/game/Kit_BCG_AO.png",
+     "curv": "bake/game/Kit_BCG_Curv.png",
+     "masks": "bake/game/Kit_BCG_Masks.png"
+    }
+   },
+   "socket_names": [
+    "Optic_Socket",
+    "Rail_Top_01",
+    "Rail_Top_02",
+    "Rail_Top_03",
+    "Rail_Top_04",
+    "Rail_Top_05",
+    "Rail_Top_06",
+    "Rail_Top_07",
+    "Rail_Top_08",
+    "Rail_Top_09",
+    "Rail_Top_10",
+    "Rail_Top_11",
+    "Rail_Top_12",
+    "Rail_Top_13",
+    "Rail_Top_14",
+    "Rail_Top_15",
+    "Rail_Top_16",
+    "Rail_Top_17",
+    "Rail_Top_18",
+    "EjectionSocket",
+    "ChargingHandle",
+    "ForwardAssist",
+    "Eye",
+    "Aim",
+    "Part_Barrel",
+    "Part_Handguard"
+   ]
+  },
+  {
+   "name": "SM_AR15_Barrel16",
+   "label": "16 in barrel",
+   "fbx": "game/SM_AR15_Barrel16.fbx",
+   "lods": [
+    "game/lod/SM_AR15_Barrel16_LOD1.fbx",
+    "game/lod/SM_AR15_Barrel16_LOD2.fbx"
+   ],
+   "sockets": "game/sockets/sockets_SM_AR15_Barrel16.json",
+   "slots": [
+    "Steel"
+   ],
+   "tris": 2926,
+   "lod_tris": [
+    1462,
+    584
+   ],
+   "frame": "gun",
+   "frame_note": "shared gun frame (UE: +X gun left, +Y muzzle, +Z up; INTEGRATION.md origin, bore at z 12.14): attach at identity",
+   "parts": [
+    "SM_AR15_Barrel16",
+    "SM_AR15_BarrelNut",
+    "SM_AR15_GasBlockLP",
+    "SM_AR15_GasTube"
+   ],
+   "attach": {
+    "parent": "SM_AR15_Upper",
+    "socket": "Part_Barrel"
+   },
+   "collision": null,
+   "textures": {
+    "Steel": {
+     "atlas": "Kit_Steel",
+     "size": 2048,
+     "ao": "bake/game/Kit_Steel_AO.png",
+     "curv": "bake/game/Kit_Steel_Curv.png",
+     "masks": "bake/game/Kit_Steel_Masks.png"
+    }
+   },
+   "socket_names": [
+    "Muzzle",
+    "Chamber"
+   ]
+  },
+  {
+   "name": "SM_AR15_Barrel145",
+   "label": "14.5 in barrel",
+   "fbx": "game/SM_AR15_Barrel145.fbx",
+   "lods": [
+    "game/lod/SM_AR15_Barrel145_LOD1.fbx",
+    "game/lod/SM_AR15_Barrel145_LOD2.fbx"
+   ],
+   "sockets": "game/sockets/sockets_SM_AR15_Barrel145.json",
+   "slots": [
+    "Steel"
+   ],
+   "tris": 2926,
+   "lod_tris": [
+    1462,
+    584
+   ],
+   "frame": "gun",
+   "frame_note": "shared gun frame (UE: +X gun left, +Y muzzle, +Z up; INTEGRATION.md origin, bore at z 12.14): attach at identity",
+   "parts": [
+    "SM_AR15_Barrel",
+    "SM_AR15_BarrelNut",
+    "SM_AR15_GasBlockLP",
+    "SM_AR15_GasTube"
+   ],
+   "attach": {
+    "parent": "SM_AR15_Upper",
+    "socket": "Part_Barrel"
+   },
+   "collision": null,
+   "textures": {
+    "Steel": {
+     "atlas": "Kit_Steel",
+     "size": 2048,
+     "ao": "bake/game/Kit_Steel_AO.png",
+     "curv": "bake/game/Kit_Steel_Curv.png",
+     "masks": "bake/game/Kit_Steel_Masks.png"
+    }
+   },
+   "socket_names": [
+    "Muzzle",
+    "Chamber"
+   ]
+  },
+  {
+   "name": "SM_AR15_HG_MLOK",
+   "label": "15 in M-LOK handguard",
+   "fbx": "game/SM_AR15_HG_MLOK.fbx",
+   "lods": [
+    "game/lod/SM_AR15_HG_MLOK_LOD1.fbx",
+    "game/lod/SM_AR15_HG_MLOK_LOD2.fbx"
+   ],
+   "sockets": "game/sockets/sockets_SM_AR15_HG_MLOK.json",
+   "slots": [
+    "Steel",
+    "Handguard"
+   ],
+   "tris": 10604,
+   "lod_tris": [
+    5302,
+    2120
+   ],
+   "frame": "gun",
+   "frame_note": "shared gun frame (UE: +X gun left, +Y muzzle, +Z up; INTEGRATION.md origin, bore at z 12.14): attach at identity",
+   "parts": [
+    "SM_AR15_HandguardMLOK"
+   ],
+   "attach": {
+    "parent": "SM_AR15_Upper",
+    "socket": "Part_Handguard"
+   },
+   "collision": null,
+   "textures": {
+    "Steel": {
+     "atlas": "Kit_Steel",
+     "size": 2048,
+     "ao": "bake/game/Kit_Steel_AO.png",
+     "curv": "bake/game/Kit_Steel_Curv.png",
+     "masks": "bake/game/Kit_Steel_Masks.png"
+    },
+    "Handguard": {
+     "atlas": "MLOK_Handguard",
+     "size": 4096,
+     "ao": "bake/game/MLOK_Handguard_AO.png",
+     "curv": "bake/game/MLOK_Handguard_Curv.png",
+     "masks": "bake/game/MLOK_Handguard_Masks.png"
+    }
+   },
+   "socket_names": [
+    "Grip_Socket",
+    "TacticalSocket",
+    "LeftHandSocket",
+    "GripCyl_L",
+    "Support_Default",
+    "Mlok_3_01",
+    "Mlok_3_02",
+    "Mlok_3_03",
+    "Mlok_3_04",
+    "Mlok_3_05",
+    "Mlok_3_06",
+    "Mlok_3_07",
+    "Mlok_3_08",
+    "Mlok_6_01",
+    "Mlok_6_02",
+    "Mlok_6_03",
+    "Mlok_6_04",
+    "Mlok_6_05",
+    "Mlok_6_06",
+    "Mlok_6_07",
+    "Mlok_6_08",
+    "Mlok_9_01",
+    "Mlok_9_02",
+    "Mlok_9_03",
+    "Mlok_9_04",
+    "Mlok_9_05",
+    "Mlok_9_06",
+    "Mlok_9_07",
+    "Mlok_9_08",
+    "Rail_Top_19",
+    "Rail_Top_20",
+    "Rail_Top_21",
+    "Rail_Top_22",
+    "Rail_Top_23",
+    "Rail_Top_24",
+    "Rail_Top_25",
+    "Rail_Top_26",
+    "Rail_Top_27",
+    "Rail_Top_28",
+    "Rail_Top_29",
+    "Rail_Top_30",
+    "Rail_Top_31",
+    "Rail_Top_32",
+    "Rail_Top_33",
+    "Rail_Top_34",
+    "Rail_Top_35",
+    "Rail_Top_36",
+    "Rail_Top_37",
+    "Rail_Top_38",
+    "Rail_Top_39",
+    "Rail_Top_40",
+    "Rail_Top_41",
+    "Rail_Top_42",
+    "Rail_Top_43",
+    "Rail_Top_44",
+    "Rail_Top_45",
+    "Rail_Top_46",
+    "Rail_Top_47",
+    "Rail_Top_48",
+    "Rail_Top_49",
+    "Rail_Top_50",
+    "Rail_Top_51",
+    "Rail_Top_52",
+    "Rail_Top_53",
+    "Rail_Top_54",
+    "Rail_Top_55",
+    "Rail_Top_56"
+   ]
+  },
+  {
+   "name": "SM_AR15_HG_M4Quad",
+   "label": "M4 quad rail + delta ring + A2 FSB",
+   "fbx": "game/SM_AR15_HG_M4Quad.fbx",
+   "lods": [
+    "game/lod/SM_AR15_HG_M4Quad_LOD1.fbx",
+    "game/lod/SM_AR15_HG_M4Quad_LOD2.fbx"
+   ],
+   "sockets": "game/sockets/sockets_SM_AR15_HG_M4Quad.json",
+   "slots": [
+    "Steel",
+    "Handguard"
+   ],
+   "tris": 11038,
+   "lod_tris": [
+    5518,
+    2206
+   ],
+   "frame": "gun",
+   "frame_note": "shared gun frame (UE: +X gun left, +Y muzzle, +Z up; INTEGRATION.md origin, bore at z 12.14): attach at identity",
+   "parts": [
+    "SM_AR15_HandguardQuad",
+    "SM_AR15_DeltaRing",
+    "SM_AR15_FrontSightBase"
+   ],
+   "attach": {
+    "parent": "SM_AR15_Upper",
+    "socket": "Part_Handguard"
+   },
+   "collision": null,
+   "textures": {
+    "Steel": {
+     "atlas": "Kit_Steel",
+     "size": 2048,
+     "ao": "bake/game/Kit_Steel_AO.png",
+     "curv": "bake/game/Kit_Steel_Curv.png",
+     "masks": "bake/game/Kit_Steel_Masks.png"
+    },
+    "Handguard": {
+     "atlas": "M4Quad_Handguard",
+     "size": 4096,
+     "ao": "bake/game/M4Quad_Handguard_AO.png",
+     "curv": "bake/game/M4Quad_Handguard_Curv.png",
+     "masks": "bake/game/M4Quad_Handguard_Masks.png"
+    }
+   },
+   "socket_names": [
+    "Grip_Socket",
+    "TacticalSocket",
+    "LeftHandSocket",
+    "GripCyl_L",
+    "Support_Default",
+    "Rail_3_01",
+    "Rail_3_02",
+    "Rail_3_03",
+    "Rail_3_04",
+    "Rail_3_05",
+    "Rail_3_06",
+    "Rail_3_07",
+    "Rail_3_08",
+    "Rail_3_09",
+    "Rail_3_10",
+    "Rail_3_11",
+    "Rail_3_12",
+    "Rail_3_13",
+    "Rail_3_14",
+    "Rail_3_15",
+    "Rail_6_01",
+    "Rail_6_02",
+    "Rail_6_03",
+    "Rail_6_04",
+    "Rail_6_05",
+    "Rail_6_06",
+    "Rail_6_07",
+    "Rail_6_08",
+    "Rail_6_09",
+    "Rail_6_10",
+    "Rail_6_11",
+    "Rail_6_12",
+    "Rail_6_13",
+    "Rail_6_14",
+    "Rail_6_15",
+    "Rail_9_01",
+    "Rail_9_02",
+    "Rail_9_03",
+    "Rail_9_04",
+    "Rail_9_05",
+    "Rail_9_06",
+    "Rail_9_07",
+    "Rail_9_08",
+    "Rail_9_09",
+    "Rail_9_10",
+    "Rail_9_11",
+    "Rail_9_12",
+    "Rail_9_13",
+    "Rail_9_14",
+    "Rail_9_15",
+    "Rail_Top_19",
+    "Rail_Top_20",
+    "Rail_Top_21",
+    "Rail_Top_22",
+    "Rail_Top_23",
+    "Rail_Top_24",
+    "Rail_Top_25",
+    "Rail_Top_26",
+    "Rail_Top_27",
+    "Rail_Top_28",
+    "Rail_Top_29",
+    "Rail_Top_30",
+    "Rail_Top_31",
+    "Rail_Top_32",
+    "Rail_Top_33"
+   ]
+  },
+  {
+   "name": "SM_AR15_Stock",
+   "label": "M4 6-position stock",
+   "fbx": "game/SM_AR15_Stock.fbx",
+   "lods": [
+    "game/lod/SM_AR15_Stock_LOD1.fbx",
+    "game/lod/SM_AR15_Stock_LOD2.fbx"
+   ],
+   "sockets": "game/sockets/sockets_SM_AR15_Stock.json",
+   "slots": [
+    "Steel",
+    "Polymer"
+   ],
+   "tris": 4140,
+   "lod_tris": [
+    2070,
+    828
+   ],
+   "frame": "gun",
+   "frame_note": "shared gun frame (UE: +X gun left, +Y muzzle, +Z up; INTEGRATION.md origin, bore at z 12.14): attach at identity",
+   "parts": [
+    "SM_AR15_Stock"
+   ],
+   "attach": {
+    "parent": "SM_AR15_Lower",
+    "socket": "Part_Stock"
+   },
+   "collision": null,
+   "textures": {
+    "Steel": {
+     "atlas": "Kit_Steel",
+     "size": 2048,
+     "ao": "bake/game/Kit_Steel_AO.png",
+     "curv": "bake/game/Kit_Steel_Curv.png",
+     "masks": "bake/game/Kit_Steel_Masks.png"
+    },
+    "Polymer": {
+     "atlas": "Kit_Polymer",
+     "size": 2048,
+     "ao": "bake/game/Kit_Polymer_AO.png",
+     "curv": "bake/game/Kit_Polymer_Curv.png",
+     "n": "bake/game/Kit_Polymer_N.png",
+     "masks": "bake/game/Kit_Polymer_Masks.png"
+    }
+   },
+   "socket_names": [
+    "Stock",
+    "Butt"
+   ]
+  },
+  {
+   "name": "SM_AR15_Muzzle_A2",
+   "label": "A2 birdcage",
+   "fbx": "game/SM_AR15_Muzzle_A2.fbx",
+   "lods": [
+    "game/lod/SM_AR15_Muzzle_A2_LOD1.fbx",
+    "game/lod/SM_AR15_Muzzle_A2_LOD2.fbx"
+   ],
+   "sockets": "game/sockets/sockets_SM_AR15_Muzzle_A2.json",
+   "slots": [
+    "Steel"
+   ],
+   "tris": 1996,
+   "lod_tris": [
+    998,
+    398
+   ],
+   "frame": "muzzle",
+   "frame_note": "muzzle-device frame: +X forward along the bore, origin on the barrel muzzle face (the barrel's Muzzle socket), +Z up",
+   "parts": [
+    "SM_AR15_Birdcage"
+   ],
+   "attach": {
+    "parent": "<barrel>",
+    "socket": "Muzzle"
+   },
+   "collision": null,
+   "textures": {
+    "Steel": {
+     "atlas": "Kit_Steel",
+     "size": 2048,
+     "ao": "bake/game/Kit_Steel_AO.png",
+     "curv": "bake/game/Kit_Steel_Curv.png",
+     "masks": "bake/game/Kit_Steel_Masks.png"
+    }
+   },
+   "socket_names": [
+    "MuzzleSocket"
+   ]
+  },
+  {
+   "name": "SM_AR15_Sights_BUIS_Set",
+   "label": "BUIS rear + front (M-LOK)",
+   "fbx": "game/SM_AR15_Sights_BUIS_Set.fbx",
+   "lods": [
+    "game/lod/SM_AR15_Sights_BUIS_Set_LOD1.fbx",
+    "game/lod/SM_AR15_Sights_BUIS_Set_LOD2.fbx"
+   ],
+   "sockets": "game/sockets/sockets_SM_AR15_Sights_BUIS_Set.json",
+   "slots": [
+    "Steel",
+    "Polymer"
+   ],
+   "tris": 9392,
+   "lod_tris": [
+    4696,
+    1878
+   ],
+   "frame": "optic",
+   "frame_note": "optic frame: +Y forward, +Z up, origin at Optic_Socket (pivot at the bottom, on the rail top)",
+   "parts": [
+    "SM_AR15_BUIS",
+    "SM_AR15_FrontBUIS"
+   ],
+   "attach": {
+    "parent": "SM_AR15_Lower",
+    "socket": "Optic_Socket"
+   },
+   "collision": null,
+   "textures": {
+    "Steel": {
+     "atlas": "Kit_Steel",
+     "size": 2048,
+     "ao": "bake/game/Kit_Steel_AO.png",
+     "curv": "bake/game/Kit_Steel_Curv.png",
+     "masks": "bake/game/Kit_Steel_Masks.png"
+    },
+    "Polymer": {
+     "atlas": "Kit_Polymer",
+     "size": 2048,
+     "ao": "bake/game/Kit_Polymer_AO.png",
+     "curv": "bake/game/Kit_Polymer_Curv.png",
+     "n": "bake/game/Kit_Polymer_N.png",
+     "masks": "bake/game/Kit_Polymer_Masks.png"
+    }
+   },
+   "socket_names": [
+    "Aim",
+    "AimSocket"
+   ],
+   "fold": {
+    "rear": {
+     "pivot_cm": [
+      0.0,
+      -8.21,
+      0.7
+     ],
+     "axis": "X (through the pivot)",
+     "angle_deg": 90.0,
+     "leaf_top_goes": "-Y (rearward)"
+    },
+    "front": {
+     "pivot_cm": [
+      0.0,
+      45.378,
+      0.7
+     ],
+     "axis": "X (through the pivot)",
+     "angle_deg": 90.0,
+     "leaf_top_goes": "-Y (rearward)"
+    }
+   }
+  },
+  {
+   "name": "SM_AR15_Sights_BUIS_Rear",
+   "label": "BUIS rear only (M4Quad: FSB post in front)",
+   "fbx": "game/SM_AR15_Sights_BUIS_Rear.fbx",
+   "lods": [
+    "game/lod/SM_AR15_Sights_BUIS_Rear_LOD1.fbx",
+    "game/lod/SM_AR15_Sights_BUIS_Rear_LOD2.fbx"
+   ],
+   "sockets": "game/sockets/sockets_SM_AR15_Sights_BUIS_Rear.json",
+   "slots": [
+    "Steel",
+    "Polymer"
+   ],
+   "tris": 5696,
+   "lod_tris": [
+    2848,
+    1138
+   ],
+   "frame": "optic",
+   "frame_note": "optic frame: +Y forward, +Z up, origin at Optic_Socket (pivot at the bottom, on the rail top)",
+   "parts": [
+    "SM_AR15_BUIS"
+   ],
+   "attach": {
+    "parent": "SM_AR15_Lower",
+    "socket": "Optic_Socket"
+   },
+   "collision": null,
+   "textures": {
+    "Steel": {
+     "atlas": "Kit_Steel",
+     "size": 2048,
+     "ao": "bake/game/Kit_Steel_AO.png",
+     "curv": "bake/game/Kit_Steel_Curv.png",
+     "masks": "bake/game/Kit_Steel_Masks.png"
+    },
+    "Polymer": {
+     "atlas": "Kit_Polymer",
+     "size": 2048,
+     "ao": "bake/game/Kit_Polymer_AO.png",
+     "curv": "bake/game/Kit_Polymer_Curv.png",
+     "n": "bake/game/Kit_Polymer_N.png",
+     "masks": "bake/game/Kit_Polymer_Masks.png"
+    }
+   },
+   "socket_names": [
+    "Aim",
+    "AimSocket"
+   ],
+   "fold": {
+    "rear": {
+     "pivot_cm": [
+      0.0,
+      -8.21,
+      0.7
+     ],
+     "axis": "X (through the pivot)",
+     "angle_deg": 90.0,
+     "leaf_top_goes": "-Y (rearward)"
+    }
+   }
+  },
+  {
+   "name": "SM_AR15_Sights_BUIS_Set_Stowed",
+   "label": "BUIS rear + front, both leaves folded (stowed; not used yet)",
+   "fbx": "game/SM_AR15_Sights_BUIS_Set_Stowed.fbx",
+   "lods": [
+    "game/lod/SM_AR15_Sights_BUIS_Set_Stowed_LOD1.fbx",
+    "game/lod/SM_AR15_Sights_BUIS_Set_Stowed_LOD2.fbx"
+   ],
+   "sockets": "game/sockets/sockets_SM_AR15_Sights_BUIS_Set_Stowed.json",
+   "slots": [
+    "Steel",
+    "Polymer"
+   ],
+   "tris": 9392,
+   "lod_tris": [
+    4696,
+    1878
+   ],
+   "frame": "optic",
+   "frame_note": "optic frame: +Y forward, +Z up, origin at Optic_Socket (pivot at the bottom, on the rail top)",
+   "parts": [
+    "SM_AR15_BUIS",
+    "SM_AR15_FrontBUIS"
+   ],
+   "attach": {
+    "parent": "SM_AR15_Lower",
+    "socket": "Optic_Socket"
+   },
+   "collision": null,
+   "textures": {
+    "Steel": {
+     "atlas": "Kit_Steel",
+     "size": 2048,
+     "ao": "bake/game/Kit_Steel_AO.png",
+     "curv": "bake/game/Kit_Steel_Curv.png",
+     "masks": "bake/game/Kit_Steel_Masks.png"
+    },
+    "Polymer": {
+     "atlas": "Kit_Polymer",
+     "size": 2048,
+     "ao": "bake/game/Kit_Polymer_AO.png",
+     "curv": "bake/game/Kit_Polymer_Curv.png",
+     "n": "bake/game/Kit_Polymer_N.png",
+     "masks": "bake/game/Kit_Polymer_Masks.png"
+    }
+   },
+   "socket_names": [
+    "Aim",
+    "AimSocket"
+   ],
+   "fold": {
+    "rear": {
+     "pivot_cm": [
+      0.0,
+      -8.21,
+      0.7
+     ],
+     "axis": "X (through the pivot)",
+     "angle_deg": 90.0,
+     "leaf_top_goes": "-Y (rearward)"
+    },
+    "front": {
+     "pivot_cm": [
+      0.0,
+      45.378,
+      0.7
+     ],
+     "axis": "X (through the pivot)",
+     "angle_deg": 90.0,
+     "leaf_top_goes": "-Y (rearward)"
+    }
+   },
+   "stowed": true
+  },
+  {
+   "name": "SM_AR15_Mag30",
+   "label": "30-round magazine",
+   "fbx": "game/SM_AR15_Mag30.fbx",
+   "lods": [
+    "game/lod/SM_AR15_Mag30_LOD1.fbx",
+    "game/lod/SM_AR15_Mag30_LOD2.fbx"
+   ],
+   "sockets": "game/sockets/sockets_SM_AR15_Mag30.json",
+   "slots": [
+    "Receiver",
+    "Steel",
+    "Polymer"
+   ],
+   "tris": 2670,
+   "lod_tris": [
+    1334,
+    534
+   ],
+   "frame": "magazine",
+   "frame_note": "magazine frame: origin on the pivot = MagazineSocket (same convention as SM_M4_Mag), UE axes",
+   "parts": [
+    "SM_AR15_Mag30"
+   ],
+   "attach": {
+    "parent": "SM_AR15_Lower",
+    "socket": "MagazineSocket"
+   },
+   "collision": null,
+   "textures": {
+    "Receiver": {
+     "atlas": "Mag30_Receiver",
+     "size": 1024,
+     "ao": "bake/game/Mag30_Receiver_AO.png",
+     "curv": "bake/game/Mag30_Receiver_Curv.png",
+     "masks": "bake/game/Mag30_Receiver_Masks.png"
+    },
+    "Steel": {
+     "atlas": "Mag30_Steel",
+     "size": 512,
+     "ao": "bake/game/Mag30_Steel_AO.png",
+     "curv": "bake/game/Mag30_Steel_Curv.png",
+     "masks": "bake/game/Mag30_Steel_Masks.png"
+    },
+    "Polymer": {
+     "atlas": "Mag30_Polymer",
+     "size": 512,
+     "ao": "bake/game/Mag30_Polymer_AO.png",
+     "curv": "bake/game/Mag30_Polymer_Curv.png",
+     "masks": "bake/game/Mag30_Polymer_Masks.png"
+    }
+   },
+   "socket_names": []
+  },
+  {
+   "name": "SM_AR15_Mag30_Loaded",
+   "label": "30-round magazine, loaded",
+   "fbx": "game/SM_AR15_Mag30_Loaded.fbx",
+   "lods": [
+    "game/lod/SM_AR15_Mag30_Loaded_LOD1.fbx",
+    "game/lod/SM_AR15_Mag30_Loaded_LOD2.fbx"
+   ],
+   "sockets": "game/sockets/sockets_SM_AR15_Mag30_Loaded.json",
+   "slots": [
+    "Receiver",
+    "Steel",
+    "Polymer",
+    "Brass"
+   ],
+   "tris": 3428,
+   "lod_tris": [
+    1714,
+    684
+   ],
+   "frame": "magazine",
+   "frame_note": "magazine frame: origin on the pivot = MagazineSocket (same convention as SM_M4_Mag), UE axes",
+   "parts": [
+    "SM_AR15_Mag30",
+    "SM_AR15_MagRound"
+   ],
+   "attach": {
+    "parent": "SM_AR15_Lower",
+    "socket": "MagazineSocket"
+   },
+   "collision": null,
+   "textures": {
+    "Receiver": {
+     "atlas": "Mag30_Receiver",
+     "size": 1024,
+     "ao": "bake/game/Mag30_Receiver_AO.png",
+     "curv": "bake/game/Mag30_Receiver_Curv.png",
+     "masks": "bake/game/Mag30_Receiver_Masks.png"
+    },
+    "Steel": {
+     "atlas": "Mag30_Steel",
+     "size": 512,
+     "ao": "bake/game/Mag30_Steel_AO.png",
+     "curv": "bake/game/Mag30_Steel_Curv.png",
+     "masks": "bake/game/Mag30_Steel_Masks.png"
+    },
+    "Polymer": {
+     "atlas": "Mag30_Polymer",
+     "size": 512,
+     "ao": "bake/game/Mag30_Polymer_AO.png",
+     "curv": "bake/game/Mag30_Polymer_Curv.png",
+     "masks": "bake/game/Mag30_Polymer_Masks.png"
+    },
+    "Brass": {
+     "atlas": "MagRound_Brass",
+     "size": 512,
+     "ao": "bake/game/MagRound_Brass_AO.png",
+     "curv": "bake/game/MagRound_Brass_Curv.png",
+     "masks": "bake/game/MagRound_Brass_Masks.png"
+    }
+   },
+   "socket_names": []
+  },
+  {
+   "name": "SM_AR15_MagRound",
+   "label": "top cartridge (toggle)",
+   "fbx": "game/SM_AR15_MagRound.fbx",
+   "lods": [
+    "game/lod/SM_AR15_MagRound_LOD1.fbx",
+    "game/lod/SM_AR15_MagRound_LOD2.fbx"
+   ],
+   "sockets": "game/sockets/sockets_SM_AR15_MagRound.json",
+   "slots": [
+    "Brass"
+   ],
+   "tris": 758,
+   "lod_tris": [
+    378,
+    150
+   ],
+   "frame": "magazine",
+   "frame_note": "magazine frame: origin on the pivot = MagazineSocket (same convention as SM_M4_Mag), UE axes",
+   "parts": [
+    "SM_AR15_MagRound"
+   ],
+   "attach": {
+    "parent": "SM_AR15_Lower",
+    "socket": "MagazineSocket"
+   },
+   "collision": null,
+   "textures": {
+    "Brass": {
+     "atlas": "MagRound_Brass",
+     "size": 512,
+     "ao": "bake/game/MagRound_Brass_AO.png",
+     "curv": "bake/game/MagRound_Brass_Curv.png",
+     "masks": "bake/game/MagRound_Brass_Masks.png"
+    }
+   },
+   "socket_names": []
+  }
+ ]
+}

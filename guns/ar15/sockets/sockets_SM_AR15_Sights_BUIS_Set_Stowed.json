@@ -1,0 +1,103 @@
+{
+ "mesh": "SM_AR15_Sights_BUIS_Set_Stowed",
+ "units": "cm",
+ "frame": "optic frame: +Y forward, +Z up, origin at Optic_Socket (pivot at the bottom, on the rail top)",
+ "rotator": "FRotator (pitch, yaw, roll) degrees; x/y/z_axis = the resulting socket axes in mesh space",
+ "import_hint": "unreal.StaticMeshSocket: relative_location = loc, relative_rotation = Rotator(pitch=, yaw=, roll=), tag = tag",
+ "attach": {
+  "parent": "SM_AR15_Lower",
+  "socket": "Optic_Socket"
+ },
+ "sockets": [
+  {
+   "name": "Aim",
+   "loc": [
+    0.0,
+    -8.2095,
+    3.21
+   ],
+   "rot_pyr": [
+    0.0,
+    90.0,
+    0.0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "y_axis": [
+    -1.0,
+    0.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    0.0,
+    -236.595,
+    -89.3
+   ],
+   "note": "sight line where the deployed rear aperture sits (leaves folded: no sight picture)",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "AimSocket",
+   "loc": [
+    0.0,
+    -8.2095,
+    3.21
+   ],
+   "rot_pyr": [
+    0.0,
+    90.0,
+    0.0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "y_axis": [
+    -1.0,
+    0.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    0.0,
+    -236.595,
+    -89.3
+   ],
+   "note": "same as Aim (alias)",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ]
+}

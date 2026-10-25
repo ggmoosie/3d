@@ -1,0 +1,103 @@
+{
+ "mesh": "SM_AR15_Stock",
+ "units": "cm",
+ "frame": "shared gun frame (UE: +X gun left, +Y muzzle, +Z up; INTEGRATION.md origin, bore at z 12.14): attach at identity",
+ "rotator": "FRotator (pitch, yaw, roll) degrees; x/y/z_axis = the resulting socket axes in mesh space",
+ "import_hint": "unreal.StaticMeshSocket: relative_location = loc, relative_rotation = Rotator(pitch=, yaw=, roll=), tag = tag",
+ "attach": {
+  "parent": "SM_AR15_Lower",
+  "socket": "Part_Stock"
+ },
+ "sockets": [
+  {
+   "name": "Stock",
+   "loc": [
+    0.0,
+    -27.565,
+    7.565
+   ],
+   "rot_pyr": [
+    0,
+    90,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "y_axis": [
+    -1.0,
+    0.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    0.0,
+    -430.15,
+    -45.75
+   ],
+   "note": "butt-plate centre, stock at position 3 of 0-5 (half extended)",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  },
+  {
+   "name": "Butt",
+   "loc": [
+    0.0,
+    -27.565,
+    7.565
+   ],
+   "rot_pyr": [
+    0.0,
+    -90.0,
+    0.0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "y_axis": [
+    1.0,
+    0.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    0.0,
+    -430.15,
+    -45.75
+   ],
+   "note": "butt-plate centre, X out of the plate toward the shoulder (modular-hold branch)",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ]
+}

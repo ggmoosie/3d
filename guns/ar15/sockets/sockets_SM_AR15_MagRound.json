@@ -1,0 +1,12 @@
+{
+ "mesh": "SM_AR15_MagRound",
+ "units": "cm",
+ "frame": "magazine frame: origin on the pivot = MagazineSocket (same convention as SM_M4_Mag), UE axes",
+ "rotator": "FRotator (pitch, yaw, roll) degrees; x/y/z_axis = the resulting socket axes in mesh space",
+ "import_hint": "unreal.StaticMeshSocket: relative_location = loc, relative_rotation = Rotator(pitch=, yaw=, roll=), tag = tag",
+ "attach": {
+  "parent": "SM_AR15_Lower",
+  "socket": "MagazineSocket"
+ },
+ "sockets": []
+}

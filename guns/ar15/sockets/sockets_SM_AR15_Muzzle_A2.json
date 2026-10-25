@@ -1,0 +1,58 @@
+{
+ "mesh": "SM_AR15_Muzzle_A2",
+ "units": "cm",
+ "frame": "muzzle-device frame: +X forward along the bore, origin on the barrel muzzle face (the barrel's Muzzle socket), +Z up",
+ "rotator": "FRotator (pitch, yaw, roll) degrees; x/y/z_axis = the resulting socket axes in mesh space",
+ "import_hint": "unreal.StaticMeshSocket: relative_location = loc, relative_rotation = Rotator(pitch=, yaw=, roll=), tag = tag",
+ "attach": {
+  "parent": "<barrel>",
+  "socket": "Muzzle"
+ },
+ "sockets": [
+  {
+   "name": "MuzzleSocket",
+   "loc": [
+    3.0125,
+    0.0,
+    0.0
+   ],
+   "rot_pyr": [
+    0,
+    0,
+    0
+   ],
+   "scale": [
+    1,
+    1,
+    1
+   ],
+   "tag": "",
+   "x_axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "y_axis": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "z_axis": [
+    -0.0,
+    0.0,
+    1.0
+   ],
+   "g_mm": [
+    30.125,
+    -154.5,
+    -121.4
+   ],
+   "note": "tip of the A2 birdcage, 30.1 mm ahead of the barrel muzzle face; X forward",
+   "nrm": [
+    -0.0,
+    0.0,
+    1.0
+   ]
+  }
+ ]
+}
