@@ -1,0 +1,488 @@
+{
+ "skeleton": "UE5 Mannequin (Manny), 88-bone simple rig as used by LootNShoot clothing; full height about 180 cm",
+ "frame": "skeletal-mesh space, centimetres: Z up, the character faces +Y, its left side is +X (Unreal's mannequin convention)",
+ "note": "Positions only (no Epic mesh). Rest pose is the mannequin's A-pose. Skin clothing to these exact bone names.",
+ "bones": {
+  "pelvis": {
+   "head": [
+    -0.0,
+    2.28,
+    95.9
+   ],
+   "tail": [
+    -0.0,
+    -5.76,
+    95.39
+   ],
+   "parent": null
+  },
+  "spine_01": {
+   "head": [
+    0.0,
+    2.05,
+    99.57
+   ],
+   "tail": [
+    0.0,
+    -4.63,
+    100.84
+   ],
+   "parent": "pelvis"
+  },
+  "spine_02": {
+   "head": [
+    0.0,
+    3.32,
+    106.24
+   ],
+   "tail": [
+    0.0,
+    -3.85,
+    107.17
+   ],
+   "parent": "spine_01"
+  },
+  "spine_03": {
+   "head": [
+    0.0,
+    4.25,
+    113.42
+   ],
+   "tail": [
+    0.0,
+    -4.26,
+    112.89
+   ],
+   "parent": "spine_02"
+  },
+  "spine_04": {
+   "head": [
+    -0.0,
+    3.72,
+    121.93
+   ],
+   "tail": [
+    -0.0,
+    -15.46,
+    118.73
+   ],
+   "parent": "spine_03"
+  },
+  "spine_05": {
+   "head": [
+    -0.0,
+    0.53,
+    141.1
+   ],
+   "tail": [
+    0.0,
+    -7.21,
+    139.72
+   ],
+   "parent": "spine_04"
+  },
+  "neck_01": {
+   "head": [
+    -0.0,
+    -1.57,
+    152.8
+   ],
+   "tail": [
+    0.0,
+    -6.53,
+    154.02
+   ],
+   "parent": "spine_05"
+  },
+  "neck_02": {
+   "head": [
+    -0.0,
+    -0.35,
+    157.77
+   ],
+   "tail": [
+    0.0,
+    -5.16,
+    158.78
+   ],
+   "parent": "neck_01"
+  },
+  "head": {
+   "head": [
+    -0.0,
+    0.66,
+    162.58
+   ],
+   "tail": [
+    -0.0,
+    -4.25,
+    162.58
+   ],
+   "parent": "neck_02"
+  },
+  "clavicle_l": {
+   "head": [
+    1.43,
+    -1.74,
+    146.3
+   ],
+   "tail": [
+    0.61,
+    -19.53,
+    146.37
+   ],
+   "parent": "spine_05"
+  },
+  "upperarm_l": {
+   "head": [
+    19.01,
+    -2.56,
+    143.58
+   ],
+   "tail": [
+    18.41,
+    -21.04,
+    142.63
+   ],
+   "parent": "clavicle_l"
+  },
+  "lowerarm_l": {
+   "head": [
+    35.01,
+    -1.91,
+    120.89
+   ],
+   "tail": [
+    41.13,
+    -15.74,
+    110.83
+   ],
+   "parent": "upperarm_l"
+  },
+  "lowerarm_twist_02_l": {
+   "head": [
+    39.26,
+    3.96,
+    115.42
+   ],
+   "tail": [
+    45.41,
+    -10.29,
+    105.98
+   ],
+   "parent": "lowerarm_l"
+  },
+  "lowerarm_twist_01_l": {
+   "head": [
+    43.51,
+    9.83,
+    109.94
+   ],
+   "tail": [
+    49.66,
+    -4.42,
+    100.51
+   ],
+   "parent": "lowerarm_l"
+  },
+  "hand_l": {
+   "head": [
+    47.77,
+    15.7,
+    104.47
+   ],
+   "tail": [
+    45.33,
+    14.72,
+    101.75
+   ],
+   "parent": "lowerarm_l"
+  },
+  "upperarm_twist_01_l": {
+   "head": [
+    24.34,
+    -2.34,
+    136.02
+   ],
+   "tail": [
+    23.8,
+    -20.82,
+    134.98
+   ],
+   "parent": "upperarm_l"
+  },
+  "upperarm_twist_02_l": {
+   "head": [
+    29.67,
+    -2.12,
+    128.46
+   ],
+   "tail": [
+    29.07,
+    -20.6,
+    127.5
+   ],
+   "parent": "upperarm_l"
+  },
+  "clavicle_r": {
+   "head": [
+    -1.43,
+    -1.74,
+    146.3
+   ],
+   "tail": [
+    -2.25,
+    16.05,
+    146.24
+   ],
+   "parent": "spine_05"
+  },
+  "upperarm_r": {
+   "head": [
+    -19.01,
+    -2.56,
+    143.58
+   ],
+   "tail": [
+    -19.61,
+    15.92,
+    144.54
+   ],
+   "parent": "clavicle_r"
+  },
+  "lowerarm_r": {
+   "head": [
+    -35.01,
+    -1.91,
+    120.89
+   ],
+   "tail": [
+    -28.88,
+    11.92,
+    130.96
+   ],
+   "parent": "upperarm_r"
+  },
+  "lowerarm_twist_02_r": {
+   "head": [
+    -39.26,
+    3.96,
+    115.42
+   ],
+   "tail": [
+    -33.11,
+    18.22,
+    124.85
+   ],
+   "parent": "lowerarm_r"
+  },
+  "lowerarm_twist_01_r": {
+   "head": [
+    -43.51,
+    9.83,
+    109.94
+   ],
+   "tail": [
+    -37.37,
+    24.08,
+    119.38
+   ],
+   "parent": "lowerarm_r"
+  },
+  "hand_r": {
+   "head": [
+    -47.77,
+    15.7,
+    104.47
+   ],
+   "tail": [
+    -50.21,
+    16.67,
+    107.18
+   ],
+   "parent": "lowerarm_r"
+  },
+  "upperarm_twist_01_r": {
+   "head": [
+    -24.34,
+    -2.34,
+    136.02
+   ],
+   "tail": [
+    -24.88,
+    16.14,
+    137.06
+   ],
+   "parent": "upperarm_r"
+  },
+  "upperarm_twist_02_r": {
+   "head": [
+    -29.67,
+    -2.12,
+    128.46
+   ],
+   "tail": [
+    -30.28,
+    16.36,
+    129.41
+   ],
+   "parent": "upperarm_r"
+  },
+  "thigh_r": {
+   "head": [
+    -9.97,
+    2.55,
+    93.54
+   ],
+   "tail": [
+    -14.19,
+    31.13,
+    93.81
+   ],
+   "parent": "pelvis"
+  },
+  "calf_r": {
+   "head": [
+    -12.33,
+    2.61,
+    50.27
+   ],
+   "tail": [
+    -16.56,
+    30.34,
+    48.07
+   ],
+   "parent": "thigh_r"
+  },
+  "foot_r": {
+   "head": [
+    -14.09,
+    -0.98,
+    8.24
+   ],
+   "tail": [
+    -16.57,
+    15.6,
+    7.71
+   ],
+   "parent": "calf_r"
+  },
+  "ball_r": {
+   "head": [
+    -15.78,
+    13.94,
+    0.75
+   ],
+   "tail": [
+    -15.7,
+    13.41,
+    -16.02
+   ],
+   "parent": "foot_r"
+  },
+  "calf_twist_01_r": {
+   "head": [
+    -13.58,
+    0.2,
+    22.25
+   ],
+   "tail": [
+    -17.74,
+    28.02,
+    21.36
+   ],
+   "parent": "calf_r"
+  },
+  "thigh_twist_01_r": {
+   "head": [
+    -10.76,
+    2.57,
+    79.12
+   ],
+   "tail": [
+    -15.01,
+    31.15,
+    78.73
+   ],
+   "parent": "thigh_r"
+  },
+  "thigh_l": {
+   "head": [
+    9.97,
+    2.54,
+    93.54
+   ],
+   "tail": [
+    5.75,
+    -26.04,
+    93.28
+   ],
+   "parent": "pelvis"
+  },
+  "calf_l": {
+   "head": [
+    12.33,
+    2.6,
+    50.27
+   ],
+   "tail": [
+    8.1,
+    -25.14,
+    52.46
+   ],
+   "parent": "thigh_l"
+  },
+  "foot_l": {
+   "head": [
+    14.09,
+    -0.99,
+    8.24
+   ],
+   "tail": [
+    11.6,
+    -17.58,
+    8.77
+   ],
+   "parent": "calf_l"
+  },
+  "ball_l": {
+   "head": [
+    15.78,
+    13.93,
+    0.75
+   ],
+   "tail": [
+    15.86,
+    14.45,
+    17.52
+   ],
+   "parent": "foot_l"
+  },
+  "calf_twist_01_l": {
+   "head": [
+    13.58,
+    0.19,
+    22.25
+   ],
+   "tail": [
+    9.41,
+    -27.63,
+    23.14
+   ],
+   "parent": "calf_l"
+  },
+  "thigh_twist_01_l": {
+   "head": [
+    10.76,
+    2.56,
+    79.12
+   ],
+   "tail": [
+    6.5,
+    -26.02,
+    79.51
+   ],
+   "parent": "thigh_l"
+  }
+ }
+}

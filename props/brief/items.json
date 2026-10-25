@@ -1,0 +1,4177 @@
+[
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "Apple",
+  "name": "Apple",
+  "description": "Delicious apple",
+  "grid": "1x1",
+  "stack": 2,
+  "rarity": "Common",
+  "current_mesh": "Apple",
+  "current_mesh_size_cm": [
+   7.6,
+   8.2,
+   8.0
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Eat_Apple",
+  "hold_clip": "A_Consume_Eat_Apple_Hold",
+  "consumable": [
+   "Food"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "Banana",
+  "name": "Banana",
+  "description": "Delicious banana",
+  "grid": "1x2",
+  "stack": 4,
+  "rarity": "Common",
+  "current_mesh": "peeled_banana_22",
+  "current_mesh_size_cm": [
+   20.0,
+   13.0,
+   16.6
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Eat_Banana",
+  "hold_clip": "A_Consume_Eat_Banana_Hold",
+  "consumable": [
+   "Food"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "Banapple",
+  "name": "Banapple",
+  "description": "bana and appl",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Rare",
+  "current_mesh": "Banapple_CFE7A087",
+  "current_mesh_size_cm": [
+   11.6,
+   8.2,
+   11.3
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Eat_Apple",
+  "hold_clip": "A_Consume_Eat_Apple_Hold",
+  "consumable": [
+   "Food"
+  ],
+  "tags": [
+   "CraftOnly"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "CannedBeans",
+  "name": "Canned Beans",
+  "description": "Dented can, no label. Still sealed.",
+  "grid": "1x1",
+  "stack": 4,
+  "rarity": "Common",
+  "current_mesh": "SM_Can",
+  "current_mesh_size_cm": [
+   7.9,
+   7.9,
+   10.3
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Eat_CanSpoon",
+  "hold_clip": "A_Consume_Eat_CanSpoon_Hold",
+  "consumable": [
+   "Food"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "Chocolate",
+  "name": "Chocolate Bar",
+  "description": "Melted and re-set at least once.",
+  "grid": "1x1",
+  "stack": 5,
+  "rarity": "Common",
+  "current_mesh": "SM_Chocolate",
+  "current_mesh_size_cm": [
+   7.7,
+   0.6,
+   18.3
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Eat_BarFlat",
+  "hold_clip": "A_Consume_Eat_BarFlat_Hold",
+  "consumable": [
+   "Food"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "Coffee",
+  "name": "Coffee",
+  "description": "Yesterday\\'s pot in a chipped mug.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Mug_01",
+  "current_mesh_size_cm": [
+   14.1,
+   10.1,
+   11.5
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Drink_Can",
+  "hold_clip": "A_Consume_Drink_Can_Hold",
+  "consumable": [
+   "Food",
+   "Water"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "Cola",
+  "name": "Cola",
+  "description": "Can of cola. Shaken, probably.",
+  "grid": "1x1",
+  "stack": 4,
+  "rarity": "Common",
+  "current_mesh": "SM_Cola",
+  "current_mesh_size_cm": [
+   6.6,
+   6.6,
+   12.3
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Drink_Can",
+  "hold_clip": "A_Consume_Drink_Can_Hold",
+  "consumable": [
+   "Food",
+   "Water"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "Cookie",
+  "name": "Cookie",
+  "description": "Vending-machine cookie, mostly crumbs.",
+  "grid": "1x1",
+  "stack": 5,
+  "rarity": "Common",
+  "current_mesh": "SM_Cookie",
+  "current_mesh_size_cm": [
+   10.6,
+   2.2,
+   11.8
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Eat_Disc",
+  "hold_clip": "A_Consume_Eat_Disc_Hold",
+  "consumable": [
+   "Food"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "JuiceBox",
+  "name": "Juice Box",
+  "description": "Warm juice, straw included.",
+  "grid": "1x2",
+  "stack": 3,
+  "rarity": "Common",
+  "current_mesh": "SM_JuiceBox",
+  "current_mesh_size_cm": [
+   7.8,
+   9.3,
+   21.5
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Drink_TwistBottle",
+  "hold_clip": "A_Consume_Drink_TwistBottle_Hold",
+  "consumable": [
+   "Food",
+   "Water"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "Lemonade",
+  "name": "Lemonade",
+  "description": "Bottle of lemonade, cap still sealed.",
+  "grid": "1x2",
+  "stack": 2,
+  "rarity": "Common",
+  "current_mesh": "SM_Lemonade",
+  "current_mesh_size_cm": [
+   6.9,
+   6.9,
+   30.6
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Drink_Beer",
+  "hold_clip": "A_Consume_Drink_Beer_Hold",
+  "consumable": [
+   "Food",
+   "Water"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "MRE01",
+  "name": "Field Ration A",
+  "description": "Sealed military ration. A full day\\'s calories, no taste.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_FoodRations_01",
+  "current_mesh_size_cm": [
+   16.5,
+   16.5,
+   10.7
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Eat_CanSpoon",
+  "hold_clip": "A_Consume_Eat_CanSpoon_Hold",
+  "consumable": [
+   "Food"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "MRE02",
+  "name": "Field Ration B",
+  "description": "Sealed military ration. The menu number has worn off.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_FoodRations_02",
+  "current_mesh_size_cm": [
+   20.4,
+   12.4,
+   15.7
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Eat_CanSpoon",
+  "hold_clip": "A_Consume_Eat_CanSpoon_Hold",
+  "consumable": [
+   "Food"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "MRE03",
+  "name": "Ration Snack",
+  "description": "Ration side pouch: crackers and a spread.",
+  "grid": "1x1",
+  "stack": 3,
+  "rarity": "Common",
+  "current_mesh": "SM_FoodRations_03",
+  "current_mesh_size_cm": [
+   8.1,
+   4.1,
+   10.6
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Eat_CanSpoon",
+  "hold_clip": "A_Consume_Eat_CanSpoon_Hold",
+  "consumable": [
+   "Food"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "MRE04",
+  "name": "Ration Entree",
+  "description": "Single ration entree pouch. Eat cold.",
+  "grid": "1x2",
+  "stack": 2,
+  "rarity": "Common",
+  "current_mesh": "SM_FoodRations_04",
+  "current_mesh_size_cm": [
+   12.9,
+   6.3,
+   18.2
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Eat_CanSpoon",
+  "hold_clip": "A_Consume_Eat_CanSpoon_Hold",
+  "consumable": [
+   "Food"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "Meatballs",
+  "name": "Canned Meatballs",
+  "description": "Meatballs in sauce. Filling.",
+  "grid": "1x1",
+  "stack": 2,
+  "rarity": "Common",
+  "current_mesh": "SM_Meatballs",
+  "current_mesh_size_cm": [
+   19.8,
+   19.5,
+   5.6
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Eat_CanSpoon",
+  "hold_clip": "A_Consume_Eat_CanSpoon_Hold",
+  "consumable": [
+   "Food"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "OliveJar",
+  "name": "Jar of Olives",
+  "description": "Brined olives, lid rusted on.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_ElOliveJar",
+  "current_mesh_size_cm": [
+   12.0,
+   12.0,
+   22.6
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Eat_CanSpoon",
+  "hold_clip": "A_Consume_Eat_CanSpoon_Hold",
+  "consumable": [
+   "Food"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "PlasticBottle",
+  "name": "Plastic Bottle",
+  "description": "Refilled tap water in a crushed bottle.",
+  "grid": "1x2",
+  "stack": 3,
+  "rarity": "Common",
+  "current_mesh": "SM_trash_bottle_01",
+  "current_mesh_size_cm": [
+   7.0,
+   7.0,
+   22.1
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Drink_TwistBottle",
+  "hold_clip": "A_Consume_Drink_TwistBottle_Hold",
+  "consumable": [
+   "Water"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "Sardines",
+  "name": "Sardines",
+  "description": "Tin of sardines. Key still on the lid.",
+  "grid": "1x1",
+  "stack": 4,
+  "rarity": "Common",
+  "current_mesh": "SM_Sardines",
+  "current_mesh_size_cm": [
+   8.7,
+   8.7,
+   5.4
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Eat_CanSpoon",
+  "hold_clip": "A_Consume_Eat_CanSpoon_Hold",
+  "consumable": [
+   "Food"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "SauceBottle",
+  "name": "Hot Sauce",
+  "description": "Makes anything edible.",
+  "grid": "1x2",
+  "stack": 3,
+  "rarity": "Common",
+  "current_mesh": "SM_ElSauceBottle1",
+  "current_mesh_size_cm": [
+   8.0,
+   8.0,
+   26.6
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Drink_Beer",
+  "hold_clip": "A_Consume_Drink_Beer_Hold",
+  "consumable": [
+   "Food"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "SodaCan",
+  "name": "Soda",
+  "description": "Warm and flat.",
+  "grid": "1x1",
+  "stack": 4,
+  "rarity": "Common",
+  "current_mesh": "SM_TT_Can_A",
+  "current_mesh_size_cm": [
+   7.9,
+   7.8,
+   11.2
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Drink_Can",
+  "hold_clip": "A_Consume_Drink_Can_Hold",
+  "consumable": [
+   "Food",
+   "Water"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "Sprats",
+  "name": "Sprats",
+  "description": "Smoked sprats in oil.",
+  "grid": "1x1",
+  "stack": 4,
+  "rarity": "Common",
+  "current_mesh": "SM_Sprats",
+  "current_mesh_size_cm": [
+   9.6,
+   18.3,
+   2.6
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Eat_CanSpoon",
+  "hold_clip": "A_Consume_Eat_CanSpoon_Hold",
+  "consumable": [
+   "Food"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "TunaCan",
+  "name": "Canned Tuna",
+  "description": "Tuna in oil. Pull tab still attached.",
+  "grid": "1x1",
+  "stack": 4,
+  "rarity": "Common",
+  "current_mesh": "SM_TT_Can_B",
+  "current_mesh_size_cm": [
+   8.1,
+   7.8,
+   6.2
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Eat_CanSpoon",
+  "hold_clip": "A_Consume_Eat_CanSpoon_Hold",
+  "consumable": [
+   "Food"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "UsedWaterBottle",
+  "name": "Water Bottle (used)",
+  "description": "Refilled from somewhere. Probably fine.",
+  "grid": "1x2",
+  "stack": 2,
+  "rarity": "Common",
+  "current_mesh": "Sm_WaterBottle",
+  "current_mesh_size_cm": [
+   8.5,
+   8.5,
+   29.0
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Drink_TwistBottle",
+  "hold_clip": "A_Consume_Drink_TwistBottle_Hold",
+  "consumable": [
+   "Water"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "Water",
+  "name": "Water",
+  "description": "Wata botto",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "Sm_WaterBottle",
+  "current_mesh_size_cm": [
+   8.5,
+   8.5,
+   29.0
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Drink_TwistBottle",
+  "hold_clip": "A_Consume_Drink_TwistBottle_Hold",
+  "consumable": [
+   "Water"
+  ]
+ },
+ {
+  "table": "DT_Food",
+  "category": "FOOD",
+  "row": "WaterJug",
+  "name": "Water Jug",
+  "description": "Heavy plastic jug, nearly full.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Bottle_03",
+  "current_mesh_size_cm": [
+   15.4,
+   15.4,
+   41.1
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Drink_TwistBottle",
+  "hold_clip": "A_Consume_Drink_TwistBottle_Hold",
+  "consumable": [
+   "Water"
+  ]
+ },
+ {
+  "table": "DT_Medical",
+  "category": "MEDICAL",
+  "row": "AdrenalineSyringe",
+  "name": "Adrenaline Syringe",
+  "description": "Auto-injector. Gets you back on your feet.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_AdrenalineSyringe",
+  "current_mesh_size_cm": [
+   3.8,
+   16.9,
+   19.9
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Inject_Forearm",
+  "hold_clip": "A_Consume_Inject_Forearm_Hold",
+  "consumable": [
+   "Stim"
+  ]
+ },
+ {
+  "table": "DT_Medical",
+  "category": "MEDICAL",
+  "row": "Bandage",
+  "name": "Bandage",
+  "description": "Standard bandage",
+  "grid": "1x1",
+  "stack": 5,
+  "rarity": "Common",
+  "current_mesh": "SM_Bandage",
+  "current_mesh_size_cm": [
+   6.4,
+   6.6,
+   8.1
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Bandage_Wrap",
+  "hold_clip": "A_Consume_Bandage_Forearm_Hold",
+  "consumable": [
+   "Bandage"
+  ]
+ },
+ {
+  "table": "DT_Medical",
+  "category": "MEDICAL",
+  "row": "BandagePack",
+  "name": "Bandage Pack",
+  "description": "Sterile field dressing, sealed.",
+  "grid": "1x1",
+  "stack": 5,
+  "rarity": "Common",
+  "current_mesh": "SM_Bandage_01",
+  "current_mesh_size_cm": [
+   14.2,
+   9.6,
+   16.3
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Bandage_Wrap",
+  "hold_clip": "A_Consume_Bandage_Forearm_Hold",
+  "consumable": [
+   "Bandage"
+  ]
+ },
+ {
+  "table": "DT_Medical",
+  "category": "MEDICAL",
+  "row": "BandageRoll",
+  "name": "Bandage Roll",
+  "description": "Gauze roll. Enough for one wound.",
+  "grid": "1x1",
+  "stack": 5,
+  "rarity": "Common",
+  "current_mesh": "SM_Bandage_03",
+  "current_mesh_size_cm": [
+   5.5,
+   4.6,
+   21.4
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Bandage_Wrap",
+  "hold_clip": "A_Consume_Bandage_Forearm_Hold",
+  "consumable": [
+   "Bandage"
+  ]
+ },
+ {
+  "table": "DT_Medical",
+  "category": "MEDICAL",
+  "row": "FirstAidTin",
+  "name": "First Aid Tin",
+  "description": "Tin of antiseptic, plasters and a suture kit.",
+  "grid": "2x1",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_TT_FirstAidTin",
+  "current_mesh_size_cm": [
+   19.5,
+   25.9,
+   10.9
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Surgery_Kit",
+  "hold_clip": "A_Consume_Surgery_Kit_Hold",
+  "consumable": [
+   "Medicine"
+  ]
+ },
+ {
+  "table": "DT_Medical",
+  "category": "MEDICAL",
+  "row": "IVBag",
+  "name": "IV Bag",
+  "description": "Saline drip. Needs a quiet minute.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_SerumBag_01",
+  "current_mesh_size_cm": [
+   15.4,
+   27.3,
+   4.3
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Bandage_Forearm",
+  "hold_clip": "A_Consume_Bandage_Forearm_Hold",
+  "consumable": [
+   "Medicine"
+  ]
+ },
+ {
+  "table": "DT_Medical",
+  "category": "MEDICAL",
+  "row": "MedKitLarge",
+  "name": "Medical Kit",
+  "description": "Full trauma kit. Heals almost anything, slowly.",
+  "grid": "3x2",
+  "stack": 1,
+  "rarity": "Rare",
+  "current_mesh": "SM_MedicalSupplies_01",
+  "current_mesh_size_cm": [
+   41.5,
+   34.0,
+   20.8
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Surgery_Kit",
+  "hold_clip": "A_Consume_Surgery_Kit_Hold",
+  "consumable": [
+   "Medicine"
+  ]
+ },
+ {
+  "table": "DT_Medical",
+  "category": "MEDICAL",
+  "row": "MorphineSyringe",
+  "name": "Morphine Syringe",
+  "description": "Field morphine. Numbs everything.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Rare",
+  "current_mesh": "SM_MorphineSyringe",
+  "current_mesh_size_cm": [
+   3.4,
+   21.9,
+   20.1
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Inject_Forearm",
+  "hold_clip": "A_Consume_Inject_Forearm_Hold",
+  "consumable": [
+   "Stim"
+  ]
+ },
+ {
+  "table": "DT_Medical",
+  "category": "MEDICAL",
+  "row": "PainkillerSyringe",
+  "name": "Painkiller Syringe",
+  "description": "Fast-acting analgesic.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_PainkillerSyringe",
+  "current_mesh_size_cm": [
+   3.4,
+   8.4,
+   24.5
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Inject_Forearm",
+  "hold_clip": "A_Consume_Inject_Forearm_Hold",
+  "consumable": [
+   "Stim"
+  ]
+ },
+ {
+  "table": "DT_Attachments",
+  "category": "ATTACHMENT",
+  "row": "AR15_BUIS",
+  "name": "Flip-up Iron Sights",
+  "description": "Flip-up rear and front sights for a flat-top rail. On the M4 quad rail only the rear goes on: the front sight base is the front sight. A red dot or a scope take",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_AR15_Sights_BUIS_Set",
+  "current_mesh_size_cm": [
+   3.4,
+   56.4,
+   4.3
+  ],
+  "equip_slot": "Custom"
+ },
+ {
+  "table": "DT_Attachments",
+  "category": "ATTACHMENT",
+  "row": "AR15_Barrel145",
+  "name": "14.5\" M4 Barrel",
+  "description": "14.5-inch M4-profile carbine barrel with the M203 cut, carbine gas. Handier: quicker to the shoulder and steadier on target, for a little less velocity (about 9",
+  "grid": "3x1",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_AR15_Barrel145",
+  "current_mesh_size_cm": [
+   3.4,
+   41.0,
+   3.6
+  ],
+  "equip_slot": "Custom"
+ },
+ {
+  "table": "DT_Attachments",
+  "category": "ATTACHMENT",
+  "row": "AR15_Barrel16",
+  "name": "16\" Government Barrel",
+  "description": "16-inch 1:7 chrome-lined barrel, government profile, mid-length gas. More velocity (about 930 m/s with M855) and tighter groups than the carbine barrel; a littl",
+  "grid": "3x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_AR15_Barrel16",
+  "current_mesh_size_cm": [
+   3.4,
+   44.8,
+   3.6
+  ],
+  "equip_slot": "Custom"
+ },
+ {
+  "table": "DT_Attachments",
+  "category": "ATTACHMENT",
+  "row": "AR15_HG_M4Quad",
+  "name": "M4 Quad Rail Handguard",
+  "description": "Mil-spec Picatinny quad rail with heat shield and the A2 front sight base. Heavier, and steadier for it.",
+  "grid": "2x1",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_AR15_HG_M4Quad",
+  "current_mesh_size_cm": [
+   6.1,
+   23.9,
+   9.6
+  ],
+  "equip_slot": "Custom"
+ },
+ {
+  "table": "DT_Attachments",
+  "category": "ATTACHMENT",
+  "row": "AR15_HG_MLOK",
+  "name": "15\" M-LOK Handguard",
+  "description": "Free-float aluminium handguard with M-LOK slots at 3, 6 and 9 o\\'clock and a full-length top rail. Light.",
+  "grid": "3x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_AR15_HG_MLOK",
+  "current_mesh_size_cm": [
+   4.4,
+   39.0,
+   5.8
+  ],
+  "equip_slot": "Custom"
+ },
+ {
+  "table": "DT_Attachments",
+  "category": "ATTACHMENT",
+  "row": "AR15_MuzzleA2",
+  "name": "A2 Flash Hider",
+  "description": "Birdcage flash hider. The closed bottom keeps the muzzle from climbing a little and the flash off the ground.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_AR15_Muzzle_A2",
+  "current_mesh_size_cm": [
+   4.6,
+   2.2,
+   2.2
+  ],
+  "equip_slot": "Custom",
+  "use_clip": "AS_Machete_Attack_02",
+  "hold_clip": "Arms_idle_foregrip"
+ },
+ {
+  "table": "DT_Attachments",
+  "category": "ATTACHMENT",
+  "row": "AR15_Stock",
+  "name": "M4 Collapsible Stock",
+  "description": "Six-position stock on a mil-spec buffer tube. Takes the recoil into the shoulder.",
+  "grid": "2x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_AR15_Stock",
+  "current_mesh_size_cm": [
+   3.9,
+   17.2,
+   13.6
+  ],
+  "equip_slot": "Custom"
+ },
+ {
+  "table": "DT_Attachments",
+  "category": "ATTACHMENT",
+  "row": "AR15_Upper",
+  "name": "AR-15 Upper Receiver",
+  "description": "Flat-top forged upper with the bolt carrier group, charging handle, forward assist and dust cover. Carries the optic rail, the barrel and the handguard.",
+  "grid": "2x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_AR15_Upper",
+  "current_mesh_size_cm": [
+   4.7,
+   21.6,
+   5.3
+  ],
+  "equip_slot": "Custom"
+ },
+ {
+  "table": "DT_Attachments",
+  "category": "ATTACHMENT",
+  "row": "G17_Backstrap",
+  "name": "G17 standard backstrap",
+  "description": "Original Glock 17 game component.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_G17_Backstrap",
+  "current_mesh_size_cm": [
+   2.9,
+   3.6,
+   7.9
+  ],
+  "equip_slot": "Custom"
+ },
+ {
+  "table": "DT_Attachments",
+  "category": "ATTACHMENT",
+  "row": "G17_Barrel",
+  "name": "G17 factory barrel",
+  "description": "Original Glock 17 game component.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_G17_Barrel",
+  "current_mesh_size_cm": [
+   1.7,
+   11.2,
+   3.0
+  ],
+  "equip_slot": "Custom"
+ },
+ {
+  "table": "DT_Attachments",
+  "category": "ATTACHMENT",
+  "row": "G17_Slide",
+  "name": "G17 factory slide and sights",
+  "description": "Original Glock 17 game component.",
+  "grid": "2x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_G17_Slide",
+  "current_mesh_size_cm": [
+   2.6,
+   18.8,
+   3.8
+  ],
+  "equip_slot": "Custom"
+ },
+ {
+  "table": "DT_Attachments",
+  "category": "ATTACHMENT",
+  "row": "MagazineAR15",
+  "name": "5.56 STANAG Magazine (30)",
+  "description": "30-round aluminium STANAG magazine. Fits the AR-15 and the M4.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_AR15_Mag30_Loaded",
+  "current_mesh_size_cm": [
+   2.5,
+   8.1,
+   19.0
+  ],
+  "equip_slot": "Custom",
+  "use_clip": "AS_Machete_Attack_02",
+  "hold_clip": "AS_Machete_Idle"
+ },
+ {
+  "table": "DT_Attachments",
+  "category": "ATTACHMENT",
+  "row": "MagazineMAC10",
+  "name": "MAC-10 Magazine (32)",
+  "description": "32-round 9 mm MAC-10 magazine.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_MAC10_Magazine",
+  "current_mesh_size_cm": [
+   3.7,
+   3.7,
+   19.2
+  ],
+  "equip_slot": "Custom"
+ },
+ {
+  "table": "DT_Attachments",
+  "category": "ATTACHMENT",
+  "row": "MagazinePR9",
+  "name": "G17 Magazine (17)",
+  "description": "Custom polymer 17-round 9mm magazine.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_G17_Magazine",
+  "current_mesh_size_cm": [
+   2.5,
+   8.4,
+   11.4
+  ],
+  "equip_slot": "Custom"
+ },
+ {
+  "table": "DT_Ammo",
+  "category": "AMMO",
+  "row": "556Round",
+  "name": "5.56 Round",
+  "description": "Standard 556 round",
+  "grid": "1x1",
+  "stack": 60,
+  "rarity": "Common",
+  "current_mesh": "SM_556Round",
+  "current_mesh_size_cm": [
+   0.8,
+   0.8,
+   5.7
+  ],
+  "equip_slot": "Ammo",
+  "use_clip": "AS_Machete_Attack_02",
+  "hold_clip": "AS_Machete_Idle"
+ },
+ {
+  "table": "DT_Ammo",
+  "category": "AMMO",
+  "row": "556RoundAP",
+  "name": "5.56 AP",
+  "description": "Armor-piercing 5.56. Less soft-tissue damage, punches through plates.",
+  "grid": "1x1",
+  "stack": 60,
+  "rarity": "Rare",
+  "current_mesh": "SM_556Round",
+  "current_mesh_size_cm": [
+   0.8,
+   0.8,
+   5.7
+  ],
+  "equip_slot": "Ammo",
+  "use_clip": "AS_Machete_Attack_02",
+  "hold_clip": "AS_Machete_Idle"
+ },
+ {
+  "table": "DT_Ammo",
+  "category": "AMMO",
+  "row": "556RoundBox",
+  "name": "5.56 Box (120)",
+  "description": "Standard box of 556 round",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Ammo_Boxes_NN_01a",
+  "current_mesh_size_cm": [
+   11.9,
+   5.8,
+   7.4
+  ],
+  "equip_slot": "Ammo",
+  "use_clip": "AS_Machete_Attack_02",
+  "hold_clip": "AS_Machete_Idle",
+  "tags": [
+   "Unpack.556Round.x120"
+  ]
+ },
+ {
+  "table": "DT_Ammo",
+  "category": "AMMO",
+  "row": "556RoundHP",
+  "name": "5.56 HP",
+  "description": "Hollow point 5.56. Big wounds, stopped by any armor.",
+  "grid": "1x1",
+  "stack": 60,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_556Round",
+  "current_mesh_size_cm": [
+   0.8,
+   0.8,
+   5.7
+  ],
+  "equip_slot": "Ammo",
+  "use_clip": "AS_Machete_Attack_02",
+  "hold_clip": "AS_Machete_Idle"
+ },
+ {
+  "table": "DT_Ammo",
+  "category": "AMMO",
+  "row": "762Round",
+  "name": "7.62 Round",
+  "description": "Full-power rifle round for the bolt gun.",
+  "grid": "1x1",
+  "stack": 30,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_Shell_762x51",
+  "current_mesh_size_cm": [
+   1.2,
+   7.0,
+   1.2
+  ],
+  "equip_slot": "Ammo",
+  "use_clip": "AS_Machete_Attack_02",
+  "hold_clip": "AS_Machete_Idle"
+ },
+ {
+  "table": "DT_Ammo",
+  "category": "AMMO",
+  "row": "9mmRound",
+  "name": "9mm Round",
+  "description": "Standard 9mm round",
+  "grid": "1x1",
+  "stack": 60,
+  "rarity": "Common",
+  "current_mesh": "SM_Shell_9mm",
+  "current_mesh_size_cm": [
+   1.0,
+   3.0,
+   1.0
+  ],
+  "equip_slot": "Ammo",
+  "use_clip": "AS_Machete_Attack_02",
+  "hold_clip": "AS_Machete_Idle"
+ },
+ {
+  "table": "DT_Ammo",
+  "category": "AMMO",
+  "row": "9mmRoundAP",
+  "name": "9mm AP",
+  "description": "Steel-core 9mm.",
+  "grid": "1x1",
+  "stack": 60,
+  "rarity": "Rare",
+  "current_mesh": "SM_Shell_9mm",
+  "current_mesh_size_cm": [
+   1.0,
+   3.0,
+   1.0
+  ],
+  "equip_slot": "Ammo",
+  "use_clip": "AS_Machete_Attack_02",
+  "hold_clip": "AS_Machete_Idle"
+ },
+ {
+  "table": "DT_Ammo",
+  "category": "AMMO",
+  "row": "9mmRoundBox",
+  "name": "9mm Box (100)",
+  "description": "Standard box of 9mm round",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Ammo_Boxes_NN_01b",
+  "current_mesh_size_cm": [
+   12.8,
+   7.4,
+   3.4
+  ],
+  "equip_slot": "Ammo",
+  "use_clip": "AS_Machete_Attack_02",
+  "hold_clip": "AS_Machete_Idle",
+  "tags": [
+   "Unpack.9mmRound.x50"
+  ]
+ },
+ {
+  "table": "DT_Ammo",
+  "category": "AMMO",
+  "row": "9mmRoundHP",
+  "name": "9mm HP",
+  "description": "Hollow point 9mm. Devastating unarmored, useless on plates.",
+  "grid": "1x1",
+  "stack": 60,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_Shell_9mm",
+  "current_mesh_size_cm": [
+   1.0,
+   3.0,
+   1.0
+  ],
+  "equip_slot": "Ammo",
+  "use_clip": "AS_Machete_Attack_02",
+  "hold_clip": "AS_Machete_Idle"
+ },
+ {
+  "table": "DT_Ammo",
+  "category": "AMMO",
+  "row": "ShotgunShell",
+  "name": "12ga Buckshot",
+  "description": "Standard shotgunshell",
+  "grid": "1x1",
+  "stack": 25,
+  "rarity": "Common",
+  "current_mesh": "SM_ShotgunShell",
+  "current_mesh_size_cm": [
+   2.2,
+   2.2,
+   5.6
+  ],
+  "equip_slot": "Ammo",
+  "use_clip": "AS_Machete_Attack_02",
+  "hold_clip": "AS_Machete_Idle"
+ },
+ {
+  "table": "DT_Ammo",
+  "category": "AMMO",
+  "row": "ShotgunShellBox",
+  "name": "12ga Box (20)",
+  "description": "Standard box of shotgunshell",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_ShotGunRoundBox",
+  "current_mesh_size_cm": [
+   10.6,
+   11.3,
+   11.8
+  ],
+  "equip_slot": "Ammo",
+  "tags": [
+   "Unpack.ShotgunShell.x20"
+  ]
+ },
+ {
+  "table": "DT_Ammo",
+  "category": "AMMO",
+  "row": "ShotgunSlug",
+  "name": "12ga Slug",
+  "description": "Single rifled slug. One hole, a big one.",
+  "grid": "1x1",
+  "stack": 25,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_ShotgunShell",
+  "current_mesh_size_cm": [
+   2.2,
+   2.2,
+   5.6
+  ],
+  "equip_slot": "Ammo",
+  "use_clip": "AS_Machete_Attack_02",
+  "hold_clip": "AS_Machete_Idle"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "AdjustableWrench",
+  "name": "Adjustable Wrench",
+  "description": "Adjustable Wrench from a site kit.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Workers_Wrench1",
+  "current_mesh_size_cm": [
+   7.3,
+   26.8,
+   2.4
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "Binoculars",
+  "name": "Binoculars",
+  "description": "Rubber-armoured field glasses, 8x.",
+  "grid": "2x1",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_Binoculars",
+  "current_mesh_size_cm": [
+   23.2,
+   23.6,
+   11.6
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "CableCoil",
+  "name": "Cable Coil",
+  "description": "Coil of heavy cable.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_TT_CableCoil",
+  "current_mesh_size_cm": [
+   44.8,
+   45.8,
+   13.6
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "Carabiner",
+  "name": "Carabiner",
+  "description": "Carabiner from a site kit.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Workers_Carabine1",
+  "current_mesh_size_cm": [
+   6.0,
+   9.6,
+   1.1
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "CarpenterPencil",
+  "name": "Carpenter Pencil",
+  "description": "Carpenter Pencil from a site kit.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Workers_Pencil1",
+  "current_mesh_size_cm": [
+   1.1,
+   16.7,
+   1.0
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "ClawHammer",
+  "name": "Claw Hammer",
+  "description": "Claw Hammer from a site kit.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Workers_Hammer1",
+  "current_mesh_size_cm": [
+   11.7,
+   29.3,
+   3.9
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "CuttingPliers",
+  "name": "Cutting Pliers",
+  "description": "Cutting Pliers from a site kit.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Workers_Pliers2",
+  "current_mesh_size_cm": [
+   5.7,
+   20.7,
+   1.6
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "DuctTape",
+  "name": "Duct Tape",
+  "description": "Duct Tape from a site kit.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Workers_Tape1",
+  "current_mesh_size_cm": [
+   6.3,
+   6.4,
+   2.0
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "FieldRadio",
+  "name": "Field Radio",
+  "description": "Manpack radio set with the handset still attached.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_Field_Radio",
+  "current_mesh_size_cm": [
+   35.4,
+   11.1,
+   22.2
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "FireExtinguisher",
+  "name": "Fire Extinguisher",
+  "description": "Red cylinder, gauge in the green.",
+  "grid": "2x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_fireex",
+  "current_mesh_size_cm": [
+   22.2,
+   12.9,
+   48.0
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "Flashlight2",
+  "name": "Tactical Flashlight",
+  "description": "Compact LED light, clicky tail switch.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Flashlight_02",
+  "current_mesh_size_cm": [
+   8.2,
+   36.6,
+   8.2
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "FlatScrewdriver",
+  "name": "Flat Screwdriver",
+  "description": "Flat Screwdriver from a site kit.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Workers_Screwdriver1",
+  "current_mesh_size_cm": [
+   2.6,
+   21.4,
+   2.5
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "HammerDrill",
+  "name": "Hammer Drill",
+  "description": "Hammer Drill from a site kit.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Workers_Electric_HammerDrill1",
+  "current_mesh_size_cm": [
+   23.5,
+   23.5,
+   6.8
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "LiftingSling",
+  "name": "Lifting Sling",
+  "description": "Lifting Sling from a site kit.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Workers_Sling1",
+  "current_mesh_size_cm": [
+   3.9,
+   15.2,
+   3.0
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "OilCan",
+  "name": "Oil Can",
+  "description": "Machine oil, half full.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_TT_OilCan",
+  "current_mesh_size_cm": [
+   18.1,
+   19.1,
+   30.3
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "Pen",
+  "name": "Pen",
+  "description": "Pen from a site kit.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Workers_Pen1",
+  "current_mesh_size_cm": [
+   1.9,
+   16.3,
+   1.6
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "Pencil",
+  "name": "Pencil",
+  "description": "Pencil from a site kit.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Workers_Pencil2",
+  "current_mesh_size_cm": [
+   1.1,
+   9.9,
+   1.0
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "PhillipsScrewdriver",
+  "name": "Phillips Screwdriver",
+  "description": "Phillips Screwdriver from a site kit.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Workers_Screwdriver2",
+  "current_mesh_size_cm": [
+   2.2,
+   20.4,
+   2.3
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "Pliers",
+  "name": "Pliers",
+  "description": "Pliers from a site kit.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Workers_Pliers1",
+  "current_mesh_size_cm": [
+   6.2,
+   20.6,
+   2.3
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "RopeCoil",
+  "name": "Rope Coil",
+  "description": "Rope Coil from a site kit.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Workers_Rope1",
+  "current_mesh_size_cm": [
+   6.3,
+   22.4,
+   4.3
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "Shears",
+  "name": "Shears",
+  "description": "Shears from a site kit.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Workers_Scissors1",
+  "current_mesh_size_cm": [
+   7.7,
+   18.7,
+   0.8
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "SiteRadio",
+  "name": "Site Radio",
+  "description": "Site Radio from a site kit.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Workers_Radio1",
+  "current_mesh_size_cm": [
+   6.0,
+   19.6,
+   3.7
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "SpiritLevel",
+  "name": "Spirit Level",
+  "description": "Spirit Level from a site kit.",
+  "grid": "1x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Workers_Level1",
+  "current_mesh_size_cm": [
+   4.9,
+   34.3,
+   1.2
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "TapeMeasure",
+  "name": "Tape Measure",
+  "description": "Tape Measure from a site kit.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Workers_Roulette1",
+  "current_mesh_size_cm": [
+   9.9,
+   9.6,
+   3.9
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "Torch",
+  "name": "Torch",
+  "description": "Wooden torch, the head wrapped in pitch-soaked rag.",
+  "grid": "1x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Torch",
+  "current_mesh_size_cm": [
+   10.4,
+   10.4,
+   63.3
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "WalkieTalkie",
+  "name": "Walkie-Talkie",
+  "description": "Handheld radio. Squelches at nothing.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_WalkieTalkie",
+  "current_mesh_size_cm": [
+   7.2,
+   6.5,
+   57.3
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Tools",
+  "category": "TOOL",
+  "row": "Zippo",
+  "name": "Zippo Lighter",
+  "description": "Brass lighter. Lid still clicks.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Zippo",
+  "current_mesh_size_cm": [
+   9.1,
+   1.4,
+   7.0
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "Badge",
+  "name": "ID Badge",
+  "description": "Laminated ID card on a clip.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_Badge",
+  "current_mesh_size_cm": [
+   5.9,
+   2.8,
+   4.4
+  ],
+  "current_skeletal_mesh": "SK_Military_Badge",
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "Bong",
+  "name": "Bong",
+  "description": "Glass water pipe. Chipped at the base, still draws.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_Bong_Full",
+  "current_mesh_size_cm": [
+   13.3,
+   10.4,
+   30.0
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Smoke_Bong",
+  "hold_clip": "A_Consume_Smoke_Bong_Hold"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "BookPile",
+  "name": "Book Pile",
+  "description": "Stack of water-stained books.",
+  "grid": "2x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_TT_BookPile",
+  "current_mesh_size_cm": [
+   21.6,
+   26.1,
+   14.6
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "CardsBox",
+  "name": "Playing Cards (boxed)",
+  "description": "Sealed deck, still in the box.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_PlayingCards_01_Box_LOD0",
+  "current_mesh_size_cm": [
+   6.9,
+   2.3,
+   10.6
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "Cigarettes",
+  "name": "Cigarettes",
+  "description": "Half a pack. Trades well.",
+  "grid": "1x1",
+  "stack": 10,
+  "rarity": "Common",
+  "current_mesh": "SM_trash_cigs_01",
+  "current_mesh_size_cm": [
+   5.1,
+   8.3,
+   2.1
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Smoke_Cigarette",
+  "hold_clip": "A_Consume_Smoke_Cigarette_Hold"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "FieldManual",
+  "name": "Field Manual",
+  "description": "Dog-eared military manual.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Book_05a",
+  "current_mesh_size_cm": [
+   15.8,
+   23.7,
+   2.4
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "FieldRadio1",
+  "name": "Field Radio 1",
+  "description": "Military handheld radio.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_FieldRadio1",
+  "current_mesh_size_cm": [
+   8.8,
+   10.8,
+   26.1
+  ],
+  "current_skeletal_mesh": "SK_Military_Radio1",
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "FieldRadio2",
+  "name": "Field Radio 2",
+  "description": "Military handheld radio.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_FieldRadio2",
+  "current_mesh_size_cm": [
+   10.9,
+   11.7,
+   26.2
+  ],
+  "current_skeletal_mesh": "SK_Military_Radio2",
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "FieldRadio3",
+  "name": "Field Radio 3",
+  "description": "Military handheld radio.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_FieldRadio3",
+  "current_mesh_size_cm": [
+   9.1,
+   16.3,
+   27.1
+  ],
+  "current_skeletal_mesh": "SK_Military_Radio3",
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "FieldRadio4",
+  "name": "Field Radio 4",
+  "description": "Military handheld radio.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_FieldRadio4",
+  "current_mesh_size_cm": [
+   10.0,
+   9.2,
+   32.4
+  ],
+  "current_skeletal_mesh": "SK_Military_Radio4",
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "FieldWatch",
+  "name": "Field Watch",
+  "description": "Analogue field watch.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_FieldWatch",
+  "current_mesh_size_cm": [
+   7.1,
+   7.1,
+   6.7
+  ],
+  "current_skeletal_mesh": "SK_Military_Watch1",
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "Flashlight",
+  "name": "Flashlight",
+  "description": "Handheld torch. Batteries rattle.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Flashlight_01",
+  "current_mesh_size_cm": [
+   16.9,
+   31.8,
+   22.4
+  ],
+  "equip_slot": "Melee",
+  "hold_clip": "A_Consume_Drink_Can_Hold"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "Gamepad",
+  "name": "Game Controller",
+  "description": "Sticky buttons, still works.",
+  "grid": "2x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Gamepad_01",
+  "current_mesh_size_cm": [
+   16.2,
+   10.9,
+   5.9
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "Headphones",
+  "name": "Headphones",
+  "description": "Over-ear headphones. Someone will pay for these.",
+  "grid": "2x1",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_Headphones_01",
+  "current_mesh_size_cm": [
+   20.9,
+   19.9,
+   8.9
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "Jerrycan",
+  "name": "Jerrycan",
+  "description": "Sloshes. Probably fuel.",
+  "grid": "2x3",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_TT_Jerrycan",
+  "current_mesh_size_cm": [
+   19.0,
+   35.3,
+   47.8
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "KeyHallDoor",
+  "name": "Hall Door Key",
+  "description": "Brass tenant key with a paper tag. Fits the residential hall doors along the block.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_Key_Brass",
+  "current_mesh_size_cm": [
+   6.6,
+   4.4,
+   0.2
+  ],
+  "equip_slot": "Any",
+  "tags": [
+   "Key",
+   "HallDoor"
+  ]
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "KeyMaster",
+  "name": "Building Master Key",
+  "description": "Super\\'s master key on a brass tag. Opens every keyed lock on the block, but not the card readers.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Legendary",
+  "current_mesh": "SM_Key_Master",
+  "current_mesh_size_cm": [
+   5.4,
+   4.9,
+   0.2
+  ],
+  "equip_slot": "Any",
+  "tags": [
+   "Key",
+   "MasterKey"
+  ]
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "KeyPadlock",
+  "name": "Padlock Key",
+  "description": "Small steel key. Opens padlocked crates, lockers and cages.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_Key_Steel",
+  "current_mesh_size_cm": [
+   3.9,
+   1.6,
+   0.2
+  ],
+  "equip_slot": "Any",
+  "tags": [
+   "Key",
+   "Padlock"
+  ]
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "KeyShopRing",
+  "name": "Shopkeeper\\'s Key Ring",
+  "description": "Ring of shop keys on a plastic fob. Opens the locked storefront doors and back rooms on the block.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Rare",
+  "current_mesh": "SM_Key_Ring",
+  "current_mesh_size_cm": [
+   9.8,
+   7.2,
+   0.7
+  ],
+  "equip_slot": "Any",
+  "tags": [
+   "Key",
+   "Shop"
+  ]
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "KeycardMTA",
+  "name": "MTA Staff Keycard",
+  "description": "Blue employee access card on a lanyard. Opens the Employees Only doors and the fare-line turnstiles at Cortlandt.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Rare",
+  "current_mesh": "SM_Keycard_MTA",
+  "current_mesh_size_cm": [
+   8.6,
+   5.4,
+   0.1
+  ],
+  "equip_slot": "Any",
+  "tags": [
+   "Key",
+   "Keycard",
+   "MTA",
+   "TransitPass"
+  ]
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "KeycardSecurity",
+  "name": "Security Keycard",
+  "description": "Red-striped contractor card. Opens the security office and the station\\'s equipment cages.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Epic",
+  "current_mesh": "SM_Keycard_Security",
+  "current_mesh_size_cm": [
+   8.6,
+   5.4,
+   0.1
+  ],
+  "equip_slot": "Any",
+  "tags": [
+   "Key",
+   "Keycard",
+   "Security"
+  ]
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "Lantern",
+  "name": "Oil Lantern",
+  "description": "Old brass lantern.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_TT_Lantern",
+  "current_mesh_size_cm": [
+   16.0,
+   15.4,
+   29.1
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "Lighter",
+  "name": "Lighter",
+  "description": "Half a tank of gas.",
+  "grid": "1x1",
+  "stack": 3,
+  "rarity": "Common",
+  "current_mesh": "SM_lighter",
+  "current_mesh_size_cm": [
+   2.6,
+   0.9,
+   7.5
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "LooseChange",
+  "name": "Loose Change",
+  "description": "A handful of coins.",
+  "grid": "1x1",
+  "stack": 20,
+  "rarity": "Common",
+  "current_mesh": "SM_ElMoneyChangePile",
+  "current_mesh_size_cm": [
+   24.2,
+   23.7,
+   5.8
+  ],
+  "equip_slot": "Any",
+  "tags": [
+   "Currency"
+  ]
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "LunchTin",
+  "name": "Lunch Tin",
+  "description": "Dented metal lunchbox.",
+  "grid": "2x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_LaunchboxMedium",
+  "current_mesh_size_cm": [
+   12.6,
+   6.9,
+   3.2
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "Newspaper",
+  "name": "Newspaper",
+  "description": "Yellowed paper from the last week anyone printed one.",
+  "grid": "1x1",
+  "stack": 5,
+  "rarity": "Common",
+  "current_mesh": "SM_TT_NewspaperFlat",
+  "current_mesh_size_cm": [
+   30.1,
+   40.1,
+   1.1
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "OldPC",
+  "name": "Old Computer",
+  "description": "Beige tower. Heavy, and someone wants the parts.",
+  "grid": "3x3",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_Computer_01a",
+  "current_mesh_size_cm": [
+   18.5,
+   46.0,
+   40.2
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "Paperback",
+  "name": "Paperback",
+  "description": "Dog-eared novel.",
+  "grid": "1x2",
+  "stack": 2,
+  "rarity": "Common",
+  "current_mesh": "SM_Book_04a",
+  "current_mesh_size_cm": [
+   11.4,
+   23.7,
+   1.5
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "PlayingCards",
+  "name": "Playing Cards",
+  "description": "Deck of cards, jokers missing.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_PlayingCards_01_Stack02",
+  "current_mesh_size_cm": [
+   7.1,
+   9.8,
+   1.5
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "ShootingGlasses",
+  "name": "Shooting Glasses",
+  "description": "Amber safety lenses.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_ShootingGlasses",
+  "current_mesh_size_cm": [
+   16.7,
+   15.0,
+   5.4
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "SpiritsBottle",
+  "name": "Spirits",
+  "description": "Clear spirits. Burns going down and going up.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_TT_Bottle_C",
+  "current_mesh_size_cm": [
+   9.0,
+   9.0,
+   12.8
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Drink_Can",
+  "hold_clip": "A_Consume_Drink_Can_Hold",
+  "consumable": [
+   "Water"
+  ]
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "TacticalWatch",
+  "name": "Tactical Watch",
+  "description": "Digital tactical watch.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Rare",
+  "current_mesh": "SM_TacticalWatch",
+  "current_mesh_size_cm": [
+   6.6,
+   6.9,
+   7.6
+  ],
+  "current_skeletal_mesh": "SK_Military_Watch2",
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "Thermos",
+  "name": "Thermos",
+  "description": "Dented steel thermos.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Thermos",
+  "current_mesh_size_cm": [
+   8.1,
+   8.1,
+   28.2
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Drink_Beer",
+  "hold_clip": "A_Consume_Drink_Beer_Hold",
+  "consumable": [
+   "Water"
+  ]
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "Toolbox",
+  "name": "Toolbox",
+  "description": "Heavy steel toolbox, tools included.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_TT_Toolbox",
+  "current_mesh_size_cm": [
+   25.4,
+   51.3,
+   20.7
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "TransitPass",
+  "name": "Transit Pass",
+  "description": "Unlimited-ride fare card on a lanyard. The Cortlandt hub marks old passes as membership cards - the fare-line turnstiles open for anyone carrying one.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Rare",
+  "current_mesh": "SM_MZ_TransitPass",
+  "current_mesh_size_cm": [
+   43.9,
+   12.0,
+   0.6
+  ],
+  "equip_slot": "Any",
+  "tags": [
+   "Key",
+   "TransitPass"
+  ]
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "WhiskeyBottle",
+  "name": "Whiskey",
+  "description": "Unopened. Trades well.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_TT_Bottle_A",
+  "current_mesh_size_cm": [
+   8.2,
+   8.2,
+   28.2
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Drink_Beer",
+  "hold_clip": "A_Consume_Drink_Beer_Hold",
+  "consumable": [
+   "Water"
+  ]
+ },
+ {
+  "table": "DT_Valuables",
+  "category": "MISC",
+  "row": "WineBottle",
+  "name": "Wine",
+  "description": "Corked red, label peeling.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_TT_Bottle_B",
+  "current_mesh_size_cm": [
+   6.2,
+   9.8,
+   24.1
+  ],
+  "equip_slot": "Consumable",
+  "use_clip": "A_Consume_Drink_Beer",
+  "hold_clip": "A_Consume_Drink_Beer_Hold",
+  "consumable": [
+   "Water"
+  ]
+ },
+ {
+  "table": "DT_Materials",
+  "category": "MATERIAL",
+  "row": "FilamentBlack",
+  "name": "Filament (Black)",
+  "description": "1 kg spool of black printer filament.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_TT_CableCoil",
+  "current_mesh_size_cm": [
+   44.8,
+   45.8,
+   13.6
+  ],
+  "equip_slot": "Any",
+  "tags": [
+   "Filament"
+  ]
+ },
+ {
+  "table": "DT_Materials",
+  "category": "MATERIAL",
+  "row": "FilamentOrange",
+  "name": "Filament (Orange)",
+  "description": "1 kg spool of orange printer filament.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_TT_CableCoil",
+  "current_mesh_size_cm": [
+   44.8,
+   45.8,
+   13.6
+  ],
+  "equip_slot": "Any",
+  "tags": [
+   "Filament"
+  ]
+ },
+ {
+  "table": "DT_Materials",
+  "category": "MATERIAL",
+  "row": "FilamentWhite",
+  "name": "Filament (White)",
+  "description": "1 kg spool of white printer filament.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_TT_CableCoil",
+  "current_mesh_size_cm": [
+   44.8,
+   45.8,
+   13.6
+  ],
+  "equip_slot": "Any",
+  "tags": [
+   "Filament"
+  ]
+ },
+ {
+  "table": "DT_Materials",
+  "category": "MATERIAL",
+  "row": "ScrapMetal",
+  "name": "Scrap Metal",
+  "description": "Standard scrap metal",
+  "grid": "1x1",
+  "stack": 5,
+  "rarity": "Common",
+  "current_mesh": "SM_ScrapMetal",
+  "current_mesh_size_cm": [
+   26.2,
+   17.1,
+   10.1
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Throwables",
+  "category": "THROWABLE",
+  "row": "Frag",
+  "name": "Frag",
+  "description": "Standard frag",
+  "grid": "1x1",
+  "stack": 2,
+  "rarity": "Common",
+  "current_mesh": "SM_Frag",
+  "current_mesh_size_cm": [
+   7.0,
+   6.2,
+   9.0
+  ],
+  "equip_slot": "Custom",
+  "use_clip": "A_FP_HE_Throw_Start",
+  "hold_clip": "A_FP_HE_Idle_Pose"
+ },
+ {
+  "table": "DT_Throwables",
+  "category": "THROWABLE",
+  "row": "Molotov",
+  "name": "Molotov",
+  "description": "Standard molotov",
+  "grid": "1x1",
+  "stack": 2,
+  "rarity": "Common",
+  "current_mesh": "SM_Molotov",
+  "current_mesh_size_cm": [
+   5.5,
+   5.5,
+   20.0
+  ],
+  "equip_slot": "Custom",
+  "use_clip": "A_FP_HE_Throw_Start",
+  "hold_clip": "A_FP_HE_Idle_Pose"
+ },
+ {
+  "table": "DT_Containers",
+  "category": "CONTAINER",
+  "row": "SmallContainer",
+  "name": "Small Container",
+  "description": "Standard small container",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_SmallContainer",
+  "current_mesh_size_cm": [
+   19.3,
+   19.3,
+   14.6
+  ],
+  "equip_slot": "Any"
+ },
+ {
+  "table": "DT_Gear",
+  "category": "EQUIPMENT",
+  "row": "AssaultPack",
+  "name": "Assault Pack",
+  "description": "Day pack with MOLLE.",
+  "grid": "4x5",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_AssaultPack",
+  "current_mesh_size_cm": [
+   48.1,
+   30.9,
+   64.1
+  ],
+  "current_skeletal_mesh": "SK_Military_Backpack2",
+  "equip_slot": "Backpack"
+ },
+ {
+  "table": "DT_Gear",
+  "category": "EQUIPMENT",
+  "row": "Backpack",
+  "name": "Backpack",
+  "description": "Standard backpack",
+  "grid": "4x5",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "Backpack",
+  "current_mesh_size_cm": [
+   39.0,
+   27.7,
+   53.7
+  ],
+  "current_skeletal_mesh": "SK_Military_Backpack2",
+  "equip_slot": "Backpack"
+ },
+ {
+  "table": "DT_Gear",
+  "category": "EQUIPMENT",
+  "row": "ChestRig",
+  "name": "Tactical Vest",
+  "description": "Black MOLLE vest over a soft panel. Pistol rounds only.",
+  "grid": "3x3",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_ChestRig",
+  "current_mesh_size_cm": [
+   42.0,
+   37.7,
+   52.1
+  ],
+  "current_skeletal_mesh": "SK_Military_Vest1",
+  "equip_slot": "Vest"
+ },
+ {
+  "table": "DT_Gear",
+  "category": "EQUIPMENT",
+  "row": "CombatHelmet",
+  "name": "Combat Helmet",
+  "description": "Ballistic shell with rails. Stops pistol rounds, slows rifle rounds.",
+  "grid": "3x3",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_CombatHelmet",
+  "current_mesh_size_cm": [
+   24.4,
+   27.0,
+   18.3
+  ],
+  "current_skeletal_mesh": "SK_Military_Helmet1",
+  "equip_slot": "Helmet"
+ },
+ {
+  "table": "DT_Gear",
+  "category": "EQUIPMENT",
+  "row": "DuffelBag",
+  "name": "Duffel Bag",
+  "description": "Canvas duffel.",
+  "grid": "4x5",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_DuffelBag",
+  "current_mesh_size_cm": [
+   47.6,
+   53.8,
+   67.4
+  ],
+  "current_skeletal_mesh": "SK_Military_Bag1",
+  "equip_slot": "Backpack"
+ },
+ {
+  "table": "DT_Gear",
+  "category": "EQUIPMENT",
+  "row": "HardHat",
+  "name": "Hard Hat",
+  "description": "Site hard hat. Turns a falling brick, not a bullet.",
+  "grid": "3x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Baked_Workers_Helmet1",
+  "current_mesh_size_cm": [
+   19.7,
+   26.2,
+   17.1
+  ],
+  "current_skeletal_mesh": "SK_Workers_Helmet1",
+  "equip_slot": "Helmet"
+ },
+ {
+  "table": "DT_Gear",
+  "category": "EQUIPMENT",
+  "row": "Helmet",
+  "name": "Helmet",
+  "description": "Standard helmet",
+  "grid": "3x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "Helmet",
+  "current_mesh_size_cm": [
+   24.4,
+   27.0,
+   18.3
+  ],
+  "current_skeletal_mesh": "SK_Military_Helmet1",
+  "equip_slot": "Helmet"
+ },
+ {
+  "table": "DT_Gear",
+  "category": "EQUIPMENT",
+  "row": "HiVisVest",
+  "name": "Hi-Vis Vest",
+  "description": "Reflective site vest. Makes you easy to see.",
+  "grid": "3x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_HiVisVest",
+  "current_mesh_size_cm": [
+   42.4,
+   33.3,
+   64.2
+  ],
+  "current_skeletal_mesh": "SK_Workers_Vest1",
+  "equip_slot": "Vest"
+ },
+ {
+  "table": "DT_Gear",
+  "category": "EQUIPMENT",
+  "row": "LightVest",
+  "name": "Kevlar Vest",
+  "description": "Soft armor. Pistol rounds and shrapnel only.",
+  "grid": "3x3",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "Vest",
+  "current_mesh_size_cm": [
+   42.0,
+   52.1,
+   18.5
+  ],
+  "current_skeletal_mesh": "SK_Military_Vest4",
+  "equip_slot": "Vest"
+ },
+ {
+  "table": "DT_Gear",
+  "category": "EQUIPMENT",
+  "row": "PatrolPack",
+  "name": "Patrol Pack",
+  "description": "Large patrol pack.",
+  "grid": "4x5",
+  "stack": 1,
+  "rarity": "Rare",
+  "current_mesh": "SM_PatrolPack",
+  "current_mesh_size_cm": [
+   39.0,
+   27.7,
+   53.7
+  ],
+  "current_skeletal_mesh": "SK_Military_Backpack3",
+  "equip_slot": "Backpack"
+ },
+ {
+  "table": "DT_Gear",
+  "category": "EQUIPMENT",
+  "row": "PlateCarrier",
+  "name": "Plate Carrier",
+  "description": "Carrier with front and back ceramic plates. Heavy, slow, stops rifle rounds.",
+  "grid": "3x3",
+  "stack": 1,
+  "rarity": "Rare",
+  "current_mesh": "Vest",
+  "current_mesh_size_cm": [
+   42.0,
+   52.1,
+   18.5
+  ],
+  "current_skeletal_mesh": "SK_Military_Vest2",
+  "equip_slot": "Vest"
+ },
+ {
+  "table": "DT_Gear",
+  "category": "EQUIPMENT",
+  "row": "RiotHelmet",
+  "name": "Riot Helmet",
+  "description": "Heavy police shell. Great against blunt hits, weak against rifles.",
+  "grid": "3x3",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_RiotHelmet",
+  "current_mesh_size_cm": [
+   24.5,
+   25.9,
+   22.4
+  ],
+  "current_skeletal_mesh": "SK_Military_Helmet3",
+  "equip_slot": "Helmet"
+ },
+ {
+  "table": "DT_Gear",
+  "category": "EQUIPMENT",
+  "row": "SlingBag",
+  "name": "Sling Bag",
+  "description": "Single-strap sling bag.",
+  "grid": "4x5",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_SlingBag",
+  "current_mesh_size_cm": [
+   38.7,
+   52.0,
+   60.1
+  ],
+  "current_skeletal_mesh": "SK_Military_Bag2",
+  "equip_slot": "Backpack"
+ },
+ {
+  "table": "DT_Gear",
+  "category": "EQUIPMENT",
+  "row": "TacticalHelmet",
+  "name": "Tactical Helmet",
+  "description": "High-cut helmet, lighter and rail-ready.",
+  "grid": "3x3",
+  "stack": 1,
+  "rarity": "Rare",
+  "current_mesh": "SM_TacticalHelmet",
+  "current_mesh_size_cm": [
+   22.6,
+   26.9,
+   16.5
+  ],
+  "current_skeletal_mesh": "SK_Military_Helmet2",
+  "equip_slot": "Helmet"
+ },
+ {
+  "table": "DT_Gear",
+  "category": "EQUIPMENT",
+  "row": "Vest",
+  "name": "Vest",
+  "description": "Standard vest",
+  "grid": "3x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "Vest",
+  "current_mesh_size_cm": [
+   42.0,
+   52.1,
+   18.5
+  ],
+  "current_skeletal_mesh": "SK_Military_Vest2",
+  "equip_slot": "Vest"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "Balaclava",
+  "name": "Balaclava",
+  "description": "Knit face cover.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Balaclava",
+  "current_mesh_size_cm": [
+   17.4,
+   24.0,
+   32.5
+  ],
+  "current_skeletal_mesh": "SK_Military_Balaclava",
+  "equip_slot": "Mask"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "BallisticGoggles",
+  "name": "Ballistic Glasses",
+  "description": "Wraparound shooting glasses.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_BallisticGoggles",
+  "current_mesh_size_cm": [
+   16.7,
+   15.4,
+   5.0
+  ],
+  "current_skeletal_mesh": "SK_Military_Goggles1",
+  "equip_slot": "Mask"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "BallisticMask1",
+  "name": "Ballistic Mask",
+  "description": "Standard mask",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Mask_2",
+  "current_mesh_size_cm": [
+   16.4,
+   24.0,
+   17.2
+  ],
+  "equip_slot": "Mask"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "Beanie",
+  "name": "Beanie",
+  "description": "Standard beanie",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "Beanie",
+  "current_mesh_size_cm": [
+   18.6,
+   22.7,
+   4.5
+  ],
+  "current_skeletal_mesh": "SK_Military_Cap5",
+  "equip_slot": "Helmet"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "Boots",
+  "name": "Boots",
+  "description": "Standard boots",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "Boots3",
+  "current_mesh_size_cm": [
+   43.5,
+   31.9,
+   17.2
+  ],
+  "current_skeletal_mesh": "SK_Military_Boots3",
+  "equip_slot": "Boots"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "CamoPants",
+  "name": "Camo Pants",
+  "description": "Camo pants",
+  "grid": "2x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "CamoPants",
+  "current_mesh_size_cm": [
+   44.2,
+   93.1,
+   5.6
+  ],
+  "current_skeletal_mesh": "SK_Military_Pants1",
+  "equip_slot": "Pants"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "CargoPants",
+  "name": "Cargo Pants",
+  "description": "Olive cargo pants, knees worn through.",
+  "grid": "2x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_CargoPants",
+  "current_mesh_size_cm": [
+   42.3,
+   31.5,
+   91.4
+  ],
+  "current_skeletal_mesh": "SK_Military_Pants4",
+  "equip_slot": "Pants"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "ClownMask",
+  "name": "Clown Mask",
+  "description": "Standard mask",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Mask_05",
+  "current_mesh_size_cm": [
+   16.7,
+   24.6,
+   24.6
+  ],
+  "equip_slot": "Mask"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "CombatShirt",
+  "name": "Dress Shirt & Blazer",
+  "description": "A white dress shirt under a grey wool blazer. Smart, not tough.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_CombatShirt",
+  "current_mesh_size_cm": [
+   122.4,
+   35.9,
+   80.3
+  ],
+  "current_skeletal_mesh": "SK_Military_Shirt8",
+  "equip_slot": "Shirt"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "CombatTrousers",
+  "name": "Jeans",
+  "description": "Faded blue denim jeans with a leather belt.",
+  "grid": "2x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_CombatTrousers",
+  "current_mesh_size_cm": [
+   46.9,
+   33.0,
+   100.7
+  ],
+  "current_skeletal_mesh": "SK_Military_Pants7",
+  "equip_slot": "Pants"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "CreepyMask",
+  "name": "Creepy Mask",
+  "description": "Standard mask",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Mask_17",
+  "current_mesh_size_cm": [
+   18.5,
+   24.3,
+   20.7
+  ],
+  "equip_slot": "Mask"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "DesertBoots",
+  "name": "Desert Boots",
+  "description": "Tan suede boots.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_DesertBoots",
+  "current_mesh_size_cm": [
+   51.0,
+   33.4,
+   22.1
+  ],
+  "current_skeletal_mesh": "SK_Military_Boots6",
+  "equip_slot": "Boots"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "DesertGoggles",
+  "name": "Sunglasses",
+  "description": "Thin wire-frame sunglasses.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_DesertGoggles",
+  "current_mesh_size_cm": [
+   17.3,
+   15.5,
+   4.5
+  ],
+  "current_skeletal_mesh": "SK_Military_Googles4",
+  "equip_slot": "Mask"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "DropLegHolster",
+  "name": "Drop-Leg Holster",
+  "description": "Thigh holster on a belt.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_DropLegHolster",
+  "current_mesh_size_cm": [
+   25.7,
+   23.4,
+   34.9
+  ],
+  "current_skeletal_mesh": "SK_Military_Holster1",
+  "equip_slot": "Belt"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "DustMask",
+  "name": "Dust Mask",
+  "description": "Paper dust mask, elastic gone slack.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_DustMask",
+  "current_mesh_size_cm": [
+   15.9,
+   16.4,
+   13.9
+  ],
+  "current_skeletal_mesh": "SK_Workers_Facemask1",
+  "equip_slot": "Mask"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "EarDefenders",
+  "name": "Ear Defenders",
+  "description": "Passive ear muffs.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_EarDefenders",
+  "current_mesh_size_cm": [
+   23.2,
+   6.8,
+   18.0
+  ],
+  "current_skeletal_mesh": "SK_Workers_Headset1",
+  "equip_slot": "Mask"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "FieldCap",
+  "name": "Field Cap",
+  "description": "Faded patrol cap.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_FieldCap",
+  "current_mesh_size_cm": [
+   18.7,
+   29.8,
+   13.1
+  ],
+  "current_skeletal_mesh": "SK_Military_Cap3",
+  "equip_slot": "Helmet"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "FieldShirt",
+  "name": "Camo Hooded Jacket",
+  "description": "Hooded camo jacket with a front zip.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_FieldShirt",
+  "current_mesh_size_cm": [
+   100.8,
+   37.2,
+   79.4
+  ],
+  "current_skeletal_mesh": "SK_Military_Shirt4",
+  "equip_slot": "Shirt"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "FieldTrousers",
+  "name": "Dress Trousers",
+  "description": "Grey slacks with a belt.",
+  "grid": "2x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_FieldTrousers",
+  "current_mesh_size_cm": [
+   47.8,
+   32.9,
+   102.6
+  ],
+  "current_skeletal_mesh": "SK_Military_Pants8",
+  "equip_slot": "Pants"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "FlannelShirt",
+  "name": "Flannel Shirt",
+  "description": "Button-up flannel, one button missing.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_FlannelShirt",
+  "current_mesh_size_cm": [
+   101.0,
+   32.5,
+   59.1
+  ],
+  "current_skeletal_mesh": "SK_Military_Shirt7",
+  "equip_slot": "Shirt"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "FleeceJacket",
+  "name": "Fleece Jacket",
+  "description": "Warm fleece.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_FleeceJacket",
+  "current_mesh_size_cm": [
+   120.3,
+   34.7,
+   61.1
+  ],
+  "current_skeletal_mesh": "SK_Military_Shirt9",
+  "equip_slot": "Shirt"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "GasMask",
+  "name": "Gas Mask",
+  "description": "Standard mask",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "Mask",
+  "current_mesh_size_cm": [
+   21.2,
+   26.7,
+   26.8
+  ],
+  "current_skeletal_mesh": "SK_Military_Gasmask2",
+  "equip_slot": "Mask"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "Gloves",
+  "name": "Gloves",
+  "description": "Standard gloves",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Gloves",
+  "current_mesh_size_cm": [
+   20.8,
+   16.3,
+   6.1
+  ],
+  "current_skeletal_mesh": "SK_Military_FPS_Hands_Gloves2",
+  "equip_slot": "Gloves"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "HardHat",
+  "name": "Red Beanie",
+  "description": "Red knit cap.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_HardHat",
+  "current_mesh_size_cm": [
+   20.4,
+   22.0,
+   19.0
+  ],
+  "current_skeletal_mesh": "SK_Workers_Hat1",
+  "equip_slot": "Helmet"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "HearingProtectionHeadset",
+  "name": "Hearing Protection Headset",
+  "description": "Active ear defenders.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_HearingProtectionHeadset",
+  "current_mesh_size_cm": [
+   23.0,
+   8.6,
+   18.8
+  ],
+  "current_skeletal_mesh": "SK_Military_Headset3",
+  "equip_slot": "Mask"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "HikingBoots",
+  "name": "Hiking Boots",
+  "description": "Mud-caked hiking boots.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_HikingBoots",
+  "current_mesh_size_cm": [
+   44.4,
+   31.7,
+   19.8
+  ],
+  "current_skeletal_mesh": "SK_Military_Boots5",
+  "equip_slot": "Boots"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "JungleBoots",
+  "name": "Dress Shoes",
+  "description": "Black leather shoes.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_JungleBoots",
+  "current_mesh_size_cm": [
+   49.3,
+   32.9,
+   12.9
+  ],
+  "current_skeletal_mesh": "SK_Military_Boots7",
+  "equip_slot": "Boots"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "MiliShirt",
+  "name": "Military Shirt",
+  "description": "Standard military shirt",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_MiliShirt",
+  "current_mesh_size_cm": [
+   96.1,
+   57.0,
+   9.7
+  ],
+  "current_skeletal_mesh": "SK_Military_Shirt6",
+  "equip_slot": "Shirt"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "NeckbandHeadset",
+  "name": "Neckband Headset",
+  "description": "Behind-the-head headset.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_NeckbandHeadset",
+  "current_mesh_size_cm": [
+   23.0,
+   18.1,
+   21.7
+  ],
+  "current_skeletal_mesh": "SK_Military_Headset4",
+  "equip_slot": "Mask"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "NinjaMask",
+  "name": "Ninja Mask",
+  "description": "Standard mask",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Mask_18",
+  "current_mesh_size_cm": [
+   16.1,
+   22.0,
+   10.8
+  ],
+  "equip_slot": "Mask"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "OverallsTopblue",
+  "name": "Work T-Shirt (blue)",
+  "description": "Plain cotton tee.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_OverallsTopblue",
+  "current_mesh_size_cm": [
+   68.4,
+   31.0,
+   52.9
+  ],
+  "current_skeletal_mesh": "SK_Workers_Shirt3_1",
+  "equip_slot": "Shirt"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "OverallsToporange",
+  "name": "Work T-Shirt (orange)",
+  "description": "Plain cotton tee in site orange.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_OverallsToporange",
+  "current_mesh_size_cm": [
+   68.3,
+   31.8,
+   61.4
+  ],
+  "current_skeletal_mesh": "SK_Workers_Shirt3_2",
+  "equip_slot": "Shirt"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "Overallsblue",
+  "name": "Work Trousers (blue)",
+  "description": "Plain canvas work trousers.",
+  "grid": "2x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Overallsblue",
+  "current_mesh_size_cm": [
+   45.3,
+   29.2,
+   98.9
+  ],
+  "current_skeletal_mesh": "SK_Workers_Pants3",
+  "equip_slot": "Pants"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "Overallsorange",
+  "name": "Overalls (orange)",
+  "description": "Canvas bib overalls with braces.",
+  "grid": "2x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Overallsorange",
+  "current_mesh_size_cm": [
+   45.3,
+   33.6,
+   148.3
+  ],
+  "current_skeletal_mesh": "SK_Workers_Pants4",
+  "equip_slot": "Pants"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "PlainTee",
+  "name": "Plain T-Shirt",
+  "description": "A plain cotton tee. Takes any colour.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "Shirt",
+  "current_mesh_size_cm": [
+   69.9,
+   54.0,
+   3.6
+  ],
+  "current_skeletal_mesh": "SK_Military_TShirtBlack",
+  "equip_slot": "Shirt"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "ReapersMask",
+  "name": "Reaper Mask",
+  "description": "Standard mask",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Mask_Reapers",
+  "current_mesh_size_cm": [
+   16.7,
+   24.9,
+   24.7
+  ],
+  "equip_slot": "Mask",
+  "tags": [
+   "Faction.Reapers"
+  ]
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "RubberBoots",
+  "name": "Rubber Boots",
+  "description": "Cracked rubber boots.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_RubberBoots",
+  "current_mesh_size_cm": [
+   43.7,
+   29.1,
+   20.6
+  ],
+  "current_skeletal_mesh": "SK_Workers_Boots2",
+  "equip_slot": "Boots"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "RubberGloves",
+  "name": "Rubber Gloves",
+  "description": "Chemical gloves.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_RubberGloves",
+  "current_mesh_size_cm": [
+   111.1,
+   20.2,
+   22.8
+  ],
+  "current_skeletal_mesh": "SK_Workers_Gloves3",
+  "equip_slot": "Gloves"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "SafetyGlasses",
+  "name": "Safety Glasses",
+  "description": "Clear site glasses.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_SafetyGlasses",
+  "current_mesh_size_cm": [
+   16.5,
+   16.1,
+   6.2
+  ],
+  "current_skeletal_mesh": "SK_Workers_Glasses2",
+  "equip_slot": "Mask"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "Shirt",
+  "name": "Shirt",
+  "description": "Standard shirt",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "Shirt",
+  "current_mesh_size_cm": [
+   69.9,
+   54.0,
+   3.6
+  ],
+  "current_skeletal_mesh": "SK_Military_Shirt5",
+  "equip_slot": "Shirt"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "ShootingGloves",
+  "name": "Shooting Gloves",
+  "description": "Short-cuff gloves.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_ShootingGloves",
+  "current_mesh_size_cm": [
+   138.2,
+   16.9,
+   22.4
+  ],
+  "current_skeletal_mesh": "SK_Military_Gloves_casual_short",
+  "equip_slot": "Gloves"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "SoftshellJacket",
+  "name": "Short-Sleeve Shirt",
+  "description": "Light blue button-up shirt, short sleeves.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_SoftshellJacket",
+  "current_mesh_size_cm": [
+   79.3,
+   34.1,
+   61.0
+  ],
+  "current_skeletal_mesh": "SK_Military_Shirt10",
+  "equip_slot": "Shirt"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "SteelToeBoots",
+  "name": "Steel-Toe Boots",
+  "description": "Site boots with steel caps.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_SteelToeBoots",
+  "current_mesh_size_cm": [
+   43.7,
+   28.7,
+   11.6
+  ],
+  "current_skeletal_mesh": "SK_Workers_Boots3",
+  "equip_slot": "Boots"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "TShirtBlack",
+  "name": "Black T-Shirt",
+  "description": "Standard shirt",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "Shirt",
+  "current_mesh_size_cm": [
+   69.9,
+   54.0,
+   3.6
+  ],
+  "current_skeletal_mesh": "SK_Military_TShirtBlack",
+  "equip_slot": "Shirt",
+  "tags": [
+   "Faction.Reapers"
+  ]
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "TShirtBlue",
+  "name": "Blue T-Shirt",
+  "description": "Standard shirt",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "Shirt",
+  "current_mesh_size_cm": [
+   69.9,
+   54.0,
+   3.6
+  ],
+  "current_skeletal_mesh": "SK_Military_TShirtBlue",
+  "equip_slot": "Shirt"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "TShirtGreen",
+  "name": "T-Shirt (green)",
+  "description": "Plain green tee.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_TShirtGreen",
+  "current_mesh_size_cm": [
+   69.9,
+   31.8,
+   54.0
+  ],
+  "current_skeletal_mesh": "SK_Military_TShirtGreen",
+  "equip_slot": "Shirt"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "TShirtRed",
+  "name": "Red T-Shirt",
+  "description": "Standard shirt",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "Shirt",
+  "current_mesh_size_cm": [
+   69.9,
+   54.0,
+   3.6
+  ],
+  "current_skeletal_mesh": "SK_Military_TShirtRed",
+  "equip_slot": "Shirt",
+  "tags": [
+   "Faction.Vanguard"
+  ]
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "TShirtTan",
+  "name": "T-Shirt (tan)",
+  "description": "Plain tan tee.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_TShirtTan",
+  "current_mesh_size_cm": [
+   69.9,
+   31.8,
+   54.0
+  ],
+  "current_skeletal_mesh": "SK_Military_TShirtTan",
+  "equip_slot": "Shirt"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "TacticalBoots",
+  "name": "Grey Shoes",
+  "description": "Grey leather shoes.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_TacticalBoots",
+  "current_mesh_size_cm": [
+   50.7,
+   33.1,
+   13.2
+  ],
+  "current_skeletal_mesh": "SK_Military_Boots8",
+  "equip_slot": "Boots"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "TacticalGloves",
+  "name": "Tactical Gloves",
+  "description": "Knuckle-guard gloves.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_TacticalGloves",
+  "current_mesh_size_cm": [
+   111.0,
+   28.2,
+   28.5
+  ],
+  "current_skeletal_mesh": "SK_Military_Forearm_Gloves2_Male",
+  "equip_slot": "Gloves"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "TacticalGoggles",
+  "name": "Aviator Sunglasses",
+  "description": "Wire-frame aviators.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Uncommon",
+  "current_mesh": "SM_TacticalGoggles",
+  "current_mesh_size_cm": [
+   18.0,
+   15.6,
+   5.9
+  ],
+  "current_skeletal_mesh": "SK_Military_Googles3",
+  "equip_slot": "Mask"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "TacticalJacket",
+  "name": "White T-Shirt",
+  "description": "A plain white cotton t-shirt.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_TacticalJacket",
+  "current_mesh_size_cm": [
+   63.4,
+   29.6,
+   55.1
+  ],
+  "current_skeletal_mesh": "SK_Military_Shirt11",
+  "equip_slot": "Shirt"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "ToolBelt",
+  "name": "Work Belt",
+  "description": "Plain canvas belt.",
+  "grid": "2x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_ToolBelt",
+  "current_mesh_size_cm": [
+   38.7,
+   30.5,
+   9.3
+  ],
+  "current_skeletal_mesh": "SK_Workers_Belt1",
+  "equip_slot": "Belt"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "VanguardsMask",
+  "name": "Vanguard Mask",
+  "description": "Standard mask",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Mask_Vangaurds",
+  "current_mesh_size_cm": [
+   18.3,
+   27.0,
+   25.1
+  ],
+  "equip_slot": "Mask",
+  "tags": [
+   "Faction.Vanguard"
+  ]
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "WeldingMask",
+  "name": "Welding Mask",
+  "description": "Flip-front welding helmet.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_WeldingMask",
+  "current_mesh_size_cm": [
+   20.1,
+   24.8,
+   28.9
+  ],
+  "current_skeletal_mesh": "SK_Workers_WeldingMask1_close",
+  "equip_slot": "Mask"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "WorkBoots",
+  "name": "Work Boots",
+  "description": "Steel toe, worn heels.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_WorkBoots",
+  "current_mesh_size_cm": [
+   43.4,
+   28.7,
+   12.1
+  ],
+  "current_skeletal_mesh": "SK_Workers_Boots1",
+  "equip_slot": "Boots"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "WorkCap",
+  "name": "Work Cap",
+  "description": "Sweat-stained cap.",
+  "grid": "1x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_WorkCap",
+  "current_mesh_size_cm": [
+   17.1,
+   27.2,
+   13.1
+  ],
+  "current_skeletal_mesh": "SK_Workers_Cap1",
+  "equip_slot": "Helmet"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "WorkGloves",
+  "name": "Work Gloves",
+  "description": "Leather palm work gloves.",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_WorkGloves",
+  "current_mesh_size_cm": [
+   110.9,
+   16.1,
+   18.8
+  ],
+  "current_skeletal_mesh": "SK_Workers_Gloves2",
+  "equip_slot": "Gloves"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "WorkJacketblue",
+  "name": "Plaid Shirt",
+  "description": "Flannel plaid shirt, sleeves down.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_WorkJacketblue",
+  "current_mesh_size_cm": [
+   103.0,
+   32.9,
+   58.2
+  ],
+  "current_skeletal_mesh": "SK_Workers_Shirt2_1",
+  "equip_slot": "Shirt"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "WorkJacketgrey",
+  "name": "Rolled-Sleeve Shirt",
+  "description": "White button-up shirt with the sleeves rolled.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_WorkJacketgrey",
+  "current_mesh_size_cm": [
+   74.9,
+   32.5,
+   54.6
+  ],
+  "current_skeletal_mesh": "SK_Workers_Shirt2_2",
+  "equip_slot": "Shirt"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "WorkPants",
+  "name": "Work Pants",
+  "description": "Heavy twill pants.",
+  "grid": "2x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_WorkPants",
+  "current_mesh_size_cm": [
+   41.7,
+   31.0,
+   96.2
+  ],
+  "current_skeletal_mesh": "SK_Military_Pants5",
+  "equip_slot": "Pants"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "WorkShirt",
+  "name": "Hi-Vis Work Shirt",
+  "description": "Long-sleeve work shirt with a hi-vis yoke.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_WorkShirt",
+  "current_mesh_size_cm": [
+   54.6,
+   34.6,
+   50.4
+  ],
+  "current_skeletal_mesh": "SK_Workers_Shirt1",
+  "equip_slot": "Shirt"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "WorkTrousers",
+  "name": "Hi-Vis Work Trousers",
+  "description": "Navy work trousers with reflective bands.",
+  "grid": "2x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_WorkTrousers",
+  "current_mesh_size_cm": [
+   44.4,
+   28.1,
+   98.8
+  ],
+  "current_skeletal_mesh": "SK_Workers_Pants1",
+  "equip_slot": "Pants"
+ },
+ {
+  "table": "DT_Clothes",
+  "category": "CLOTHING",
+  "row": "WorkTrousersgrey",
+  "name": "Work Jeans",
+  "description": "Faded work jeans.",
+  "grid": "2x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_WorkTrousersgrey",
+  "current_mesh_size_cm": [
+   41.6,
+   28.3,
+   98.9
+  ],
+  "current_skeletal_mesh": "SK_Workers_Pants2",
+  "equip_slot": "Pants"
+ },
+ {
+  "table": "DT_Weapons",
+  "category": "WEAPON",
+  "row": "AR15",
+  "name": "AR-15 Rifle",
+  "description": "Semi-automatic 5.56x45 rifle built from parts you can swap: upper, barrel, handguard and stock. 16-inch barrel, about 930 m/s with M855. Semi-auto only.",
+  "grid": "5x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_AR15_Lower",
+  "current_mesh_size_cm": [
+   3.8,
+   36.7,
+   17.0
+  ],
+  "equip_slot": "MainHand",
+  "use_clip": "Arms_Rifle_Idle",
+  "hold_clip": "Arms_Rifle_Idle"
+ },
+ {
+  "table": "DT_Weapons",
+  "category": "WEAPON",
+  "row": "Bat",
+  "name": "Baseball Bat",
+  "description": "Ash bat, taped handle. Swing for the fences.",
+  "grid": "1x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Bat",
+  "current_mesh_size_cm": [
+   7.4,
+   7.4,
+   80.0
+  ],
+  "equip_slot": "Melee",
+  "use_clip": "A_Melee_Bat_Swing_Horizontal",
+  "hold_clip": "A_Melee_Bat_Hold",
+  "tags": [
+   "Melee",
+   "Basic"
+  ]
+ },
+ {
+  "table": "DT_Weapons",
+  "category": "WEAPON",
+  "row": "Crowbar",
+  "name": "Crowbar",
+  "description": "Forged steel pry bar. Opens things and heads.",
+  "grid": "1x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Crowbar",
+  "current_mesh_size_cm": [
+   3.0,
+   15.1,
+   66.5
+  ],
+  "equip_slot": "Melee",
+  "use_clip": "A_Melee_Crowbar_Swing_Horizontal",
+  "hold_clip": "A_Melee_Crowbar_Hold",
+  "tags": [
+   "Melee",
+   "Basic"
+  ]
+ },
+ {
+  "table": "DT_Weapons",
+  "category": "WEAPON",
+  "row": "Hatchet",
+  "name": "Hatchet",
+  "description": "Camp hatchet. Short, sharp, reliable.",
+  "grid": "1x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Axe_01",
+  "current_mesh_size_cm": [
+   3.3,
+   18.9,
+   48.1
+  ],
+  "equip_slot": "Melee",
+  "use_clip": "A_Melee_Hatchet_Swing_Horizontal",
+  "hold_clip": "A_Melee_Hatchet_Hold",
+  "tags": [
+   "Melee",
+   "Basic"
+  ]
+ },
+ {
+  "table": "DT_Weapons",
+  "category": "WEAPON",
+  "row": "Kar98k",
+  "name": "Kar98k",
+  "description": "Bolt-action rifle with iron sights and a five-round integral magazine. Uses the game\\'s 762Round ammo.",
+  "grid": "5x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Kar98k",
+  "current_mesh_size_cm": [
+   7.4,
+   110.5,
+   19.7
+  ],
+  "equip_slot": "MainHand",
+  "use_clip": "Arms_Rifle_Idle",
+  "hold_clip": "Arms_Rifle_Idle"
+ },
+ {
+  "table": "DT_Weapons",
+  "category": "WEAPON",
+  "row": "Knife1",
+  "name": "Knife",
+  "description": "Standard knife",
+  "grid": "1x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "Knife1",
+  "current_mesh_size_cm": [
+   10.2,
+   1.3,
+   29.6
+  ],
+  "equip_slot": "Melee",
+  "use_clip": "A_Melee_Knife_Swing_Horizontal",
+  "hold_clip": "A_Melee_Knife_Hold"
+ },
+ {
+  "table": "DT_Weapons",
+  "category": "WEAPON",
+  "row": "LeadPipe",
+  "name": "Lead Pipe",
+  "description": "Length of threaded pipe with a taped grip.",
+  "grid": "1x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_LeadPipe",
+  "current_mesh_size_cm": [
+   4.6,
+   4.6,
+   55.0
+  ],
+  "equip_slot": "Melee",
+  "use_clip": "A_Melee_LeadPipe_Swing_Horizontal",
+  "hold_clip": "A_Melee_LeadPipe_Hold",
+  "tags": [
+   "Melee",
+   "Basic"
+  ]
+ },
+ {
+  "table": "DT_Weapons",
+  "category": "WEAPON",
+  "row": "MAC10",
+  "name": "MAC-10",
+  "description": "Compact 9 mm automatic with a 32-round magazine.",
+  "grid": "3x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_MAC10",
+  "current_mesh_size_cm": [
+   5.6,
+   55.8,
+   17.2
+  ],
+  "equip_slot": "MainHand",
+  "use_clip": "Arms_Rifle_Idle",
+  "hold_clip": "AS_PistolADS"
+ },
+ {
+  "table": "DT_Weapons",
+  "category": "WEAPON",
+  "row": "Machete",
+  "name": "Machete",
+  "description": "Standard machete",
+  "grid": "1x3",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_Machete",
+  "current_mesh_size_cm": [
+   2.0,
+   7.0,
+   55.4
+  ],
+  "equip_slot": "Melee",
+  "use_clip": "A_Melee_Machete_Swing_Horizontal",
+  "hold_clip": "A_Melee_Machete_Hold"
+ },
+ {
+  "table": "DT_Weapons",
+  "category": "WEAPON",
+  "row": "Pistol",
+  "name": "Glock 17",
+  "description": "Custom full-size 9mm pistol. Modular frame, slide, barrel, backstrap and 17-round magazine.",
+  "grid": "2x2",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_G17_Frame",
+  "current_mesh_size_cm": [
+   3.2,
+   18.7,
+   11.3
+  ],
+  "equip_slot": "OffHand",
+  "use_clip": "Arms_PistolAimPose",
+  "hold_clip": "AS_PistolADS"
+ },
+ {
+  "table": "DT_Weapons",
+  "category": "WEAPON",
+  "row": "Shotgun",
+  "name": "Mossberg 590",
+  "description": "12 gauge pump-action shotgun, 20 in barrel, 8-round tube.",
+  "grid": "4x1",
+  "stack": 1,
+  "rarity": "Common",
+  "current_mesh": "SM_M590",
+  "current_mesh_size_cm": [
+   4.8,
+   104.1,
+   18.9
+  ],
+  "equip_slot": "MainHand",
+  "use_clip": "ShotGUN_PullBack",
+  "hold_clip": "ShotgunAim",
+  "tags": [
+   "InternalMag"
+  ]
+ }
+]

@@ -1,0 +1,1196 @@
+{
+ "note": "UE cm unless stated. Pivots / axes are what the animation clips were authored against: a replacement prop must keep the pivot, the axes, the grip dimensions (within about 10 %) and the moving parts listed, or the hands will not line up.",
+ "fps": 30,
+ "props": {
+  "Beer": {
+   "asset": "/Game/Mesh/Terminus/Blender/SM_TT_Bottle_A",
+   "proxy": false,
+   "pivot": "base centre, +Z up",
+   "height_cm": 28.15,
+   "lip_r_cm": 1.69,
+   "cap": "crown cap proxy r 1.97 x 0.95 cm at z 27.40 (out/props/SM_Beer_Cap.fbx), 3 pulls x 60 deg, lifts 0.9"
+  },
+  "PlasticBottle": {
+   "asset": "(none: Sm_WaterBottle has no FBX source on disk) proxy SM_Proxy_PlasticBottle.fbx",
+   "proxy": true,
+   "dims": "6.5 x 22 cm (r 3.25, waist r 2.85 at 9.5), neck r 1.45, cap r 1.55 x 1.4 (separate mesh, pivot bottom centre)",
+   "pivot": "base centre, +Z up",
+   "cap": "screw cap proxy out/props/SM_Proxy_PlasticCap.fbx, 2 pulls x 100 deg, lifts 0.5, stays in the left hand"
+  },
+  "SodaCan": {
+   "asset": "(none: SM_ElSodaCan1..4 / Can_Soda have no FBX source on disk) proxy SM_Proxy_SodaCan.fbx + SM_Proxy_SodaCanTab.fbx",
+   "proxy": true,
+   "dims": "6.6 x 12.2 cm (r 3.3), pull tab 1.2 x 2.5 cm on a rivet at the top centre",
+   "pivot": "base centre, +Z up; tab pivot = rivet at the top centre (0,0,11.60), lifts about its X",
+   "mouth_local_cm": [
+    0.0,
+    2.0,
+    11.6
+   ]
+  },
+  "Apple": {
+   "asset": "(Content Apple.uasset has no FBX source on disk) proxy SM_Proxy_Apple.fbx",
+   "proxy": true,
+   "dims": "7.5 cm sphere (0.94 tall), stem 2 cm (proxy; the project Apple mesh has no FBX source on disk)",
+   "pivot": "centre",
+   "note": "bite states are not modelled (swap to a bitten mesh on Bite1..3 if wanted)"
+  },
+  "FoodCan": {
+   "asset": "/Game/Mesh/Terminus/Blender/SM_TT_Can_A",
+   "proxy": false,
+   "pivot": "base centre, +Z up",
+   "dims": "7.8 x 7.9 x 11.2 cm (lid ring on the mesh, treated as open)"
+  },
+  "Spoon": {
+   "asset": "(none) proxy SM_Proxy_Spoon.fbx",
+   "proxy": true,
+   "dims": "17 cm: handle 10.5 x 1.1 x 0.3, bowl 4 x 2.8 x 1.1 (proxy)",
+   "pivot": "pinch point 5 cm from the handle end, +Z toward the bowl, +X = bowl up"
+  },
+  "BandageRoll": {
+   "asset": "(SM_Bandage / SM_Bandage_01..03 have no FBX source on disk) proxy SM_Proxy_BandageRoll.fbx",
+   "proxy": true,
+   "dims": "7 cm dia x 5 cm wide roll, 2.4 cm core (proxy; SM_Bandage / SM_Bandage_01 have no FBX source on disk)",
+   "pivot": "roll centre, axis = local X",
+   "wrap": "review-only sleeve (Wrap object): a 4.9 cm cylinder on the left forearm from the wrist, 2.5 + 2 cm per turn; the game can scale its own sleeve mesh the same way"
+  },
+  "Syringe": {
+   "asset": "(none) proxies SM_Proxy_Syringe*.fbx",
+   "proxy": true,
+   "dims": "12 cm: barrel r 0.75 x 7, needle 3.2, cap r 0.45 x 3.8, plunger travel 3.8 (proxy; no syringe mesh in the project)",
+   "pivot": "barrel centre, +Z toward the needle (tip at z 7.4); plunger local z -4.4 (out) .. -0.6 (pressed), its rear end at syringe z -8.0 .. -4.2 (the thumb pad); cap at z 4.0, pulled +4.5 along Z",
+   "grip": "round 5: fist round the barrel, needle out of the pinky side, thumb pad on the plunger rear end"
+  },
+  "KitBox": {
+   "asset": "(SM_TT_FirstAidTin is a 26 x 19 x 11 wall box, not hand-held) proxies SM_Proxy_KitBase.fbx + SM_Proxy_KitLid.fbx",
+   "proxy": true,
+   "dims": "16 x 10 x 5 cm base (pivot centre), lid 16 x 10 x 0.8 hinged on the far long edge (+Y), opens 110 deg away from the viewer",
+   "tool": "scalpel proxy 1 x 0.6 x 10 + blade 3.2, pivot at the pinch point, +Z toward the blade"
+  },
+  "Cigarette": {
+   "asset": "(none) proxy SM_Proxy_Cigarette.fbx",
+   "proxy": true,
+   "dims": "8.5 x 0.8 cm, filter 2.5 (pivot = filter end, +Z toward the tip); ember proxy at the tip after Lit",
+   "pivot": "filter end, +Z toward the tip"
+  },
+  "Lighter": {
+   "asset": "(none) proxy SM_Proxy_Lighter.fbx (+ SM_Proxy_LighterFlame.fbx)",
+   "proxy": true,
+   "dims": "2.5 x 1.3 x 6 cm body + 1.1 cm metal hood (pivot bottom centre, +Z up, +X toward the nozzle); striker wheel r 0.42 at (-0.6, 0, 6.55), fork under it, nozzle at (0.5, 0, 6.35); flame proxy 3.6 cm (separate object, only while lit)",
+   "pivot": "bottom centre, +Z up the body, +X toward the nozzle; flame proxy at the nozzle (0.5, 0, 6.35) while lit"
+  },
+  "Bong": {
+   "asset": "(none) proxies SM_Proxy_Bong.fbx + SM_Proxy_BongStem.fbx (downstem + bowl)",
+   "proxy": true,
+   "dims": "30 cm: base chamber r 5.2 x 8, tube r 2.3, mouthpiece r 2.65 (open, pivot base bottom centre, +Z up); downstem r 0.62-0.7 enters the tube wall at z 9.5 on +X at 45 deg up and out (4 cm inside, 6.0 cm outside), bowl cup r 1.55 opening up, rim at (6.5, 0, 15.3) (stem + bowl = separate object, pivot at the tube wall joint, +Z along the stem)",
+   "pivot": "base bottom centre, +Z up; BongStem pivot at the tube wall joint (2.3, 0, 9.5) in bong space, +Z along the stem (stem_in_bong), it never moves; during the hit the stem faces the character forward (19 deg off)"
+  },
+  "Bar": {
+   "asset": "proxy SM_Proxy_Bar.fbx (the rows use their own meshes: see row_fits in the clip entry)",
+   "proxy": true,
+   "dims": "box 3.5 x 2.5 x 18 cm (banana-ish)",
+   "pivot": "centre",
+   "axes": "pivot at the box centre; +Z = the long axis toward the bite (top) end (bite point (0, 0, 9)); X = the 3.5 cm width; Y = the 2.5 cm thickness",
+   "rows": [
+    "Banana",
+    "Chocolate"
+   ]
+  },
+  "BarFlat": {
+   "asset": "proxy SM_Proxy_BarFlat.fbx (the rows use their own meshes: see row_fits in the clip entry)",
+   "proxy": true,
+   "dims": "box 5.4 x 0.42 x 12.8 cm (the chocolate bar row at its in-hand size)",
+   "pivot": "centre",
+   "axes": "pivot at the box centre; +Z = the long axis toward the bite (top) end (bite point (0, 0, 6.4)); X = the 5.4 cm width (parallel to the mouth slit at the bite); Y = the 0.42 cm thickness: the thumb pad on the +Y face, index + middle pads on the -Y face",
+   "rows": [
+    "Chocolate"
+   ]
+  },
+  "Disc": {
+   "asset": "proxy SM_Proxy_Disc.fbx (the rows use their own meshes: see row_fits in the clip entry)",
+   "proxy": true,
+   "dims": "disc 7.5 cm across x 1.5 cm thick (cookie)",
+   "pivot": "centre",
+   "axes": "pivot at the disc centre; Y = the disc axis (faces at y = +-0.75): the thumb on the +Y (top) face, index + middle under it on the -Y face; the pinched (near) rim at -Z, +Z = the radius to the FAR rim that is bitten (bite point (0, 0, 3.75)); X along the mouth slit at the bite",
+   "rows": [
+    "Cookie"
+   ]
+  },
+  "BarBanana": {
+   "asset": "proxy SM_Proxy_BarBanana.fbx (the rows use their own meshes: see row_fits in the clip entry)",
+   "proxy": true,
+   "dims": "box 3.5 x 2.5 x 18 cm: the same grip proxy as Bar (only its lower part, the fist, is used: the banana body in the grip)",
+   "pivot": "centre",
+   "axes": "pivot at the box centre; +Z = the grip axis toward the thumb-index web; X = 3.5 width; Y = 2.5 thickness. The bite point / bite axis are the banana row's flesh tip / flesh direction in this frame (manifest proxy.bite_point_local_cm / bite_axis_local)",
+   "rows": [
+    "Banana"
+   ]
+  }
+ },
+ "clip_events_s": {
+  "A_Consume_Bandage_Forearm": [
+   [
+    0.47,
+    "WrapStart"
+   ],
+   [
+    0.47,
+    "UseItemStart"
+   ],
+   [
+    1.27,
+    "Turn1"
+   ],
+   [
+    2.07,
+    "Turn2"
+   ],
+   [
+    2.87,
+    "Turn3"
+   ],
+   [
+    3.1,
+    "Tuck"
+   ],
+   [
+    3.1,
+    "UseItemEnd"
+   ],
+   [
+    3.1,
+    "ItemGone"
+   ],
+   [
+    3.5,
+    "ActionFinished"
+   ]
+  ],
+  "A_Consume_Drink_Beer": [
+   [
+    2.37,
+    "CapOff"
+   ],
+   [
+    3.13,
+    "SipStart"
+   ],
+   [
+    3.13,
+    "UseItemStart"
+   ],
+   [
+    4.33,
+    "UseItemEnd"
+   ],
+   [
+    4.83,
+    "ItemDrop"
+   ],
+   [
+    5.6,
+    "ActionFinished"
+   ]
+  ],
+  "A_Consume_Drink_Can": [
+   [
+    0.77,
+    "TabPop"
+   ],
+   [
+    1.9,
+    "SipStart"
+   ],
+   [
+    1.9,
+    "UseItemStart"
+   ],
+   [
+    3.13,
+    "UseItemEnd"
+   ],
+   [
+    3.47,
+    "ItemDrop"
+   ],
+   [
+    4.0,
+    "ActionFinished"
+   ]
+  ],
+  "A_Consume_Drink_TwistBottle": [
+   [
+    1.3,
+    "CapOff"
+   ],
+   [
+    2.0,
+    "SipStart"
+   ],
+   [
+    2.0,
+    "UseItemStart"
+   ],
+   [
+    3.2,
+    "UseItemEnd"
+   ],
+   [
+    3.53,
+    "ItemDrop"
+   ],
+   [
+    4.0,
+    "ActionFinished"
+   ]
+  ],
+  "A_Consume_Eat_Apple": [
+   [
+    0.7,
+    "Bite1"
+   ],
+   [
+    0.7,
+    "UseItemStart"
+   ],
+   [
+    1.7,
+    "Bite2"
+   ],
+   [
+    2.7,
+    "Bite3"
+   ],
+   [
+    2.8,
+    "ItemGone"
+   ],
+   [
+    3.33,
+    "UseItemEnd"
+   ],
+   [
+    4.0,
+    "ActionFinished"
+   ]
+  ],
+  "A_Consume_Eat_Banana": [
+   [
+    0.7,
+    "Bite1"
+   ],
+   [
+    0.7,
+    "UseItemStart"
+   ],
+   [
+    1.7,
+    "Bite2"
+   ],
+   [
+    2.7,
+    "Bite3"
+   ],
+   [
+    2.8,
+    "ItemGone"
+   ],
+   [
+    3.33,
+    "UseItemEnd"
+   ],
+   [
+    4.0,
+    "ActionFinished"
+   ]
+  ],
+  "A_Consume_Eat_Bar": [
+   [
+    0.7,
+    "Bite1"
+   ],
+   [
+    0.7,
+    "UseItemStart"
+   ],
+   [
+    1.7,
+    "Bite2"
+   ],
+   [
+    2.7,
+    "Bite3"
+   ],
+   [
+    2.8,
+    "ItemGone"
+   ],
+   [
+    3.33,
+    "UseItemEnd"
+   ],
+   [
+    4.0,
+    "ActionFinished"
+   ]
+  ],
+  "A_Consume_Eat_BarFlat": [
+   [
+    0.7,
+    "Bite1"
+   ],
+   [
+    0.7,
+    "UseItemStart"
+   ],
+   [
+    1.7,
+    "Bite2"
+   ],
+   [
+    2.7,
+    "Bite3"
+   ],
+   [
+    2.8,
+    "ItemGone"
+   ],
+   [
+    3.33,
+    "UseItemEnd"
+   ],
+   [
+    4.0,
+    "ActionFinished"
+   ]
+  ],
+  "A_Consume_Eat_CanSpoon": [
+   [
+    1.4,
+    "Scoop1"
+   ],
+   [
+    2.27,
+    "UseItemStart"
+   ],
+   [
+    2.27,
+    "Bite1"
+   ],
+   [
+    3.33,
+    "Scoop2"
+   ],
+   [
+    4.23,
+    "Bite2"
+   ],
+   [
+    4.43,
+    "UseItemEnd"
+   ],
+   [
+    4.47,
+    "ItemDrop"
+   ],
+   [
+    5.27,
+    "ActionFinished"
+   ]
+  ],
+  "A_Consume_Eat_Disc": [
+   [
+    0.7,
+    "Bite1"
+   ],
+   [
+    0.7,
+    "UseItemStart"
+   ],
+   [
+    1.7,
+    "Bite2"
+   ],
+   [
+    2.7,
+    "Bite3"
+   ],
+   [
+    2.8,
+    "ItemGone"
+   ],
+   [
+    3.33,
+    "UseItemEnd"
+   ],
+   [
+    4.0,
+    "ActionFinished"
+   ]
+  ],
+  "A_Consume_Lighter_Flick": [
+   [
+    0.3,
+    "LighterFlick"
+   ],
+   [
+    0.37,
+    "Lit"
+   ],
+   [
+    0.37,
+    "UseItemStart"
+   ],
+   [
+    1.03,
+    "UseItemEnd"
+   ],
+   [
+    1.2,
+    "ActionFinished"
+   ]
+  ],
+  "A_Consume_Smoke_Bong": [
+   [
+    1.03,
+    "LighterFlick"
+   ],
+   [
+    1.13,
+    "Lit"
+   ],
+   [
+    1.13,
+    "Inhale"
+   ],
+   [
+    1.13,
+    "InhaleStart"
+   ],
+   [
+    1.13,
+    "UseItemStart"
+   ],
+   [
+    3.0,
+    "InhaleEnd"
+   ],
+   [
+    3.0,
+    "UseItemEnd"
+   ],
+   [
+    4.2,
+    "Exhale"
+   ],
+   [
+    6.0,
+    "ActionFinished"
+   ]
+  ],
+  "A_Consume_Smoke_Cigarette": [
+   [
+    1.03,
+    "LighterFlick"
+   ],
+   [
+    1.1,
+    "Lit"
+   ],
+   [
+    1.1,
+    "Inhale"
+   ],
+   [
+    1.1,
+    "InhaleStart"
+   ],
+   [
+    1.1,
+    "UseItemStart"
+   ],
+   [
+    2.1,
+    "InhaleEnd"
+   ],
+   [
+    2.1,
+    "UseItemEnd"
+   ],
+   [
+    2.6,
+    "Exhale"
+   ],
+   [
+    3.2,
+    "ItemDrop"
+   ],
+   [
+    4.0,
+    "ActionFinished"
+   ]
+  ],
+  "A_Consume_Smoke_Cigarette_Puff": [
+   [
+    0.53,
+    "Inhale"
+   ],
+   [
+    0.53,
+    "InhaleStart"
+   ],
+   [
+    0.53,
+    "UseItemStart"
+   ],
+   [
+    1.33,
+    "InhaleEnd"
+   ],
+   [
+    1.33,
+    "UseItemEnd"
+   ],
+   [
+    1.9,
+    "Exhale"
+   ],
+   [
+    2.6,
+    "ActionFinished"
+   ]
+  ],
+  "A_Consume_Surgery_Kit": [
+   [
+    1.13,
+    "KitOpen"
+   ],
+   [
+    1.9,
+    "ToolOut"
+   ],
+   [
+    2.1,
+    "UseItemStart"
+   ],
+   [
+    2.1,
+    "Dab1"
+   ],
+   [
+    2.67,
+    "Dab2"
+   ],
+   [
+    3.2,
+    "Dab3"
+   ],
+   [
+    3.67,
+    "UseItemEnd"
+   ],
+   [
+    4.87,
+    "KitClose"
+   ],
+   [
+    5.4,
+    "ActionFinished"
+   ]
+  ],
+  "A_Consume_Syringe_Thigh": [
+   [
+    0.87,
+    "CapOff"
+   ],
+   [
+    2.2,
+    "Jab"
+   ],
+   [
+    2.2,
+    "UseItemStart"
+   ],
+   [
+    2.73,
+    "UseItemEnd"
+   ],
+   [
+    2.93,
+    "ItemDrop"
+   ],
+   [
+    4.1,
+    "ActionFinished"
+   ]
+  ]
+ },
+ "holds": {
+  "A_Consume_Drink_Beer_Hold": {
+   "Beer": {
+    "socket": "Beer_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -6.9738,
+     4.4143,
+     -10.5294
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     8.1494,
+     12.5496,
+     8.6607
+    ]
+   }
+  },
+  "A_Consume_Drink_TwistBottle_Hold": {
+   "PlasticBottle": {
+    "socket": "PlasticBottle_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -7.3896,
+     3.9069,
+     -7.4754
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     7.8023,
+     -83.8246,
+     -8.974
+    ]
+   }
+  },
+  "A_Consume_Drink_Can_Hold": {
+   "SodaCan": {
+    "socket": "SodaCan_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -7.8187,
+     4.2475,
+     -5.0356
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     -8.8904,
+     -172.5964,
+     -7.8978
+    ]
+   }
+  },
+  "A_Consume_Eat_Apple_Hold": {
+   "Apple": {
+    "socket": "Apple_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -8.6008,
+     5.305,
+     0.304
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     -7.8062,
+     96.1704,
+     -1.0267
+    ]
+   }
+  },
+  "A_Consume_Eat_CanSpoon_Hold": {
+   "FoodCan": {
+    "socket": "FoodCan_in_hand_l",
+    "bone": "hand_l",
+    "ue_loc_cm": [
+     8.0795,
+     -3.7621,
+     5.0113
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     -7.8041,
+     96.1683,
+     -175.0282
+    ]
+   },
+   "Spoon": {
+    "socket": "Spoon_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -5.9761,
+     8.0957,
+     3.3886
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     41.0977,
+     -4.3323,
+     95.3801
+    ]
+   }
+  },
+  "A_Consume_Bandage_Forearm_Hold": {
+   "BandageRoll": {
+    "socket": "BandageRoll_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -6.6229,
+     7.772,
+     3.0213
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     -48.3765,
+     -113.3697,
+     -56.3721
+    ]
+   }
+  },
+  "A_Consume_Syringe_Thigh_Hold": {
+   "Syringe": {
+    "socket": "Syringe_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -7.1348,
+     2.7823,
+     -1.1191
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     20.9088,
+     2.4368,
+     -175.0847
+    ]
+   }
+  },
+  "A_Consume_Surgery_Kit_Hold": {
+   "KitBox": {
+    "socket": "KitBox_in_hand_l",
+    "bone": "hand_l",
+    "ue_loc_cm": [
+     9.49,
+     -3.8789,
+     0.505
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     82.1287,
+     88.6422,
+     -7.458
+    ]
+   }
+  },
+  "A_Consume_Smoke_Cigarette_Hold": {
+   "Cigarette": {
+    "socket": "Cigarette_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -18.648,
+     3.7971,
+     1.7235
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     7.8553,
+     -168.3277,
+     82.972
+    ]
+   }
+  },
+  "A_Consume_Lighter_Flick_Hold": {
+   "Lighter": {
+    "socket": "Lighter_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -8.9791,
+     1.8031,
+     -1.0545
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     -5.3123,
+     136.3747,
+     -5.8126
+    ]
+   }
+  },
+  "A_Consume_Smoke_Bong_Hold": {
+   "Bong": {
+    "socket": "Bong_in_hand_l",
+    "bone": "hand_l",
+    "ue_loc_cm": [
+     6.6463,
+     -2.1965,
+     19.3574
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     2.7393,
+     21.7192,
+     -171.1668
+    ]
+   },
+   "Lighter": {
+    "socket": "Lighter_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -8.9791,
+     1.8031,
+     -1.0545
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     -5.3123,
+     136.3747,
+     -5.8126
+    ]
+   }
+  },
+  "A_Consume_Drink_Beer_FP_Hold": {
+   "Beer": {
+    "socket": "Beer_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -6.9738,
+     4.4143,
+     -10.5294
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     8.1494,
+     12.5496,
+     8.6607
+    ]
+   }
+  },
+  "A_Consume_Drink_TwistBottle_FP_Hold": {
+   "PlasticBottle": {
+    "socket": "PlasticBottle_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -7.3896,
+     3.9069,
+     -7.4754
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     7.8023,
+     -83.8246,
+     -8.974
+    ]
+   }
+  },
+  "A_Consume_Drink_Can_FP_Hold": {
+   "SodaCan": {
+    "socket": "SodaCan_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -7.8187,
+     4.2475,
+     -5.0356
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     -8.8904,
+     -172.5964,
+     -7.8978
+    ]
+   }
+  },
+  "A_Consume_Eat_Apple_FP_Hold": {
+   "Apple": {
+    "socket": "Apple_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -8.6008,
+     5.305,
+     0.304
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     -7.8062,
+     96.1704,
+     -1.0267
+    ]
+   }
+  },
+  "A_Consume_Eat_CanSpoon_FP_Hold": {
+   "FoodCan": {
+    "socket": "FoodCan_in_hand_l",
+    "bone": "hand_l",
+    "ue_loc_cm": [
+     8.0795,
+     -3.7621,
+     5.0113
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     -7.8041,
+     96.1683,
+     -175.0282
+    ]
+   },
+   "Spoon": {
+    "socket": "Spoon_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -5.9761,
+     8.0957,
+     3.3886
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     41.0977,
+     -4.3323,
+     95.3801
+    ]
+   }
+  },
+  "A_Consume_Bandage_Forearm_FP_Hold": {
+   "BandageRoll": {
+    "socket": "BandageRoll_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -6.6229,
+     7.772,
+     3.0213
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     -48.3765,
+     -113.3697,
+     -56.3721
+    ]
+   }
+  },
+  "A_Consume_Syringe_Thigh_FP_Hold": {
+   "Syringe": {
+    "socket": "Syringe_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -7.1348,
+     2.7823,
+     -1.1191
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     20.9089,
+     2.4369,
+     -175.0847
+    ]
+   }
+  },
+  "A_Consume_Surgery_Kit_FP_Hold": {
+   "KitBox": {
+    "socket": "KitBox_in_hand_l",
+    "bone": "hand_l",
+    "ue_loc_cm": [
+     9.49,
+     -3.8789,
+     0.505
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     82.1287,
+     88.6422,
+     -7.458
+    ]
+   }
+  },
+  "A_Consume_Smoke_Cigarette_FP_Hold": {
+   "Cigarette": {
+    "socket": "Cigarette_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -18.648,
+     3.7971,
+     1.7235
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     7.8553,
+     -168.3277,
+     82.972
+    ]
+   },
+   "Lighter": {
+    "socket": "Lighter_in_hand_l",
+    "bone": "hand_l",
+    "ue_loc_cm": [
+     8.9788,
+     -1.803,
+     1.0545
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     5.3131,
+     -43.6314,
+     -174.184
+    ]
+   }
+  },
+  "A_Consume_Smoke_Cigarette_Puff_FP_Hold": {
+   "Cigarette": {
+    "socket": "Cigarette_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -18.648,
+     3.7971,
+     1.7235
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     7.8553,
+     -168.3277,
+     82.972
+    ]
+   }
+  },
+  "A_Consume_Lighter_Flick_FP_Hold": {
+   "Lighter": {
+    "socket": "Lighter_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -8.9791,
+     1.8031,
+     -1.0545
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     -5.3123,
+     136.3747,
+     -5.8126
+    ]
+   }
+  },
+  "A_Consume_Smoke_Bong_FP_Hold": {
+   "Bong": {
+    "socket": "Bong_in_hand_l",
+    "bone": "hand_l",
+    "ue_loc_cm": [
+     6.6463,
+     -2.1965,
+     19.3574
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     2.7393,
+     21.7192,
+     -171.1668
+    ]
+   },
+   "Lighter": {
+    "socket": "Lighter_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -8.9791,
+     1.8031,
+     -1.0545
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     -5.3123,
+     136.3747,
+     -5.8126
+    ]
+   }
+  },
+  "A_Consume_Eat_Bar_Hold": {
+   "Bar": {
+    "socket": "Bar_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -6.9522,
+     1.1492,
+     7.288
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     -12.6518,
+     -179.0015,
+     29.089
+    ]
+   }
+  },
+  "A_Consume_Eat_Bar_FP_Hold": {
+   "Bar": {
+    "socket": "Bar_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -6.9522,
+     1.1492,
+     7.288
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     -12.6518,
+     -179.0015,
+     29.089
+    ]
+   }
+  },
+  "A_Consume_Eat_BarFlat_Hold": {
+   "BarFlat": {
+    "socket": "BarFlat_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -11.6041,
+     4.1555,
+     5.6415
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     3.4662,
+     91.2036,
+     8.6343
+    ]
+   }
+  },
+  "A_Consume_Eat_BarFlat_FP_Hold": {
+   "BarFlat": {
+    "socket": "BarFlat_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -11.6041,
+     4.1555,
+     5.6415
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     3.4662,
+     91.2036,
+     8.6343
+    ]
+   }
+  },
+  "A_Consume_Eat_Disc_Hold": {
+   "Disc": {
+    "socket": "Disc_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -9.5718,
+     7.2938,
+     3.7437
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     -25.646,
+     78.638,
+     76.8983
+    ]
+   }
+  },
+  "A_Consume_Eat_Disc_FP_Hold": {
+   "Disc": {
+    "socket": "Disc_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -9.5718,
+     7.2938,
+     3.7437
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     -25.646,
+     78.638,
+     76.8983
+    ]
+   }
+  },
+  "A_Consume_Eat_Banana_Hold": {
+   "BarBanana": {
+    "socket": "BarBanana_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -6.9522,
+     1.1492,
+     7.288
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     -12.6518,
+     -179.0015,
+     29.089
+    ]
+   }
+  },
+  "A_Consume_Eat_Banana_FP_Hold": {
+   "BarBanana": {
+    "socket": "BarBanana_in_hand_r",
+    "bone": "hand_r",
+    "ue_loc_cm": [
+     -6.9522,
+     1.1492,
+     7.288
+    ],
+    "ue_rotator_pitch_yaw_roll": [
+     -12.6518,
+     -179.0015,
+     29.089
+    ]
+   }
+  }
+ }
+}

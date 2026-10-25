@@ -16,3 +16,7 @@ uv venv -p 3.11 .venv && uv pip install -p .venv bpy
 ## Skills
 
 [`skills/`](skills) holds the Claude Code skills used to build the guns and levels: `level-factory`, `gun-pipeline`, `model-factory`, `blender-3d` and `lns-game-import`. See [`skills/README.md`](skills/README.md).
+
+## Props
+
+[`props/`](props) is where the all-new LootNShoot loot props go (food, drinks, medical, attachments, ammo, tools, gear, clothes). [`props/brief/BRIEF.md`](props/brief/BRIEF.md) is the brief: rules, conventions, the animation contract for consumables, the current item list and the skeleton for clothes.
