@@ -1,119 +1,114 @@
-"""Every number and registry for Cortlandt Station. Pure data — no bpy, no logic.
-Units: metres. X runs along the platform, Y across, Z up. Platform top = 0."""
+"""Every number and registry for Cortlandt Station (layout v2: "The Well").
+Pure data — no bpy, no logic. Units: metres. X along the platform (west→east), Y across
+(south→north), Z up. Platform top = 0. Rects are (x0, y0, x1, y1)."""
 
 # --- vertical stack -----------------------------------------------------------------
 Z_PLATFORM = 0.0
 Z_MEZZ = 5.2
-Z_STREET = 10.0          # sidewalk / plaza level
-ROAD_DROP = 0.15         # roadway sits below the curb
+Z_STREET = 10.0          # sidewalk level; roadway 0.15 lower
+ROAD_DROP = 0.15
 PLATFORM_CEIL = 4.3
-MEZZ_CEIL = 8.6
+MEZZ_CEIL = 8.8
 
 TREAD = 0.28             # NYC ~11 in
 LANDING = 1.5
-STREET_STAIR_RISERS = 27
-PLATFORM_STAIR_RISERS = 29
+STREET_STAIR_RISERS = 27         # 4.8 m / 27 = 17.8 cm
+PLATFORM_STAIR_RISERS = 29       # 5.2 m / 29 = 17.9 cm
 
-# --- platform level -------------------------------------------------------------------
-PLATFORM_LEN = 70.0
-PLATFORM_W = 9.0
-TRACK_W = 4.5
+# --- the spine: one vertical shaft through all three levels -------------------------
+# Street: collapsed roadway ("The Breach"), caged over. Mezz: open "Well" with a rail.
+# Platform: daylight lands on the boarding zone. Same rect on every level.
+WELL = (-16.0, -6.0, 22.0, 6.0)
+BREACH_BUS = dict(x=4.0, y=-1.0, pitch_deg=-28, yaw_deg=8)   # set piece wedged in the shaft
+
+# --- platform level -----------------------------------------------------------------
+PLATFORM = (-35.0, -4.5, 35.0, 4.5)
+TRACK_A = (-85.0, -9.0, 85.0, -4.5)      # south: the live train
+TRACK_B = (-85.0, 4.5, 85.0, 9.0)        # north: derelicts + test range
 TRACKBED_Z = -1.1
-STATION_HALF_LEN = 45.0          # station box; tunnels continue past it
+STATION_HALF_LEN = 45.0
 TUNNEL_HALF_LEN = 85.0
-TUNNEL_CEIL = 4.0
 COLUMN_PITCH = 4.572             # 15 ft
 COLUMN_ROW_Y = 3.3
-COLUMN_COUNT_PER_ROW = 15        # k = -7..7
-EDGE_STRIP = 0.6                 # yellow warning strip
-
-PLATFORM_STAIRS = [              # top nosing (x,y) at mezz level, descend +x
-    dict(name="PlatformStair_A", top=(7.0, 0.0), width=2.4),
-    dict(name="PlatformStair_B", top=(21.0, 0.0), width=2.4),
-]
-
-TRAIN_CAR = dict(length=15.5, width=2.7, gap=0.9, floor=0.0, roof=3.0, doors_per_side=4, door_w=1.27)
-TRAIN_A = dict(track="A", cars=4, start_x=-31.0, kit="SM_TrainCar_R142")
-TRAIN_B = dict(track="B", cars=3, start_x=-26.0, kit="SM_TrainCar_Derelict")
+TRAIN_CAR = dict(length=15.5, width=2.7, gap=0.9, doors_per_side=4, door_w=1.27)
+TRAIN_A = dict(cars=4, start_x=-31.0, kit="SM_TrainCar_R142")
+TRAIN_B = dict(cars=3, start_x=-33.0, kit="SM_TrainCar_Derelict")
+PLATFORM_ZONES = {
+    "boarding":     dict(rect=(-7.0, -4.5, 13.0, 4.5), note="under the Well, daylight shaft"),
+    "route_board":  dict(rect=(-35.0, -4.5, -29.0, 0.0), note="pick a stop at the lead car cab"),
+    "test_range":   dict(rect=(35.0, 4.5, 80.0, 9.0), note="Track B tunnel, 10/25/50 m targets"),
+    "range_steps":  dict(rect=(31.0, 2.5, 35.0, 4.5), note="steps down to Track B trackbed"),
+}
 
 # --- mezzanine ----------------------------------------------------------------------
-MEZZ_RECT = (-42.0, -13.0, 40.0, 13.0)
-FARE_LINE_X = -22.0
-ROW_X = (-22.0, 6.0)
-ROW_HALF_W = 3.3                 # corridor = column rows
-STREET_STAIRS = [                # top nosing at street level, descend +x into the unpaid hall
-    dict(name="StreetStair_North", top=(-40.0, 8.5), width=1.8, globe="SM_EntranceGlobe_Green"),
-    dict(name="StreetStair_South", top=(-40.0, -8.5), width=1.8, globe="SM_EntranceGlobe_Red"),
+MEZZ = (-42.0, -16.0, 42.0, 16.0)
+FARE_LINE_X = -28.0
+WALKWAY = 3.0                    # ring walkway around the Well
+PLATFORM_STAIRS = [              # inside the Well. top nosing at mezz level
+    dict(name="Stair_West",  top=(-16.0, 0.0), dir=(1, 0),  width=3.0),
+    dict(name="Stair_Grand", top=(22.0, 0.0),  dir=(-1, 0), width=4.0),
 ]
-# The Row: old shop → new use. side +1 = north of corridor
-ROW_SHOPS = [
-    dict(key="trade_post", was="Newsstand",   side=+1, x=(-22.0, -8.0), npc="Trader"),
-    dict(key="mechanic",   was="Locksmith",   side=+1, x=(-8.0, 6.0),   npc="Mechanic"),
-    dict(key="gunsmith",   was="Shoe Repair", side=-1, x=(-22.0, -8.0), npc="Gunsmith"),
-    dict(key="infirmary",  was="Barber",      side=-1, x=(-8.0, 6.0),   npc="Medic"),
+STREET_STAIRS = [                # top nosing at street level, descend east into the Gate
+    dict(name="Kiosk_North", top=(-42.0, 9.5),  dir=(1, 0), width=2.0,
+         globe="green", state="open", note="main entrance, sandbag gate + shutter"),
+    dict(name="Kiosk_South", top=(-42.0, -9.5), dir=(1, 0), width=2.0,
+         globe="red", state="welded", note="sealed, visible landmark, opens late-game"),
 ]
-# Commons zones (rects in mezz plan) — kit pieces scattered per zone by layout_mezz
-COMMONS = dict(
-    bunks=(26.0, 5.0, 39.5, 12.5),
-    galley=(8.0, 7.0, 20.0, 12.5),
-    market=(8.0, -2.0, 20.0, 2.0),
-    stash=(8.0, -12.5, 20.0, -10.5),
-    workshop=(21.0, -12.5, 31.0, -6.0),
-    black_market=(32.0, -13.0, 40.0, -5.0),
-    raid_board=(33.5, 0.0),
-)
+# Every room: rect, what it was before the outbreak, what it is now, light identity.
+# Loop: OUT along the north side (stash→trade→arms→mech→raid board→Grand Stair),
+#       BACK along the south side (Grand Stair→infirmary→workshop→galley→bunks).
+MEZZ_ROOMS = {
+    "gate":        dict(rect=(-42.0, -16.0, -28.0, 16.0), was="Unpaid area",   light="sodium orange, CCTV glow"),
+    "watch_post":  dict(rect=(-37.0, -2.0, -33.0, 2.0),   was="Token booth",   light="red alarm lamp"),
+    "landing_sq":  dict(rect=(-28.0, -9.0, -16.0, 9.0),   was="Paid concourse", light="work lights"),
+    "stash":       dict(rect=(-28.0, 9.0, -16.0, 16.0),   was="Lost & found",  light="cool fluorescent"),
+    "trade_post":  dict(rect=(-16.0, 9.0, -2.0, 16.0),    was="Newsstand",     light="warm marquee bulbs"),
+    "gunsmith":    dict(rect=(-2.0, 9.0, 12.0, 16.0),     was="Shoe repair",   light="red neon sign"),
+    "mechanic":    dict(rect=(12.0, 9.0, 25.0, 16.0),     was="Locksmith",     light="orange caged bulbs"),
+    "departure":   dict(rect=(25.0, -16.0, 34.0, 16.0),   was="Exit passage",  light="raid board projector"),
+    "infirmary":   dict(rect=(12.0, -16.0, 25.0, -9.0),   was="Barber shop",   light="clinical white + barber pole"),
+    "workshop":    dict(rect=(0.0, -16.0, 12.0, -9.0),    was="Phone repair",  light="cool white + printer glow"),
+    "galley":      dict(rect=(-12.0, -16.0, 0.0, -9.0),   was="Coffee cart",   light="string lights"),
+    "bunks":       dict(rect=(-28.0, -16.0, -12.0, -9.0), was="Crew storage",  light="dim red night lamps"),
+    "black_market": dict(rect=(34.0, 4.0, 42.0, 16.0),    was="Signal room",   light="UV purple"),
+    "staff_hall":  dict(rect=(34.0, -4.0, 42.0, 4.0),     was="Staff corridor", light="flicker"),
+    "generator":   dict(rect=(34.0, -16.0, 42.0, -4.0),   was="Fan plant",     light="hazard amber"),
+}
 
 # --- street -------------------------------------------------------------------------
-AVENUE_HALF = 6.0                # Greenwich St, curb to curb 12 m
+AVENUE_HALF = 6.0                # Greenwich St, curb to curb 12 m (Breach fits it exactly)
 SIDEWALK_AVE = 4.5
-CROSS_X = (-50.0, 50.0)          # Cortlandt St, Dey St
+CROSS_STREETS = [dict(name="Cortlandt St", x=-60.0), dict(name="Dey St", x=60.0)]
 CROSS_HALF = 5.0
 SIDEWALK_CROSS = 4.0
 STREET_BOUNDS = (-100.0, -62.0, 100.0, 62.0)
-BARRICADE_X = 96.0
-BARRICADE_Y = 58.0
+BARRICADE = (-95.0, -58.0, 95.0, 58.0)
 LOT_DEPTH = 15.0
+STREET_ZONES = {
+    "spawn":      dict(rect=(-95.0, -6.0, -85.0, 6.0),  note="overrun NYPD checkpoint, tutorial start"),
+    "pharmacy":   dict(rect=(-51.0, 10.5, -41.0, 25.5), note="Cortlandt Drugs, first loot, next to green kiosk"),
+    "plaza":      dict(rect=(15.0, 10.5, 51.0, 45.0),   note="pocket park, overrun FEMA tent camp"),
+    "walkups":    dict(rects=[(-79.0, 25.0, -69.0, 33.0), (69.0, 20.0, 79.0, 28.0), (69.0, -40.0, 79.0, -32.0)]),
+}
 STOREFRONT_COUNT = 84
 INTERIOR_COUNT = 18
 WALKUP_COUNT = 3
-WALKUP_W = 7.5
-WALKUP_FLOORS = 5
-WALKUP_FLOOR_H = 3.0
 GROUND_FLOOR_H = 4.5
 UPPER_FLOOR_H = 3.2
-PLAZA_BLOCK = "C_N"
 SEED = 1782
 
-LOOT_TARGET = 110                # interiors 18*4 + walkups 3*8 + street rest
-LOOT_PER_INTERIOR = 4
-LOOT_PER_WALKUP = 8
+LOOT_TARGET = 110
 ZOMBIE_SPAWNERS = 12
 
-# --- materials (slot name → blockout RGBA; UE material instances bind by slot name) --
+# --- materials (slot → blockout RGBA; UE binds material instances by slot name) -------
 MATERIALS = {
-    "M_Concrete":       (0.42, 0.42, 0.40, 1),
-    "M_Tile_White":     (0.85, 0.84, 0.78, 1),
-    "M_Tile_Trim":      (0.30, 0.45, 0.35, 1),
-    "M_Terrazzo":       (0.55, 0.52, 0.47, 1),
-    "M_Platform_Edge":  (0.85, 0.65, 0.05, 1),
-    "M_Trackbed":       (0.12, 0.10, 0.09, 1),
-    "M_Rail":           (0.35, 0.30, 0.27, 1),
-    "M_Steel_Painted":  (0.18, 0.25, 0.22, 1),
-    "M_Steel_Bare":     (0.50, 0.50, 0.52, 1),
-    "M_Asphalt":        (0.10, 0.10, 0.11, 1),
-    "M_Sidewalk":       (0.55, 0.54, 0.51, 1),
-    "M_Brick":          (0.45, 0.22, 0.15, 1),
-    "M_Facade_Stone":   (0.62, 0.58, 0.52, 1),
-    "M_Glass_Dark":     (0.05, 0.07, 0.08, 1),
-    "M_Wood":           (0.40, 0.27, 0.16, 1),
-    "M_Sandbag":        (0.52, 0.47, 0.35, 1),
-    "M_Fabric":         (0.25, 0.30, 0.22, 1),
-    "M_Train_Body":     (0.62, 0.64, 0.66, 1),
-    "M_Train_Rust":     (0.38, 0.22, 0.12, 1),
-    "M_Globe_Green":    (0.10, 0.80, 0.25, 1),
-    "M_Globe_Red":      (0.85, 0.10, 0.08, 1),
+    "M_Concrete": (0.42, 0.42, 0.40, 1), "M_Tile_White": (0.85, 0.84, 0.78, 1),
+    "M_Tile_Trim": (0.30, 0.45, 0.35, 1), "M_Terrazzo": (0.55, 0.52, 0.47, 1),
+    "M_Platform_Edge": (0.85, 0.65, 0.05, 1), "M_Trackbed": (0.12, 0.10, 0.09, 1),
+    "M_Steel_Painted": (0.18, 0.25, 0.22, 1), "M_Asphalt": (0.10, 0.10, 0.11, 1),
+    "M_Sidewalk": (0.55, 0.54, 0.51, 1), "M_Brick": (0.45, 0.22, 0.15, 1),
+    "M_Glass_Dark": (0.05, 0.07, 0.08, 1), "M_Wood": (0.40, 0.27, 0.16, 1),
+    "M_Sandbag": (0.52, 0.47, 0.35, 1), "M_Train_Body": (0.62, 0.64, 0.66, 1),
+    "M_Globe_Green": (0.10, 0.80, 0.25, 1), "M_Globe_Red": (0.85, 0.10, 0.08, 1),
     "M_Light_Emissive": (1.00, 0.95, 0.85, 1),
-    "M_Barricade":      (0.70, 0.70, 0.68, 1),
-    "M_Planter":        (0.20, 0.30, 0.15, 1),
 }
-EMISSIVE = {"M_Light_Emissive": 8.0, "M_Globe_Green": 4.0, "M_Globe_Red": 4.0}
